@@ -13,7 +13,16 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <!-- This site has installed PayPal for WooCommerce v2.0.0 - https://www.angelleye.com/product/woocommerce-paypal-plugin/ -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
+  <style>
+    .main{
+      background-color: blueviolet !important;
+    }
+  </style>
+  <style>
+    .footer{
+      height: 20rem !important;
+    }
+    </style>
   <script>
     document.documentElement.classList.remove("no-js"),
       0 <= document.cookie.indexOf("emFontsLoaded=true") &&
@@ -295,7 +304,7 @@
     href="https://www.gilbaneco.com/wp-content/themes/gilbane2022/css/main.css?ver=1708703968" type="text/css"
     media="all" />
   <link rel="stylesheet" id="dashicons-css" href="https://www.gilbaneco.com/wp-includes/css/dashicons.min.css?ver=6.4.3"
-    type="text/css" media="all" />
+    type="text/css" media="all" /> 
   <script type="text/javascript"
     src="https://www.gilbaneco.com/wp-content/plugins/em-timeline/public/js/em-timeline-public.js?ver=1.0.0"
     id="em-timeline-js"></script>
@@ -306,62 +315,9 @@
     href="https://www.gilbaneco.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gilbaneco.com%2F" />
   <link rel="alternate" type="text/xml+oembed"
     href="https://www.gilbaneco.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gilbaneco.com%2F&#038;format=xml" />
-  <noscript>
-    <style>
-      .woocommerce-product-gallery {
-        opacity: 1 !important;
-      }
 
-      /* Hide the side menu by default */
-      .side-menu {
-        transform: translateX(-100%);
-        transition: transform 0.3s ease;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 250px;
-        /* Adjust as needed */
-        background-color: #fff;
-        /* Adjust background color as needed */
-        z-index: 1000;
-        /* Ensure it's above other content */
-      }
 
-      /* Show the side menu when the class is added */
-      .side-menu.show-menu {
-        transform: translateX(0);
-      }
-    </style>
-  </noscript>
-
-  <script type="application/ld+json" class="saswp-schema-markup-output">
-      [
-        {
-          "@context": "https://schema.org/",
-          "@type": "WebSite",
-          "@id": "https://www.gilbaneco.com#website",
-          "headline": "Gilbane",
-          "name": "Gilbane",
-          "description": "Gilbane is a leading global builder and real estate developer Building Company Development Company About Gilbane Innovative, solutions-driven,",
-          "url": "https://www.gilbaneco.com",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://www.gilbaneco.com?s={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        },
-
-        {
-          "@context": "https://schema.org/",
-          "@type": "Organization",
-          "@id": "https://www.gilbaneco.com#Organization",
-          "name": "emagine Development",
-          "url": "https://www.gilbaneco.com",
-          "sameAs": []
-        }
-      ]
-    </script>
+ 
 
   <link rel="icon" href="https://res.cloudinary.com/pitz/image/upload/v1708692038/Capture-removebg-preview_1_uhlkrr.png"
     sizes="32x32" />
@@ -371,13 +327,16 @@
     href= />
   <meta name="msapplication-TileImage"
     content="" />
+    <style>
+    
+      
+    </style>
 </head>
 
 <body data-rsssl="1"
   class="home default page page-id-5 wp-custom-logo theme-gilbane2022 woocommerce-no-js has_paypal_express_checkout has-hero">
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WM957XF" height="0" width="0"
-      style="display: none; visibility: hidden"></iframe></noscript>
+
   <!-- End Google Tag Manager (noscript) -->
   <div class="site">
     <!-- Starting .site wrapper tag -->
@@ -476,44 +435,88 @@
                   <ul class="sub-menu">
                     <li id="menu-item-5011"
                       class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5011">
-                      <a style="font-size: larger;" href="/sustainability.html">Sustainability</a>
-                      <ol>
-                        <li>Sustainable future</li>
-                        <li>Carbon reduction path to zero</li>
-                      </ol>
-                    </li>
-                    
-                    <li id="menu-item-5009"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5009">
-                      <a href="/Udgs.html">UNSDGS</a>
-                      <ol>
-                        <li>Affordable and clean energy</li>
+                      <div style="" onmouseover="showList()" onmouseout="hideList()">
+                        <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true" aria-expanded="false">Sustainability</a>
+                        <ol id="list" style="display: none;">
+                          <li>Sustainable future</li>
+                          <li>Carbon reduction path to zero</li>
+                        </ol>
+                      </div>
+                      
+                      <script>
+                        function showList() {
+                          var list = document.getElementById("list");
+                          list.style.display = "block";
+                        }
+                      
+                        function hideList() {
+                          var list = document.getElementById("list");
+                          list.style.display = "none";
+                        }
+                      </script>
+                       <div onmouseover="showList1()" onmouseout="hideList1()">
+                        <a style="font-size: larger; margin-top: 2rem;" href="/Udgs.html" aria-haspopup="true" aria-expanded="false">UNSDGS</a>
+                        <ol id="list1" style="display: none;">
+                          <li>Affordable and clean energy</li>
                         <li>Decent work and economic growth</li>
                         <li>Industry innovation and infrastructure</li>
                         <li>Sustainable cities and communities</li>
-                      </ol>
-                    </li>
-                    <li id="menu-item-5013"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5013">
-                      <a href="/environment.html">Environmental Focus Areas</a>
-                      <ol>
+                        </ol>
+                      </div>
+                      
+                      <script>
+                        function showList1() {
+                          var list = document.getElementById("list1");
+                          list.style.display = "block";
+                        }
+                      
+                        function hideList1() {
+                          var list = document.getElementById("list1");
+                          list.style.display = "none";
+                        }
+                      </script>
+                     <div onmouseover="showList2()" onmouseout="hideList2()">
+                      <a style="font-size: larger; margin-top: 2rem;" href="/environment.html" aria-haspopup="true" aria-expanded="false">Environmental Focus Areas</a>
+                      <ol id="list2" style="display: none;">
                         <li>Nature and pollution</li>
                         <li>Resource and materials</li>
                         <li>Climate Action</li>
-                      </ol>
-                    </li>
-                    <li id="menu-item-5021"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5021">
-                      <a href="/social.html">Social Focus Areas 
-                      </a>
-                      <ol>
-                        <li>Well being</li>
+                          </ol>
+                    </div>  
+                    <script>
+                      function showList2() {
+                        var list = document.getElementById("list2");
+                        list.style.display = "block";
+                      }
+                    
+                      function hideList2() {
+                        var list = document.getElementById("list2");
+                        list.style.display = "none";
+                      }
+                    </script>
+                   
+                   <div onmouseover="showList3()" onmouseout="hideList3()">
+                    <a style="font-size: larger; margin-top: 2rem;" href="/environment.html" aria-haspopup="true" aria-expanded="false">Social Focus Areas </a>
+                    <ol id="list3" style="display: none;">
+                      <li>Well being</li>
                         <li>Economic Prosperity</li>
                         <li>Comminity engagement</li>
-                      </ol>
-                    </li>
+                        </ol>
+                  </div>  
+                  <script>
+                    function showList3() {
+                      var list = document.getElementById("list3");
+                      list.style.display = "block";
+                    }
+                  
+                    function hideList3() {
+                      var list = document.getElementById("list3");
+                      list.style.display = "none";
+                    }
+                  </script>
+                  
                    
-                  </ul>
+                    </ul>
                 </li>
   
               </ul>
@@ -543,33 +546,96 @@
                 <ul class="sub-menu">
                   <li id="menu-item-5011"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5011">
-                    <a href="/innovations.html">INNOVATION</a>
-                    <ol>
-                      <li>Technological innovations</li>
-                      <li>General innovations innovations</li>
+                   
+                  <div style="margin-top: 1rem;" onmouseover="showList5()" onmouseout="hideList5()">
+                    <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true" aria-expanded="false">INNOVATION</a>
+                    <ol id="list5" style="display: none;">
+                        <li>Technological innovations</li>
+                        <li>General innovations innovations</li>
                     </ol>
-                  </li>
+                  </div>
+                  
+                  <script>
+                    function showList5() {
+                      var list5 = document.getElementById("list5");
+                      list5.style.display = "block";
+                    }
+                  
+                    function hideList5() {
+                      var list5 = document.getElementById("list5");
+                      list5.style.display = "none";
+                    }
+                  </script>
+
+
+
                   <li id="menu-item-5005"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5005">
-                    <a href="/energy.html">CIVIL & ENERGY INFRASTRACTURE</a>
-                    <ol>
+                  
+                  <div style="margin-top: 1rem;" onmouseover="showList6()" onmouseout="hideList6()">
+                    <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true" aria-expanded="false">CIVIL & ENERGY INFRASTRACTURE</a>
+                    <ol id="list6" style="display: none;">
                       <li>Solar energy development</li>
                       <li>Bio energy development</li>
                     </ol>
-                  </li>
-                  <li id="menu-item-5009"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5009">
-                    <a href="/roads.html">HIGHWAYS & ROADS</a>
-                    <ol>Long Distance highways</ol>
+                </div>
+                  
+                <script>
+                    function showList6() {
+                        var list6 = document.getElementById("list6");
+                        list6.style.display = "block";
+                    }
+                  
+                    function hideList6() {
+                        var list6 = document.getElementById("list6");
+                        list6.style.display = "none"; // Fix here: Change `list` to `list5`
+                    }
+                </script>
+                
+
+
+                 
+                  <div style="margin-top: 1rem;" onmouseover="showList7()" onmouseout="showList7()">
+                    <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true" aria-expanded="false">HIGHWAYS & ROADS</a>
+                    <ol id="list7" style="display: none;">
+                      <ol>Long Distance highways</ol>
                     <ol>Super  highways</ol>
-                    <ol></ol>
-                  </li>
-                  <li id="menu-item-5013"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5013">
-                    <a href="/agri.html">SOCIAL & AGRICULTURE INFRASTRACTURE</a>
-                    <ol>Large cash crop farming</ol>
+                    </ol>
+                </div>
+                  
+                <script>
+                    function showList7() {
+                        var list7 = document.getElementById("list7");
+                        list7.style.display = "block";
+                    }
+                  
+                    function showList7() {
+                        var list7 = document.getElementById("list7");
+                        list7.style.display = "none"; // Fix here: Change `list` to `list5`
+                    }
+                </script>
+                  <div style="margin-top: 1rem;" onmouseover="showList8()" onmouseout="hideList8()">
+                    <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true" aria-expanded="false">SOCIAL & AGRICULTURE INFRASTRACTURE</a>
+                    <ol id="list8" style="display: none;">
+                      <ol>Large cash crop farming</ol>
                     <ol>Horticulture  farming</ol>
-                  </li>
+                    </ol>
+                </div>
+                  
+                <script>
+                    function showList8() {
+                        var list8 = document.getElementById("list8");
+                        list8.style.display = "block";
+                    }
+                  
+                    function hideList8() {
+                        var list8 = document.getElementById("list8");
+                        list8.style.display = "none"; // Fix here: Change `list` to `list5`
+                    }
+                </script>
+
+
+                 
                   <li id="menu-item-5021"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5021">
                     <a href="/services.html">SUSTAINABLE WATER SUPPLY & DISTRIBUTION SYSTEMS

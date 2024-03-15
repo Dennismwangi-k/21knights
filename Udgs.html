@@ -13,7 +13,15 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <!-- This site has installed PayPal for WooCommerce v2.0.0 - https://www.angelleye.com/product/woocommerce-paypal-plugin/ -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
+  <style>
+    .main{
+    }
+  </style>
+  <style>
+    .footer{
+      height: 20rem !important;
+    }
+    </style>
   <script>
     document.documentElement.classList.remove("no-js"),
       0 <= document.cookie.indexOf("emFontsLoaded=true") &&
@@ -295,7 +303,7 @@
     href="https://www.gilbaneco.com/wp-content/themes/gilbane2022/css/main.css?ver=1708703968" type="text/css"
     media="all" />
   <link rel="stylesheet" id="dashicons-css" href="https://www.gilbaneco.com/wp-includes/css/dashicons.min.css?ver=6.4.3"
-    type="text/css" media="all" />
+    type="text/css" media="all" /> 
   <script type="text/javascript"
     src="https://www.gilbaneco.com/wp-content/plugins/em-timeline/public/js/em-timeline-public.js?ver=1.0.0"
     id="em-timeline-js"></script>
@@ -306,62 +314,9 @@
     href="https://www.gilbaneco.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gilbaneco.com%2F" />
   <link rel="alternate" type="text/xml+oembed"
     href="https://www.gilbaneco.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gilbaneco.com%2F&#038;format=xml" />
-  <noscript>
-    <style>
-      .woocommerce-product-gallery {
-        opacity: 1 !important;
-      }
 
-      /* Hide the side menu by default */
-      .side-menu {
-        transform: translateX(-100%);
-        transition: transform 0.3s ease;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 250px;
-        /* Adjust as needed */
-        background-color: #fff;
-        /* Adjust background color as needed */
-        z-index: 1000;
-        /* Ensure it's above other content */
-      }
 
-      /* Show the side menu when the class is added */
-      .side-menu.show-menu {
-        transform: translateX(0);
-      }
-    </style>
-  </noscript>
-
-  <script type="application/ld+json" class="saswp-schema-markup-output">
-      [
-        {
-          "@context": "https://schema.org/",
-          "@type": "WebSite",
-          "@id": "https://www.gilbaneco.com#website",
-          "headline": "Gilbane",
-          "name": "Gilbane",
-          "description": "Gilbane is a leading global builder and real estate developer Building Company Development Company About Gilbane Innovative, solutions-driven,",
-          "url": "https://www.gilbaneco.com",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://www.gilbaneco.com?s={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        },
-
-        {
-          "@context": "https://schema.org/",
-          "@type": "Organization",
-          "@id": "https://www.gilbaneco.com#Organization",
-          "name": "emagine Development",
-          "url": "https://www.gilbaneco.com",
-          "sameAs": []
-        }
-      ]
-    </script>
+ 
 
   <link rel="icon" href="https://res.cloudinary.com/pitz/image/upload/v1708692038/Capture-removebg-preview_1_uhlkrr.png"
     sizes="32x32" />
@@ -371,13 +326,16 @@
     href= />
   <meta name="msapplication-TileImage"
     content="" />
+    <style>
+    
+      
+    </style>
 </head>
 
 <body data-rsssl="1"
   class="home default page page-id-5 wp-custom-logo theme-gilbane2022 woocommerce-no-js has_paypal_express_checkout has-hero">
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WM957XF" height="0" width="0"
-      style="display: none; visibility: hidden"></iframe></noscript>
+
   <!-- End Google Tag Manager (noscript) -->
   <div class="site">
     <!-- Starting .site wrapper tag -->
@@ -476,44 +434,88 @@
                   <ul class="sub-menu">
                     <li id="menu-item-5011"
                       class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5011">
-                      <a style="font-size: larger;" href="/sustainability.html">Sustainability</a>
-                      <ol>
-                        <li>Sustainable future</li>
-                        <li>Carbon reduction path to zero</li>
-                      </ol>
-                    </li>
-                    
-                    <li id="menu-item-5009"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5009">
-                      <a href="/Udgs.html">UNSDGS</a>
-                      <ol>
-                        <li>Affordable and clean energy</li>
+                      <div style="" onmouseover="showList()" onmouseout="hideList()">
+                        <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true" aria-expanded="false">Sustainability</a>
+                        <ol id="list" style="display: none;">
+                          <li>Sustainable future</li>
+                          <li>Carbon reduction path to zero</li>
+                        </ol>
+                      </div>
+                      
+                      <script>
+                        function showList() {
+                          var list = document.getElementById("list");
+                          list.style.display = "block";
+                        }
+                      
+                        function hideList() {
+                          var list = document.getElementById("list");
+                          list.style.display = "none";
+                        }
+                      </script>
+                       <div onmouseover="showList1()" onmouseout="hideList1()">
+                        <a style="font-size: larger; margin-top: 2rem;" href="/Udgs.html" aria-haspopup="true" aria-expanded="false">UNSDGS</a>
+                        <ol id="list1" style="display: none;">
+                          <li>Affordable and clean energy</li>
                         <li>Decent work and economic growth</li>
                         <li>Industry innovation and infrastructure</li>
                         <li>Sustainable cities and communities</li>
-                      </ol>
-                    </li>
-                    <li id="menu-item-5013"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5013">
-                      <a href="/environment.html">Environmental Focus Areas</a>
-                      <ol>
+                        </ol>
+                      </div>
+                      
+                      <script>
+                        function showList1() {
+                          var list = document.getElementById("list1");
+                          list.style.display = "block";
+                        }
+                      
+                        function hideList1() {
+                          var list = document.getElementById("list1");
+                          list.style.display = "none";
+                        }
+                      </script>
+                     <div onmouseover="showList2()" onmouseout="hideList2()">
+                      <a style="font-size: larger; margin-top: 2rem;" href="/environment.html" aria-haspopup="true" aria-expanded="false">Environmental Focus Areas</a>
+                      <ol id="list2" style="display: none;">
                         <li>Nature and pollution</li>
                         <li>Resource and materials</li>
                         <li>Climate Action</li>
-                      </ol>
-                    </li>
-                    <li id="menu-item-5021"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5021">
-                      <a href="/social.html">Social Focus Areas 
-                      </a>
-                      <ol>
-                        <li>Well being</li>
+                          </ol>
+                    </div>  
+                    <script>
+                      function showList2() {
+                        var list = document.getElementById("list2");
+                        list.style.display = "block";
+                      }
+                    
+                      function hideList2() {
+                        var list = document.getElementById("list2");
+                        list.style.display = "none";
+                      }
+                    </script>
+                   
+                   <div onmouseover="showList3()" onmouseout="hideList3()">
+                    <a style="font-size: larger; margin-top: 2rem;" href="/environment.html" aria-haspopup="true" aria-expanded="false">Social Focus Areas </a>
+                    <ol id="list3" style="display: none;">
+                      <li>Well being</li>
                         <li>Economic Prosperity</li>
                         <li>Comminity engagement</li>
-                      </ol>
-                    </li>
+                        </ol>
+                  </div>  
+                  <script>
+                    function showList3() {
+                      var list = document.getElementById("list3");
+                      list.style.display = "block";
+                    }
+                  
+                    function hideList3() {
+                      var list = document.getElementById("list3");
+                      list.style.display = "none";
+                    }
+                  </script>
+                  
                    
-                  </ul>
+                    </ul>
                 </li>
   
               </ul>
@@ -543,33 +545,96 @@
                 <ul class="sub-menu">
                   <li id="menu-item-5011"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5011">
-                    <a href="/innovations.html">INNOVATION</a>
-                    <ol>
-                      <li>Technological innovations</li>
-                      <li>General innovations innovations</li>
+                   
+                  <div style="margin-top: 1rem;" onmouseover="showList5()" onmouseout="hideList5()">
+                    <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true" aria-expanded="false">INNOVATION</a>
+                    <ol id="list5" style="display: none;">
+                        <li>Technological innovations</li>
+                        <li>General innovations innovations</li>
                     </ol>
-                  </li>
+                  </div>
+                  
+                  <script>
+                    function showList5() {
+                      var list5 = document.getElementById("list5");
+                      list5.style.display = "block";
+                    }
+                  
+                    function hideList5() {
+                      var list5 = document.getElementById("list5");
+                      list5.style.display = "none";
+                    }
+                  </script>
+
+
+
                   <li id="menu-item-5005"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5005">
-                    <a href="/energy.html">CIVIL & ENERGY INFRASTRACTURE</a>
-                    <ol>
+                  
+                  <div style="margin-top: 1rem;" onmouseover="showList6()" onmouseout="hideList6()">
+                    <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true" aria-expanded="false">CIVIL & ENERGY INFRASTRACTURE</a>
+                    <ol id="list6" style="display: none;">
                       <li>Solar energy development</li>
                       <li>Bio energy development</li>
                     </ol>
-                  </li>
-                  <li id="menu-item-5009"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5009">
-                    <a href="/roads.html">HIGHWAYS & ROADS</a>
-                    <ol>Long Distance highways</ol>
+                </div>
+                  
+                <script>
+                    function showList6() {
+                        var list6 = document.getElementById("list6");
+                        list6.style.display = "block";
+                    }
+                  
+                    function hideList6() {
+                        var list6 = document.getElementById("list6");
+                        list6.style.display = "none"; // Fix here: Change `list` to `list5`
+                    }
+                </script>
+                
+
+
+                 
+                  <div style="margin-top: 1rem;" onmouseover="showList7()" onmouseout="showList7()">
+                    <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true" aria-expanded="false">HIGHWAYS & ROADS</a>
+                    <ol id="list7" style="display: none;">
+                      <ol>Long Distance highways</ol>
                     <ol>Super  highways</ol>
-                    <ol></ol>
-                  </li>
-                  <li id="menu-item-5013"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5013">
-                    <a href="/agri.html">SOCIAL & AGRICULTURE INFRASTRACTURE</a>
-                    <ol>Large cash crop farming</ol>
+                    </ol>
+                </div>
+                  
+                <script>
+                    function showList7() {
+                        var list7 = document.getElementById("list7");
+                        list7.style.display = "block";
+                    }
+                  
+                    function showList7() {
+                        var list7 = document.getElementById("list7");
+                        list7.style.display = "none"; // Fix here: Change `list` to `list5`
+                    }
+                </script>
+                  <div style="margin-top: 1rem;" onmouseover="showList8()" onmouseout="hideList8()">
+                    <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true" aria-expanded="false">SOCIAL & AGRICULTURE INFRASTRACTURE</a>
+                    <ol id="list8" style="display: none;">
+                      <ol>Large cash crop farming</ol>
                     <ol>Horticulture  farming</ol>
-                  </li>
+                    </ol>
+                </div>
+                  
+                <script>
+                    function showList8() {
+                        var list8 = document.getElementById("list8");
+                        list8.style.display = "block";
+                    }
+                  
+                    function hideList8() {
+                        var list8 = document.getElementById("list8");
+                        list8.style.display = "none"; // Fix here: Change `list` to `list5`
+                    }
+                </script>
+
+
+                 
                   <li id="menu-item-5021"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5021">
                     <a href="/services.html">SUSTAINABLE WATER SUPPLY & DISTRIBUTION SYSTEMS
@@ -1351,420 +1416,128 @@ UDGS                </h2>
         </article>
       </main>
 
-      <footer
-        class="site-footer site-footer--has-logo site-footer--align-brand-left"
-      >
-        <div class="deep-footer clearfix">
-          <div class="alignwide">
-            <div class="em-grid">
-              <div class="em-col-3_md-4_sm-12">
-                <div class="deep-footer__brand">
-                  <div class="deep-footer__logo" style="max-width: 100%">
-                    <a href="/"
-                      ><?xml version="1.0"?>
-                    <img src="https://res.cloudinary.com/pitz/image/upload/v1708692038/Capture-removebg-preview_1_uhlkrr.png" alt="">
-                    </a>
+      <style>
+        .foo{
+          color: #fcfafa !important;
+          
+        }
+        a{
+          color: #fcfafa !important;
+      
+        }
+      </style>
+          <footer  class="site-footer  site-footer--has-logo site-footer--align-brand-left">
+            <div style="background-color: rgb(6, 30, 49); color: #fff; padding: 1rem;" class=" foo clearfix">
+              <div style="color: #fff;" class="">
+                <div class="em-grid">
+                  <div class="em-col-3_md-4_sm-12">
+                    <div class="deep-footer__brand">
+                      <div class="deep-footer__logo" style="max-width: 100%">
+                        <a href="/">
+                          <?xml version="1.0"?>
+                          <img
+                            src="https://res.cloudinary.com/pitz/image/upload/v1708692038/Capture-removebg-preview_1_uhlkrr.png"
+                            alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="foo em-col-9_md-8_sm-12">
+                    <ul class="menu foo deep-footer-menu">
+                      <li id="menu-item-6069"
+                        class="menu-item foo menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6069">
+                        <a  href="https://www.gilbaneco.com/building/" class="foo">Building</a>
+                        <ul class="sub-menu">
+                          <li id="menu-item-17018"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17018">
+                            <a
+                            class="foo"
+                              href="https://www.gilbaneco.com/projects/?paged=1&#038;em_division=building&#038;orderby=date">Projects</a>
+                          </li>
+                          <li id="menu-item-6071"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6071">
+                            <a href="services.html">Services</a>
+                          </li>
+                          <li id="menu-item-16611"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16611">
+                            <a href="https://www.gilbaneco.com/markets/building/">Markets</a>
+                          </li>
+                          <li id="menu-item-9433"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9433">
+                            <a href="https://www.gilbaneco.com/building/locations/">Locations</a>
+                          </li>
+                          <li id="menu-item-9434"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9434">
+                            <a href="https://www.gilbaneco.com/building/leadership/">Leadership</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="menu-item-6072"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6072">
+                        <a href="https://www.gilbaneco.com/development/">Development</a>
+                        <ul class="sub-menu">
+                          <li id="menu-item-17019"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17019">
+                            <a
+                              href="https://www.gilbaneco.com/projects/?paged=1&#038;em_division=development&#038;orderby=date">Projects</a>
+                          </li>
+                          <li id="menu-item-6073"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6073">
+                            <a href="services.html">Services</a>
+                          </li>
+                          <li id="menu-item-16618"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16618">
+                            <a href="https://www.gilbaneco.com/markets/development/">Markets</a>
+                          </li>
+                          <li id="menu-item-6074"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6074">
+                            <a href="https://www.gilbaneco.com/development/locations/">Locations</a>
+                          </li>
+                          <li id="menu-item-9435"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9435">
+                            <a href="https://www.gilbaneco.com/development/leadership/">Leadership</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="menu-item-6077"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6077">
+                        <a href="https://www.gilbaneco.com/about/">About</a>
+                        <ul class="sub-menu">
+                          <li id="menu-item-6078"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6078">
+                            <a href="https://www.gilbaneco.com/about/our-impact/">Our Impact</a>
+                          </li>
+                          <li id="menu-item-6079"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6079">
+                            <a href="https://www.gilbaneco.com/partner-with-us/">Partner With Us</a>
+                          </li>
+                          <!-- <li
+                              id="menu-item-6080"
+                              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6080"
+                            >
+                              <a href="https://www.gilbaneco.com/careers/">Careers</a>
+                            </li> -->
+                        </ul>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div class="em-col-9_md-8_sm-12">
-                <ul class="menu deep-footer-menu">
-                  <li
-                    id="menu-item-6069"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6069"
-                  >
-                    <a href="/index.html">Building</a>
-                    <ul class="sub-menu">
-                      <li
-                        id="menu-item-17018"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17018"
-                      >
-                        <a
-                          href="/projects.html"
-                          >Projects</a
-                        >
-                      </li>
-                      <li
-                        id="menu-item-6071"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6071"
-                      >
-                        <a href="/services.html"
-                          >Services</a
-                        >
-                      </li>
-                      <!-- <li
-                        id="menu-item-16611"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16611"
-                      >
-                        <a href="/"
-                          >Markets</a
-                        >
-                      </li> -->
-                      <li
-                        id="menu-item-9433"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9433"
-                      >
-                        <a href="#"
-                          >Locations</a
-                        >
-                      </li>
-                      <li
-                        id="menu-item-9434"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9434"
-                      >
-                        <a href="/#"
-                          >Leadership</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li
-                    id="menu-item-6072"
-                    class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5000 current_page_item menu-item-has-children menu-item-6072"
-                  >
-                    <a
-                      href="#"
-                      aria-current="page"
-                      >Development</a
-                    >
-                    <ul class="sub-menu">
-                      <li
-                        id="menu-item-17019"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17019"
-                      >
-                        <a
-                          href="/projects.html"
-                          >Projects</a
-                        >
-                      </li>
-                      <li
-                        id="menu-item-6073"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6073"
-                      >
-                        <a
-                          href="/services.html"
-                          >Services</a
-                        >
-                      </li>
-                      <li
-                        id="menu-item-16618"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16618"
-                      >
-                        <a href="#"
-                          >Markets</a
-                        >
-                      </li>
-                      <li
-                        id="menu-item-6074"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6074"
-                      >
-                        <a
-                          href="#"
-                          >Locations</a
-                        >
-                      </li>
-                      <li
-                        id="menu-item-9435"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9435"
-                      >
-                        <a
-                          href="#"
-                          >Leadership</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li
-                    id="menu-item-6077"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6077"
-                  >
-                    <a href="/about.html">About</a>
-                    <ul class="sub-menu">
-                      <li
-                        id="menu-item-6078"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6078"
-                      >
-                        <a href="https://www.gilbaneco.com/about/our-impact/"
-                          >Our Impact</a
-                        >
-                      </li>
-                      <li
-                        id="menu-item-6079"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6079"
-                      >
-                        <a href="#"
-                          >Partner With Us</a
-                        >
-                      </li>
-                      <li
-                        id="menu-item-6080"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6080"
-                      >
-                        <!-- <a href="https://www.gilbaneco.com/careers/">Careers</a> -->
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+              <button class="scroll-to-top scroll-to-top--visible" id="scrollToTopButton" aria-label="Scroll to Top"
+                title="Scroll to Top">
+                <span class="screen-reader-text">Scroll to Top</span>
+                <svg width="12" height="16" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path transform="rotate(-89.7475 6.02515 7.96823)" fill="#fff"
+                      d="m13.551,7.969a0.836,0.836 0 0 0 -0.141,-0.432l-4.013,-5.34a0.435,0.435 0 0 0 -0.709,-0.025a0.77,0.77 0 0 0 -0.02,0.888l3.222,4.28l-12.89,0a0.644,0.644 0 0 0 0,1.256l12.889,0l-3.222,4.28a0.784,0.784 0 0 0 0.02,0.888a0.435,0.435 0 0 0 0.709,-0.024l4.013,-5.34a0.639,0.639 0 0 0 0.142,-0.431z"
+                      id="Arrow"></path>
+                  </g>
+                </svg>
+              </button>
             </div>
-          </div>
-          <button
-            class="scroll-to-top scroll-to-top--visible"
-            id="scrollToTopButton"
-            aria-label="Scroll to Top"
-            title="Scroll to Top"
-          >
-            <span class="screen-reader-text">Scroll to Top</span>
-            <svg width="12" height="16" xmlns="http://www.w3.org/2000/svg">
-              <g>
-                <path
-                  transform="rotate(-89.7475 6.02515 7.96823)"
-                  fill="#fff"
-                  d="m13.551,7.969a0.836,0.836 0 0 0 -0.141,-0.432l-4.013,-5.34a0.435,0.435 0 0 0 -0.709,-0.025a0.77,0.77 0 0 0 -0.02,0.888l3.222,4.28l-12.89,0a0.644,0.644 0 0 0 0,1.256l12.889,0l-3.222,4.28a0.784,0.784 0 0 0 0.02,0.888a0.435,0.435 0 0 0 0.709,-0.024l4.013,-5.34a0.639,0.639 0 0 0 0.142,-0.431z"
-                  id="Arrow"
-                ></path>
-              </g>
-            </svg>
-          </button>
-        </div>
-        <div class="site-footer__bar">
-          <hr
-            class="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide"
-          />
-          <div class="alignwide">
-            <div class="site-footer__copyright">
-              &copy;&nbsp;2024 21knight, All rights reserved
-              <div class="site-footer__menu">
-                <ul class="menu footer-menu">
-                  <li
-                    id="menu-item-9429"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9429"
-                  >
-                    <a href="https://www.gilbaneco.com/privacy-policy/"
-                      >Privacy Policy</a
-                    >
-                  </li>
-                  <li
-                    id="menu-item-9428"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9428"
-                  >
-                    <a href="https://www.gilbaneco.com/terms-of-use/"
-                      >Terms of Use</a
-                    >
-                  </li>
-                  <li
-                    id="menu-item-9427"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9427"
-                  >
-                    <a href="https://www.gilbaneco.com/site-map/">Site Map</a>
-                  </li>
-                </ul>
-              </div>
+         
             </div>
-            <div class="site-footer__social">
-              <div class="site-footer__social-menu">
-                <p class="site-footer__social-label">Building</p>
-                <nav
-                  class="social-navigation"
-                  role="navigation"
-                  aria-label="Social Links Menu"
-                >
-                  <div class="menu-building-social-menu-container">
-                    <ul
-                      id="menu-building-social-menu"
-                      class="menu social-media-menu"
-                    >
-                      <li
-                        id="menu-item-6061"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6061"
-                      >
-                        <a
-                          target="_blank"
-                          rel="noopener"
-                          href="https://www.facebook.com/GilbaneBuildingCompany"
-                          ><span class="screen-reader-text">Facebook</span
-                          ><svg
-                            class="icon icon-facebook"
-                            aria-hidden="true"
-                            role="presentation"
-                          >
-                            <use xlink:href="#icon-facebook"></use></svg
-                        ></a>
-                      </li>
-                      <li
-                        id="menu-item-6062"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6062"
-                      >
-                        <a
-                          target="_blank"
-                          rel="noopener"
-                          href="https://www.instagram.com/gilbanebuilding/"
-                          ><span class="screen-reader-text">Instagram</span
-                          ><svg
-                            class="icon icon-instagram"
-                            aria-hidden="true"
-                            role="presentation"
-                          >
-                            <use xlink:href="#icon-instagram"></use></svg
-                        ></a>
-                      </li>
-                      <li
-                        id="menu-item-6063"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6063"
-                      >
-                        <a
-                          target="_blank"
-                          rel="noopener"
-                          href="http://www.twitter.com/gilbanebuilding"
-                          ><span class="screen-reader-text">Twitter</span
-                          ><svg
-                            class="icon icon-twitter"
-                            aria-hidden="true"
-                            role="presentation"
-                          >
-                            <use xlink:href="#icon-twitter"></use></svg
-                        ></a>
-                      </li>
-                      <li
-                        id="menu-item-6064"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6064"
-                      >
-                        <a
-                          target="_blank"
-                          rel="noopener"
-                          href="http://www.linkedin.com/companies/gilbane-building-company"
-                          ><span class="screen-reader-text">Linkedin</span
-                          ><svg
-                            class="icon icon-linkedin"
-                            aria-hidden="true"
-                            role="presentation"
-                          >
-                            <use xlink:href="#icon-linkedin"></use></svg
-                        ></a>
-                      </li>
-                      <li
-                        id="menu-item-25705"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25705"
-                      >
-                        <a href="https://www.youtube.com/@gilbanebuilding"
-                          ><span class="screen-reader-text">YouTube</span
-                          ><svg
-                            class="icon icon-youtube"
-                            aria-hidden="true"
-                            role="presentation"
-                          >
-                            <use xlink:href="#icon-youtube"></use></svg
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-              <div class="site-footer__social-menu">
-                <p class="site-footer__social-label">Development</p>
-                <nav
-                  class="social-navigation"
-                  role="navigation"
-                  aria-label="Social Links Menu"
-                >
-                  <div class="menu-development-social-menu-container">
-                    <ul
-                      id="menu-development-social-menu"
-                      class="menu social-media-menu"
-                    >
-                      <li
-                        id="menu-item-6065"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6065"
-                      >
-                        <a
-                          target="_blank"
-                          rel="noopener"
-                          href="https://www.facebook.com/GilbaneDevelopment"
-                          ><span class="screen-reader-text">Facebook</span
-                          ><svg
-                            class="icon icon-facebook"
-                            aria-hidden="true"
-                            role="presentation"
-                          >
-                            <use xlink:href="#icon-facebook"></use></svg
-                        ></a>
-                      </li>
-                      <li
-                        id="menu-item-6066"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6066"
-                      >
-                        <a
-                          target="_blank"
-                          rel="noopener"
-                          href="https://www.instagram.com/gilbanedevelopment/"
-                          ><span class="screen-reader-text">Instagram</span
-                          ><svg
-                            class="icon icon-instagram"
-                            aria-hidden="true"
-                            role="presentation"
-                          >
-                            <use xlink:href="#icon-instagram"></use></svg
-                        ></a>
-                      </li>
-                      <li
-                        id="menu-item-6067"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6067"
-                      >
-                        <a
-                          target="_blank"
-                          rel="noopener"
-                          href="https://twitter.com/GilbaneDevCo"
-                          ><span class="screen-reader-text">Twitter</span
-                          ><svg
-                            class="icon icon-twitter"
-                            aria-hidden="true"
-                            role="presentation"
-                          >
-                            <use xlink:href="#icon-twitter"></use></svg
-                        ></a>
-                      </li>
-                      <li
-                        id="menu-item-6068"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6068"
-                      >
-                        <a
-                          target="_blank"
-                          rel="noopener"
-                          href="https://www.linkedin.com/company/gilbane-development-company"
-                          ><span class="screen-reader-text">LinkedIn</span
-                          ><svg
-                            class="icon icon-linkedin"
-                            aria-hidden="true"
-                            role="presentation"
-                          >
-                            <use xlink:href="#icon-linkedin"></use></svg
-                        ></a>
-                      </li>
-                      <li
-                        id="menu-item-26313"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26313"
-                      >
-                        <a
-                          target="_blank"
-                          rel="noopener"
-                          href="https://vimeo.com/user41110109"
-                          ><span class="screen-reader-text">Vimeo</span
-                          ><svg
-                            class="icon icon-vimeo"
-                            aria-hidden="true"
-                            role="presentation"
-                          >
-                            <use xlink:href="#icon-vimeo"></use></svg
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+          </footer>
       <script type="text/javascript">
         (function () {
           var c = document.body.className;
