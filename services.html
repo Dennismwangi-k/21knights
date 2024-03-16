@@ -23,7 +23,22 @@
     }
     </style>
   
+  <style>
+    /* CSS for the side menu */
+    .side-menu {
+      transform: translateX(-110%);
+      transition: transform 0.3s ease;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: #fff; /* Adjust background color as needed */
+    }
 
+    .side-menu.show-menu {
+      transform: translateX(0);
+    }
+  </style>
   <!-- This site is optimized with the Yoast SEO plugin v21.9.1 - https://yoast.com/wordpress/plugins/seo/ -->
   <title>21knight</title>
   <meta name="description"
@@ -299,24 +314,7 @@
     <a class="skip-to-content" href="#main-content">Skip to content</a>
 
  
-  <style>
-    /* CSS for the side menu */
-    .side-menu {
-      transform: translateX(-110%);
-      transition: transform 0.3s ease;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 250px; /* Adjust as needed */
-      background-color: #fff; /* Adjust background color as needed */
-      z-index: 1000; /* Ensure it's above other content */
-    }
-
-    .side-menu.show-menu {
-      transform: translateX(0);
-    }
-  </style>
+  
 
   <header id="js-si" class="site-header sticky" role="banner">
     <div class="site-header__inner alignwide">
@@ -413,10 +411,10 @@
                        <div onmouseover="showList1()" onmouseout="hideList1()">
                         <a style="font-size: larger; margin-top: 2rem;" href="/Udgs.html" aria-haspopup="true" aria-expanded="false">UNSDGS</a>
                         <ol id="list1" style="display: none;">
-                          <li>SDG 7</li>
-                        <li>SDB 8</li>
-                        <li>SDG 9</li>
-                        <li>SDG 17</li>
+							<li>Affordable and clean energy</li>
+							<li>Decent eprk and economic growth</li>
+							<li>Sustainable cities and communities</li>
+							<li>Cimate action</li>
                         </ol>
                       </div>
                       
