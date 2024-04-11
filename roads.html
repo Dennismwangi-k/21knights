@@ -362,34 +362,34 @@
     }
   </style>
 
-  <header id="js-si" class="site-header sticky" role="banner">
-    <div class="site-header__inner alignwide">
-      <!-- Custom logo and site title. -->
-      <div class="custom-logo-wrapper">
-        <a href="/" class="custom-logo-link custom-logo-link--svg" rel="home">
-          <div class="custom-logo-link__desktop">
-            <?xml version="1.0"?>
-            <img src="https://res.cloudinary.com/pitz/image/upload/v1708692038/Capture-removebg-preview_1_uhlkrr.png"
-              alt="">
-          </div>
-        </a>
-      </div>
-      <div>
-        <div class="site-header__navigation-inner">
-          <div class="site-header__navigation-top">
-            <!-- Utilities Menu -->
-            <!-- <ul class="menu utility-menu">
-              <li id="menu-item-5609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5609">
-                <a href="contact.html"></a>
-              </li>
-              <li id="menu-item-5608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5608">
-                <a href="/news.html"></a>
-              </li>
-              <li id="menu-item-5612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5612">
-                <a href="/locations.html"></a>
-              </li>
-            </ul> -->
-          </div>
+<header style="position: absolute;" id="js-si" class="site-header sticky" role="banner">
+  <div style="display: flex; padding:1rem; justify-content: space-around; gap: 10rem;" class=" alignwide">
+    <!-- Custom logo and site title. -->
+    <div class="custom-logo-wrapper">
+      <a href="/" class="custom-logo-link custom-logo-link--svg" rel="home">
+        <div class="custom-logo-link__desktop">
+          <?xml version="1.0"?>
+          <img src="https://res.cloudinary.com/pitz/image/upload/v1708692038/Capture-removebg-preview_1_uhlkrr.png"
+            alt="">
+        </div>
+      </a>
+    </div>
+    <div>
+      <div class="site-header__navigation-inner">
+        <div class="site-header__navigation-top">
+          <!-- Utilities Menu -->
+          <!-- <ul class="menu utility-menu">
+          <li id="menu-item-5609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5609">
+            <a href="contact.html"></a>
+          </li>
+          <li id="menu-item-5608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5608">
+            <a href="/news.html"></a>
+          </li>
+          <li id="menu-item-5612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5612">
+            <a href="/locations.html"></a>
+          </li>
+        </ul> -->
+        </div>
       </div>
       <!-- Mobile Trigger: Navicon for toggling site-header__navigation into view. -->
       <button id="js-navicon" class="navicon no-button-style" aria-controls="site-header__navigation1">
@@ -397,12 +397,12 @@
         <span id="js-navicon-trigger" class="navicon__trigger" aria-hidden="true"></span>
       </button>
     </div>
-    
+
     <nav id="js-site-navigation" class="site-header__navigation">
       <div class="site-header__navigation-inner">
         <div style="" class="site-header__navigation-top">
           <!-- Utilities Menu -->
-          
+
         </div>
         <!-- Main menu. -->
         <ul class="menu main-menu">
@@ -423,7 +423,7 @@
               <ul class="sub-menu">
                 <li id="menu-item-5003"
                   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5003">
-  
+
                   <button class="menu-item__trigger">
                     <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 12 12">
@@ -436,224 +436,279 @@
                     <li id="menu-item-5011"
                       class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5011">
                       <div style="" onmouseover="showList()" onmouseout="hideList()">
-                        <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true" aria-expanded="false">Sustainability</a>
+                        <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true"
+                          aria-expanded="false">Sustainability</a>
                         <ol id="list" style="display: none;">
-                          <li>Sustainable future</li>
-                          <li>Carbon reduction path to zero</li>
+                          <a class="a" style="margin-bottom: 1rem; " href="/future">
+                            <li>Sustainable future</li>
+
+                          </a>
+                          <a href=""></a>
+                          <a class="a" href="/climate.html">
+                            <li>Carbon reduction path to zero</li>
+
+                          </a>
                         </ol>
                       </div>
-                      
+
                       <script>
                         function showList() {
                           var list = document.getElementById("list");
                           list.style.display = "block";
                         }
-                      
+
                         function hideList() {
                           var list = document.getElementById("list");
                           list.style.display = "none";
                         }
                       </script>
-                       <div onmouseover="showList1()" onmouseout="hideList1()">
-                        <a style="font-size: larger; margin-top: 2rem;" href="/Udgs.html" aria-haspopup="true" aria-expanded="false">UNSDGS</a>
+                      <div onmouseover="showList1()" onmouseout="hideList1()">
+                        <a style="font-size: larger; margin-top: 2rem;" href="/Udgs.html" aria-haspopup="true"
+                          aria-expanded="false">UNSDGS</a>
                         <ol id="list1" style="display: none;">
-                          <li>Affordable and clean energy</li>
-                        <li>Decent work and economic growth</li>
-                        <li>Industry innovation and infrastructure</li>
-                        <li>Sustainable cities and communities</li>
+                          <a class="a" href="/energy1.html">
+                            <li>Affordable and clean energy</li>
+                          </a>
+                          <a class="a" href="/economic.html">
+                            <li>Decent eprk and economic growth</li>
+                          </a>
+                          <a class="a" href="environment.html">
+                            <li>Sustainable cities and communities</li>
+                          </a>
+                          <a class="a" href="/climate.html">
+                            <li>Cimate action</li< /a>>
                         </ol>
                       </div>
-                      
+
                       <script>
                         function showList1() {
                           var list = document.getElementById("list1");
                           list.style.display = "block";
                         }
-                      
+
                         function hideList1() {
                           var list = document.getElementById("list1");
                           list.style.display = "none";
                         }
                       </script>
-                     <div onmouseover="showList2()" onmouseout="hideList2()">
-                      <a style="font-size: larger; margin-top: 2rem;" href="/environment.html" aria-haspopup="true" aria-expanded="false">Environmental Focus Areas</a>
-                      <ol id="list2" style="display: none;">
-                        <li>Nature and pollution</li>
-                        <li>Resource and materials</li>
-                        <li>Climate Action</li>
-                          </ol>
-                    </div>  
-                    <script>
-                      function showList2() {
-                        var list = document.getElementById("list2");
-                        list.style.display = "block";
-                      }
-                    
-                      function hideList2() {
-                        var list = document.getElementById("list2");
-                        list.style.display = "none";
-                      }
-                    </script>
-                   
-                   <div onmouseover="showList3()" onmouseout="hideList3()">
-                    <a style="font-size: larger; margin-top: 2rem;" href="/environment.html" aria-haspopup="true" aria-expanded="false">Social Focus Areas </a>
-                    <ol id="list3" style="display: none;">
-                      <li>Well being</li>
-                        <li>Economic Prosperity</li>
-                        <li>Comminity engagement</li>
+                      <div onmouseover="showList2()" onmouseout="hideList2()">
+                        <a style="font-size: larger; margin-top: 2rem;" href="/environment.html"
+                          aria-haspopup="true" aria-expanded="false">Environmental Focus Areas</a>
+                        <ol id="list2" style="display: none;">
+                          <a class="a" href="/nature.html">
+                            <li>Nature and pollution</li>
+
+                          </a>
+                          <a class="a" href="/resource.html">
+                            <li>Resource and materials</li>
+
+                          </a>
+                          <a class="a" href="/climate.html">
+                            <li>Climate Action</li>
+
+                          </a>
                         </ol>
-                  </div>  
-                  <script>
-                    function showList3() {
-                      var list = document.getElementById("list3");
-                      list.style.display = "block";
-                    }
-                  
-                    function hideList3() {
-                      var list = document.getElementById("list3");
-                      list.style.display = "none";
-                    }
-                  </script>
-                  
-                   
-                    </ul>
+                      </div>
+                      <script>
+                        function showList2() {
+                          var list = document.getElementById("list2");
+                          list.style.display = "block";
+                        }
+
+                        function hideList2() {
+                          var list = document.getElementById("list2");
+                          list.style.display = "none";
+                        }
+                      </script>
+
+                      <div onmouseover="showList3()" onmouseout="hideList3()">
+                        <a style="font-size: larger; margin-top: 2rem;" href="/social.html" aria-haspopup="true"
+                          aria-expanded="false">Social Focus Areas </a>
+                        <ol id="list3" style="display: none;">
+                          <a class="a" href="/being.html">
+                            <li>Well being</li>
+                          </a>
+                          <a class="a" href="/economic.html">
+                            <li>Economic Prosperity</li>
+
+                          </a>
+                          <a class="a" href="community.html">
+                            <li>Comminity engagement</li>
+
+                          </a>
+                        </ol>
+                      </div>
+                      <script>
+                        function showList3() {
+                          var list = document.getElementById("list3");
+                          list.style.display = "block";
+                        }
+
+                        function hideList3() {
+                          var list = document.getElementById("list3");
+                          list.style.display = "none";
+                        }
+                      </script>
+
+
+                  </ul>
                 </li>
-  
+
               </ul>
           </li>
           <li id="menu-item-5001"
-          class="mega-menu is-two-columns menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5001">
-          <a href="/services.html" aria-haspopup="true" aria-expanded="false">Services
-            <button class="menu-item__trigger">
-              <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
-                  <path
-                    d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
-                    fill="currentColor" />
-                </svg></span><span class="screen-reader-text">Show submenu</span>
-            </button>
-            <ul class="sub-menu">
-              <li id="menu-item-5003"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5003">
+            class="mega-menu is-two-columns menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5001">
+            <a href="/services.html" aria-haspopup="true" aria-expanded="false">Services
+              <button class="menu-item__trigger">
+                <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                    <path
+                      d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
+                      fill="currentColor" />
+                  </svg></span><span class="screen-reader-text">Show submenu</span>
+              </button>
+              <ul class="sub-menu">
+                <li id="menu-item-5003"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5003">
 
-                <button class="menu-item__trigger">
-                  <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 12 12">
-                      <path
-                        d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
-                        fill="currentColor" />
-                    </svg></span><span class="screen-reader-text">Show submenu</span>
-                </button>
-                <ul class="sub-menu">
-                  <li id="menu-item-5011"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5011">
-                   
-                  <div style="margin-top: 1rem;" onmouseover="showList5()" onmouseout="hideList5()">
-                    <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true" aria-expanded="false">INNOVATION</a>
-                    <ol id="list5" style="display: none;">
-                        <li>Technological innovations</li>
-                        <li>General innovations innovations</li>
-                    </ol>
-                  </div>
-                  
-                  <script>
-                    function showList5() {
-                      var list5 = document.getElementById("list5");
-                      list5.style.display = "block";
-                    }
-                  
-                    function hideList5() {
-                      var list5 = document.getElementById("list5");
-                      list5.style.display = "none";
-                    }
-                  </script>
+                  <button class="menu-item__trigger">
+                    <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 12 12">
+                        <path
+                          d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
+                          fill="currentColor" />
+                      </svg></span><span class="screen-reader-text">Show submenu</span>
+                  </button>
+                  <ul class="sub-menu">
+                    <li id="menu-item-5011"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5011">
 
+                      <div style="margin-top: 1rem;" onmouseover="showList5()" onmouseout="hideList5()">
+                        <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true"
+                          aria-expanded="false">INNOVATION</a>
+                        <ol id="list5" style="display: none;">
+                          <a class="a" href="/tech.html">
+                            <li>Technological innovations</li>
 
+                          </a>
+                          <a class="a" href="/general.html">
+                            <li>General innovations innovations</li>
 
-                  <li id="menu-item-5005"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5005">
-                  
-                  <div style="margin-top: 1rem;" onmouseover="showList6()" onmouseout="hideList6()">
-                    <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true" aria-expanded="false">CIVIL & ENERGY INFRASTRACTURE</a>
-                    <ol id="list6" style="display: none;">
-                      <li>Solar energy development</li>
-                      <li>Bio energy development</li>
-                    </ol>
-                </div>
-                  
-                <script>
-                    function showList6() {
-                        var list6 = document.getElementById("list6");
-                        list6.style.display = "block";
-                    }
-                  
-                    function hideList6() {
-                        var list6 = document.getElementById("list6");
-                        list6.style.display = "none"; // Fix here: Change `list` to `list5`
-                    }
-                </script>
-                
+                          </a>
+                        </ol>
+                      </div>
+
+                      <script>
+                        function showList5() {
+                          var list5 = document.getElementById("list5");
+                          list5.style.display = "block";
+                        }
+
+                        function hideList5() {
+                          var list5 = document.getElementById("list5");
+                          list5.style.display = "none";
+                        }
+                      </script>
 
 
-                 
-                  <div style="margin-top: 1rem;" onmouseover="showList7()" onmouseout="showList7()">
-                    <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true" aria-expanded="false">HIGHWAYS & ROADS</a>
-                    <ol id="list7" style="display: none;">
-                      <ol>Long Distance highways</ol>
-                    <ol>Super  highways</ol>
-                    </ol>
-                </div>
-                  
-                <script>
-                    function showList7() {
-                        var list7 = document.getElementById("list7");
-                        list7.style.display = "block";
-                    }
-                  
-                    function showList7() {
-                        var list7 = document.getElementById("list7");
-                        list7.style.display = "none"; // Fix here: Change `list` to `list5`
-                    }
-                </script>
-                  <div style="margin-top: 1rem;" onmouseover="showList8()" onmouseout="hideList8()">
-                    <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true" aria-expanded="false">SOCIAL & AGRICULTURE INFRASTRACTURE</a>
-                    <ol id="list8" style="display: none;">
-                      <ol>Large cash crop farming</ol>
-                    <ol>Horticulture  farming</ol>
-                    </ol>
-                </div>
-                  
-                <script>
-                    function showList8() {
-                        var list8 = document.getElementById("list8");
-                        list8.style.display = "block";
-                    }
-                  
-                    function hideList8() {
-                        var list8 = document.getElementById("list8");
-                        list8.style.display = "none"; // Fix here: Change `list` to `list5`
-                    }
-                </script>
+
+                    <li id="menu-item-5005"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5005">
+
+                      <div style="margin-top: 1rem;" onmouseover="showList6()" onmouseout="hideList6()">
+                        <a style="font-size: larger;" href="/energy1.html" aria-haspopup="true"
+                          aria-expanded="false">CIVIL & ENERGY INFRASTRACTURE</a>
+                        <ol id="list6" style="display: none;">
+                          <a class="a" href="/energy1.html">
+                            <li>Solar energy development</li>
+                          </a> <a href="/energy1.html">
+                            <li class="a">Bio energy development</li>
+                          </a>
+                        </ol>
+                      </div>
+
+                      <script>
+                        function showList6() {
+                          var list6 = document.getElementById("list6");
+                          list6.style.display = "block";
+                        }
+
+                        function hideList6() {
+                          var list6 = document.getElementById("list6");
+                          list6.style.display = "none"; // Fix here: Change `list` to `list5`
+                        }
+                      </script>
+
+                      <div style="margin-top: 1rem; width: 100%;" onmouseover="showList11()" onmouseout="hideList11()">
+                        <a style="font-size: larger;" href="/agrii.html" aria-haspopup="true"
+                          aria-expanded="false">HIGHWAYS & ROADS</a>
+                        <ol id="list11" style="display: none; width: 12rem;">
+                          <a class="a" href="/roads.html">
+                            <ol style="width: 15rem; margin-right: 4rem;">Long Distance highways</ol>
+                          </a> <a class="a" href="/roads.html">
+                            <ol style="width: 15rem;">Super highways</ol>
+                          </a>
+                        </ol>
+                      </div>
+
+                      <script>
+                        function showList11() {
+                          var list11 = document.getElementById("list11");
+                          list11.style.display = "block";
+                        }
+
+                        function hideList11() {
+                          var list11 = document.getElementById("list11");
+                          list11.style.display = "none"; // Fix here: Change `list` to `list5`
+                        }
+                      </script>
 
 
-                 
-                  <li id="menu-item-5021"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5021">
-                    <a href="/services.html">SUSTAINABLE WATER SUPPLY & DISTRIBUTION SYSTEMS
-                    </a>
-                  </li>
-                  <li id="menu-item-5007"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5007">
-                    <a href="/services.html">ENERGY PROJECTS DEVELOPMENT</a>
-                  </li>
-                </ul>
-              </li>
 
-            </ul>
+
+                      <div style="margin-top: 1rem;" onmouseover="showList8()" onmouseout="hideList8()">
+                        <a style="font-size: larger;" href="/agrii.html" aria-haspopup="true"
+                          aria-expanded="false">SOCIAL & AGRICULTURE INFRASTRACTURE</a>
+                        <ol id="list8" style="display: none;">
+                          <a class="a" href="agrii.html">
+                            <ol  style="width: 15rem;">Large cash crop farming</ol>
+                          </a> <a class="a" href="/agrii.html">
+                            <ol  style="width: 15rem;">Horticulture farming</ol>
+                          </a>
+                        </ol>
+                      </div>
+
+                      <script>
+                        function showList8() {
+                          var list8 = document.getElementById("list8");
+                          list8.style.display = "block";
+                        }
+
+                        function hideList8() {
+                          var list8 = document.getElementById("list8");
+                          list8.style.display = "none"; // Fix here: Change `list` to `list5`
+                        }
+                      </script>
+
+
+
+                    <li id="menu-item-5021"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5021">
+                      <a class="a" href="/water.html">SUSTAINABLE WATER SUPPLY & DISTRIBUTION SYSTEMS
+                      </a>
+                    </li>
+                    <li id="menu-item-5007"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5007">
+                      <a class="a" href="/energy1.html">ENERGY PROJECTS DEVELOPMENT</a>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
           </li>
           <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
             <a href="/projects.html">Projects</a>
           </li>
-     
+
           <li id="menu-item-5093"
             class="mega-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5093">
             <a href="/about.html" aria-haspopup="true" aria-expanded="false">About</a><button
@@ -686,7 +741,7 @@
                   </li>
                   <li id="menu-item-5111"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5111">
-  
+
                     <button class="menu-item__trigger">
                       <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 12 12">
@@ -698,8 +753,10 @@
               </li>
             </ul>
           </li>
-          <a style="color: #fff;cursor: pointer;" href="/contact.html" aria-haspopup="true" aria-expanded="false">Contact us</a>
-          <a style="color: #fff; margin-left: 2rem ;cursor: pointer;" href="/news.html" aria-haspopup="true" aria-expanded="false">News</a>
+          <a style="color: #fff;cursor: pointer;" href="/contact.html" aria-haspopup="true"
+            aria-expanded="false">Contact us</a>
+          <a style="color: #fff; margin-left: 2rem ;cursor: pointer;" href="/news.html" aria-haspopup="true"
+            aria-expanded="false">News</a>
           <li id="menu-item-5129"
             class="mega-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5129">
             <button class="menu-item__trigger">
@@ -723,7 +780,8 @@
                 <ul class="sub-menu">
                   <li id="menu-item-5133"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5133">
-                    <a href="https://www.gilbaneco.com/partner-with-us/building/arts-culture/">Arts &amp; Culture</a>
+                    <a href="https://www.gilbaneco.com/partner-with-us/building/arts-culture/">Arts &amp;
+                      Culture</a>
                   </li>
                   <li id="menu-item-5135"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5135">
@@ -741,45 +799,148 @@
         </ul>
       </div>
     </nav>
-  
+
     <!--/.site-header__inner-->
-  <!-- Site Navication: Contains all the site's navigation menus. Acts as nav-drawer in mobile. -->
-  <nav id="js-site-navigation" class="site-header__navigation side-menu">
-    <div class="site-header__navigation-inner">
-      <div class="site-header__navigation-top">
-        <!-- Utilities Menu -->
-        <ul class="menu utility-menu">
-          <li id="menu-item-5609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5609">
-            <a href="contact.html">Contact</a>
-          </li>
-          <li id="menu-item-5608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5608">
-            <a href="/news.html">News</a>
-          </li>
-          <li id="menu-item-5612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5612">
-            <a href="/locations.html">Locations</a>
-          </li>
-        </ul>
-      </div>
-      <!-- Main menu. -->
-      <ul class="menu main-menu">
-        <li id="menu-item-4959"
-          class="mega-menu is-two-columns menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4959">
-          <a href="/" aria-haspopup="true" aria-expanded="false">Home</a><button class="menu-item__trigger">
-            <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
-                <path
-                  d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
-                  fill="currentColor" />
-              </svg></span>
-          </button>
-          <ul class="sub-menu">
-            <li id="menu-item-4961"
-              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4961">
+    <!-- Site Navication: Contains all the site's navigation menus. Acts as nav-drawer in mobile. -->
+    <nav id="js-site-navigation" class="site-header__navigation side-menu">
+      <div class="site-header__navigation-inner">
+        <div class="site-header__navigation-top">
+          <!-- Utilities Menu -->
+          <ul class="menu utility-menu">
+            <li id="menu-item-5609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5609">
+              <a href="contact.html">Contact</a>
+            </li>
+            <li id="menu-item-5608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5608">
+              <a href="/news.html">News</a>
+            </li>
+            <li id="menu-item-5612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5612">
+              <a href="/locations.html">Locations</a>
             </li>
           </ul>
-        </li>
-        <li id="menu-item-5001"
-          class="mega-menu is-two-columns menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5001">
-          <a href="/sustainability.html" aria-haspopup="true" aria-expanded="false">Sustainability
+        </div>
+        <!-- Main menu. -->
+        <ul class="menu main-menu">
+          <li id="menu-item-4959"
+            class="mega-menu is-two-columns menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4959">
+            <a href="/" aria-haspopup="true" aria-expanded="false">Home</a><button class="menu-item__trigger">
+              <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                  <path
+                    d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
+                    fill="currentColor" />
+                </svg></span>
+            </button>
+            <ul class="sub-menu">
+              <li id="menu-item-4961"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4961">
+              </li>
+            </ul>
+          </li>
+          <li id="menu-item-5001"
+            class="mega-menu is-two-columns menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5001">
+            <a href="/sustainability.html" aria-haspopup="true" aria-expanded="false">Sustainability
+              <button class="menu-item__trigger">
+                <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                    <path
+                      d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
+                      fill="currentColor" />
+                  </svg></span><span class="screen-reader-text">Show submenu</span>
+              </button>
+              <ul class="sub-menu">
+                <li id="menu-item-5003"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5003">
+
+                  <button class="menu-item__trigger">
+                    <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 12 12">
+                        <path
+                          d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
+                          fill="currentColor" />
+                      </svg></span><span class="screen-reader-text">Show submenu</span>
+                  </button>
+                  <ul class="sub-menu">
+                    <li id="menu-item-5011"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5011">
+                      <a href="/services.html">INNOVATION</a>
+                    </li>
+                    <li id="menu-item-5005"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5005">
+                      <a href="/services.html">CIVIL & ENERGY INFRASTRACTURE</a>
+                    </li>
+                    <li id="menu-item-5009"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5009">
+                      <a href="/services.html">HIGHWAYS & ROADS</a>
+                    </li>
+                    <li id="menu-item-5013"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5013">
+                      <a href="/services.html">SOCIAL & AGRICULTURE INFRASTRACTURE</a>
+                    </li>
+                    <li id="menu-item-5021"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5021">
+                      <a href="/services.html">SUSTAINABLE WATER SUPPLY & DISTRIBUTION SYSTEMS
+                      </a>
+                    </li>
+                    <li id="menu-item-5007"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5007">
+                      <a href="/services.html">ENERGY PROJECTS DEVELOPMENT</a>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+          </li>
+
+          <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
+            <a href="/projects.html">Projects</a>
+          </li>
+          <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
+            <a href="/services.html">Services</a>
+          </li>
+          <li id="menu-item-5093"
+            class="mega-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5093">
+            <a href="/about.html" aria-haspopup="true" aria-expanded="false">About</a><button
+              class="menu-item__trigger">
+              <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                  <path
+                    d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
+                    fill="currentColor" />
+                </svg></span><span class="screen-reader-text">Show submenu</span>
+            </button>
+            <ul class="sub-menu">
+              <li id="menu-item-12180"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12180">
+                <a href="about.html" aria-haspopup="true" aria-expanded="false">About Us</a><button
+                  class="menu-item__trigger">
+                  <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                      <path
+                        d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
+                        fill="currentColor" />
+                    </svg></span><span class="screen-reader-text">Show submenu</span>
+                </button>
+                <ul class="sub-menu">
+                  <li id="menu-item-5099"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5099">
+                    <a href="/leadership.html">Leadership</a>
+                  </li>
+                  <li id="menu-item-5097"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5097">
+                    <a href="/values.html">Vision &#038; Values</a>
+                  </li>
+                  <li id="menu-item-5111"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5111">
+
+                    <button class="menu-item__trigger">
+                      <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 12 12">
+                          <path
+                            d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
+                            fill="currentColor" />
+                        </svg></span>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li id="menu-item-5129"
+            class="mega-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5129">
             <button class="menu-item__trigger">
               <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
                   <path
@@ -788,152 +949,49 @@
                 </svg></span><span class="screen-reader-text">Show submenu</span>
             </button>
             <ul class="sub-menu">
-              <li id="menu-item-5003"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5003">
-
-                <button class="menu-item__trigger">
-                  <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 12 12">
+              <li id="menu-item-5131"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5131">
+                <a href="https://www.gilbaneco.com/partner-with-us/building/" aria-haspopup="true"
+                  aria-expanded="false">Building</a><button class="menu-item__trigger">
+                  <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
                       <path
                         d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
                         fill="currentColor" />
                     </svg></span><span class="screen-reader-text">Show submenu</span>
                 </button>
                 <ul class="sub-menu">
-                  <li id="menu-item-5011"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5011">
-                    <a href="/services.html">INNOVATION</a>
+                  <li id="menu-item-5133"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5133">
+                    <a href="https://www.gilbaneco.com/partner-with-us/building/arts-culture/">Arts &amp;
+                      Culture</a>
                   </li>
-                  <li id="menu-item-5005"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5005">
-                    <a href="/services.html">CIVIL & ENERGY INFRASTRACTURE</a>
+                  <li id="menu-item-5135"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5135">
+                    <a href="https://www.gilbaneco.com/partner-with-us/building/aviation/">Aviation</a>
                   </li>
-                  <li id="menu-item-5009"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5009">
-                    <a href="/services.html">HIGHWAYS & ROADS</a>
-                  </li>
-                  <li id="menu-item-5013"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5013">
-                    <a href="/services.html">SOCIAL & AGRICULTURE INFRASTRACTURE</a>
-                  </li>
-                  <li id="menu-item-5021"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5021">
-                    <a href="/services.html">SUSTAINABLE WATER SUPPLY & DISTRIBUTION SYSTEMS
-                    </a>
-                  </li>
-                  <li id="menu-item-5007"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5007">
-                    <a href="/services.html">ENERGY PROJECTS DEVELOPMENT</a>
+                  <li id="menu-item-5137"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5137">
+                    <a href="https://www.gilbaneco.com/partner-with-us/building/corporate-commercial/">Corporate
+                      &amp; Commercial</a>
                   </li>
                 </ul>
               </li>
-
             </ul>
-        </li>
+          </li>
+          <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
+            <a href="/projects.html">Contact</a>
+          </li>
 
-        <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
-          <a href="/projects.html">Projects</a>
-         </li>
-         <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
-          <a href="/services.html">Services</a>
-         </li>
-         <li id="menu-item-5093"
-          class="mega-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5093">
-          <a href="/about.html" aria-haspopup="true" aria-expanded="false">About</a><button
-            class="menu-item__trigger">
-            <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
-                <path
-                  d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
-                  fill="currentColor" />
-              </svg></span><span class="screen-reader-text">Show submenu</span>
-          </button>
-          <ul class="sub-menu">
-            <li id="menu-item-12180"
-              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12180">
-              <a href="about.html" aria-haspopup="true" aria-expanded="false">About Us</a><button
-                class="menu-item__trigger">
-                <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
-                    <path
-                      d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
-                      fill="currentColor" />
-                  </svg></span><span class="screen-reader-text">Show submenu</span>
-              </button>
-              <ul class="sub-menu">
-                <li id="menu-item-5099"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5099">
-                  <a href="/leadership.html">Leadership</a>
-                </li>
-                <li id="menu-item-5097"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5097">
-                  <a href="/values.html">Vision &#038; Values</a>
-                </li>
-                <li id="menu-item-5111"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5111">
-
-                  <button class="menu-item__trigger">
-                    <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 12 12">
-                        <path
-                          d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
-                          fill="currentColor" />
-                      </svg></span>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li id="menu-item-5129"
-          class="mega-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5129">
-          <button class="menu-item__trigger">
-            <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
-                <path
-                  d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
-                  fill="currentColor" />
-              </svg></span><span class="screen-reader-text">Show submenu</span>
-          </button>
-          <ul class="sub-menu">
-            <li id="menu-item-5131"
-              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5131">
-              <a href="https://www.gilbaneco.com/partner-with-us/building/" aria-haspopup="true"
-                aria-expanded="false">Building</a><button class="menu-item__trigger">
-                <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
-                    <path
-                      d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
-                      fill="currentColor" />
-                  </svg></span><span class="screen-reader-text">Show submenu</span>
-              </button>
-              <ul class="sub-menu">
-                <li id="menu-item-5133"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5133">
-                  <a href="https://www.gilbaneco.com/partner-with-us/building/arts-culture/">Arts &amp; Culture</a>
-                </li>
-                <li id="menu-item-5135"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5135">
-                  <a href="https://www.gilbaneco.com/partner-with-us/building/aviation/">Aviation</a>
-                </li>
-                <li id="menu-item-5137"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5137">
-                  <a href="https://www.gilbaneco.com/partner-with-us/building/corporate-commercial/">Corporate
-                    &amp; Commercial</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
-          <a href="/projects.html">Contact</a>
-         </li>
-        
         </ul>
-      </ul>
-    </div>
-  </nav>
-  <style>
-    .main{
-      background-color: #fff !important;
-    }
-  </style>
+        </ul>
+      </div>
+    </nav>
 </header>
-
+<style>
+  .main{
+background-color: #fff !important;
+  }
+</style>
 		<main id="main-content" class="main clearfix" role="main">
 			<article class="site-content clearfix">
 

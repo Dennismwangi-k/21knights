@@ -16,11 +16,19 @@
   <style>
     .main{
     }
+	.a:hover {
+      color: red;
+    }
   </style>
   <style>
     .footer{
       height: 20rem !important;
     }
+	.a {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+
     </style>
   
   <style>
@@ -33,6 +41,10 @@
       left: 0;
       height: 100%;
       background-color: #fff; /* Adjust background color as needed */
+    }
+	.a {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
     }
 
     .side-menu.show-menu {
@@ -393,9 +405,15 @@
 							  <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true"
 								aria-expanded="false">Sustainability</a>
 							  <ol id="list" style="display: none;">
-								<li>Sustainable future</li>
+								<a class="a" style="margin-bottom: 1rem; " href="/future">
+								  <li>Sustainable future</li>
+  
+								</a>
 								<a href=""></a>
-								<li>Carbon reduction path to zero</li>
+								<a class="a" href="/climate.html">
+								  <li>Carbon reduction path to zero</li>
+  
+								</a>
 							  </ol>
 							</div>
   
@@ -414,16 +432,16 @@
 							  <a style="font-size: larger; margin-top: 2rem;" href="/Udgs.html" aria-haspopup="true"
 								aria-expanded="false">UNSDGS</a>
 							  <ol id="list1" style="display: none;">
-								<a href="/energy1.html">
+								<a class="a" href="/energy1.html">
 								  <li>Affordable and clean energy</li>
 								</a>
-								<a href="/economic.html">
+								<a class="a" href="/economic.html">
 								  <li>Decent eprk and economic growth</li>
 								</a>
-								<a href="environment.html">
+								<a class="a" href="environment.html">
 								  <li>Sustainable cities and communities</li>
 								</a>
-								<a href="/climate.html">
+								<a class="a" href="/climate.html">
 								  <li>Cimate action</li< /a>>
 							  </ol>
 							</div>
@@ -443,9 +461,18 @@
 							  <a style="font-size: larger; margin-top: 2rem;" href="/environment.html"
 								aria-haspopup="true" aria-expanded="false">Environmental Focus Areas</a>
 							  <ol id="list2" style="display: none;">
-								<li>Nature and pollution</li>
-								<li>Resource and materials</li>
-								<li>Climate Action</li>
+								<a class="a" href="/nature.html">
+								  <li>Nature and pollution</li>
+  
+								</a>
+								<a class="a" href="/resource.html">
+								  <li>Resource and materials</li>
+  
+								</a>
+								<a class="a" href="/climate.html">
+								  <li>Climate Action</li>
+  
+								</a>
 							  </ol>
 							</div>
 							<script>
@@ -464,14 +491,14 @@
 							  <a style="font-size: larger; margin-top: 2rem;" href="/social.html" aria-haspopup="true"
 								aria-expanded="false">Social Focus Areas </a>
 							  <ol id="list3" style="display: none;">
-								<a href="/being.html">
+								<a class="a" href="/being.html">
 								  <li>Well being</li>
 								</a>
-								<a href="/economic.html">
+								<a class="a" href="/economic.html">
 								  <li>Economic Prosperity</li>
   
 								</a>
-								<a href="community.html">
+								<a class="a" href="community.html">
 								  <li>Comminity engagement</li>
   
 								</a>
@@ -525,8 +552,14 @@
 							  <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true"
 								aria-expanded="false">INNOVATION</a>
 							  <ol id="list5" style="display: none;">
-								<li>Technological innovations</li>
-								<li>General innovations innovations</li>
+								<a class="a" href="/tech.html">
+								  <li>Technological innovations</li>
+  
+								</a>
+								<a class="a" href="/general.html">
+								  <li>General innovations innovations</li>
+  
+								</a>
 							  </ol>
 							</div>
   
@@ -551,10 +584,10 @@
 							  <a style="font-size: larger;" href="/energy1.html" aria-haspopup="true"
 								aria-expanded="false">CIVIL & ENERGY INFRASTRACTURE</a>
 							  <ol id="list6" style="display: none;">
-								<a href="/energy1.html">
+								<a class="a" href="/energy1.html">
 								  <li>Solar energy development</li>
 								</a> <a href="/energy1.html">
-								  <li>Bio energy development</li>
+								  <li class="a">Bio energy development</li>
 								</a>
 							  </ol>
 							</div>
@@ -571,42 +604,41 @@
 							  }
 							</script>
   
-  
-  
-  
-							<div style="margin-top: 1rem;" onmouseover="showList7()" onmouseout="showList7()">
-							  <a style="font-size: larger;" href="/roads.html" aria-haspopup="true"
+							<div style="margin-top: 1rem; width: 100%;" onmouseover="showList11()" onmouseout="hideList11()">
+							  <a style="font-size: larger;" href="/agrii.html" aria-haspopup="true"
 								aria-expanded="false">HIGHWAYS & ROADS</a>
-							  <ol id="list7" style="display: none;">
-								<a href="/roads.html">
-								  <ol>Long Distance highways</ol>
+							  <ol id="list11" style="display: none; width: 12rem;">
+								<a class="a" href="/roads.html">
+								  <ol style="width: 15rem; margin-right: 4rem;">Long Distance highways</ol>
+								</a> <a class="a" href="/roads.html">
+								  <ol style="width: 15rem;">Super highways</ol>
 								</a>
-								<a href="/roads.html">
-								  <ol>Super highways</ol>
-								</a>
-  
 							  </ol>
 							</div>
   
 							<script>
-							  function showList7() {
-								var list7 = document.getElementById("list7");
-								list7.style.display = "block";
+							  function showList11() {
+								var list11 = document.getElementById("list11");
+								list11.style.display = "block";
 							  }
   
-							  function showList7() {
-								var list7 = document.getElementById("list7");
-								list7.style.display = "none"; // Fix here: Change `list` to `list5`
+							  function hideList11() {
+								var list11 = document.getElementById("list11");
+								list11.style.display = "none"; // Fix here: Change `list` to `list5`
 							  }
 							</script>
+  
+  
+  
+  
 							<div style="margin-top: 1rem;" onmouseover="showList8()" onmouseout="hideList8()">
 							  <a style="font-size: larger;" href="/agrii.html" aria-haspopup="true"
 								aria-expanded="false">SOCIAL & AGRICULTURE INFRASTRACTURE</a>
 							  <ol id="list8" style="display: none;">
-								<a href="agrii.html">
-								  <ol>Large cash crop farming</ol>
-								</a> <a href="/agrii.html">
-								  <ol>Horticulture farming</ol>
+								<a class="a" href="agrii.html">
+								  <ol  style="width: 15rem;">Large cash crop farming</ol>
+								</a> <a class="a" href="/agrii.html">
+								  <ol  style="width: 15rem;">Horticulture farming</ol>
 								</a>
 							  </ol>
 							</div>
@@ -627,12 +659,12 @@
   
 						  <li id="menu-item-5021"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5021">
-							<a href="/water.html">SUSTAINABLE WATER SUPPLY & DISTRIBUTION SYSTEMS
+							<a class="a" href="/water.html">SUSTAINABLE WATER SUPPLY & DISTRIBUTION SYSTEMS
 							</a>
 						  </li>
 						  <li id="menu-item-5007"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5007">
-							<a href="/energy1.html">ENERGY PROJECTS DEVELOPMENT</a>
+							<a class="a" href="/energy1.html">ENERGY PROJECTS DEVELOPMENT</a>
 						  </li>
 						</ul>
 					  </li>
