@@ -15,38 +15,18 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <style>
     .main {}
-
-    .a:hover {
-      color: red;
-    }
-
-    .a {
-      margin-bottom: 1rem;
-      margin-top: 1rem;
-    }
   </style>
   <style>
     .footer {
       height: 20rem !important;
     }
-  </style>
-  <style>
-    /* CSS for the side menu */
-    .side-menu {
-      transform: translateX(-110%);
-      transition: transform 0.3s ease;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      background-color: #fff;
-      /* Adjust background color as needed */
+    .a {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
     }
 
-    .side-menu.show-menu {
-      transform: translateX(0);
-    }
   </style>
+
 
   <!-- This site is optimized with the Yoast SEO plugin v21.9.1 - https://yoast.com/wordpress/plugins/seo/ -->
   <title>21knight</title>
@@ -250,6 +230,32 @@
       background: none !important;
       padding: 0 !important;
     }
+
+    .a {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+
+    .a:hover {
+      color: red;
+    }
+  </style>
+  <style>
+    /* CSS for the side menu */
+    .side-menu {
+      transform: translateX(-110%);
+      transition: transform 0.3s ease;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: #fff;
+      /* Adjust background color as needed */
+    }
+
+    .side-menu.show-menu {
+      transform: translateX(0);
+    }
   </style>
   <link rel="stylesheet" id="wp-block-library-css"
     href="https://www.gilbaneco.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3" type="text/css"
@@ -318,7 +324,35 @@
   <div class="site">
     <!-- Starting .site wrapper tag -->
     <a class="skip-to-content" href="#main-content">Skip to content</a>
+    <style>
+      /* Your existing CSS styles */
 
+      /* Media query for small screens */
+      @media screen and (max-width: 768px) {
+        .site-header__navigation {
+          position: fixed;
+          /* Make the navigation fixed for small screens */
+          top: 0;
+          left: -300px;
+          /* Move the navigation off-screen initially */
+          width: 250px;
+          /* Set a width for the navigation */
+          height: 100vh;
+          /* Make the navigation full height */
+          background-color: #fff;
+          /* Add a background color */
+          transition: left 0.3s ease;
+          /* Add a smooth transition */
+          z-index: 1000;
+          /* Ensure the navigation appears above other content */
+        }
+
+        .navicon {
+          display: block;
+          /* Show the navicon button on small screens */
+        }
+      }
+    </style>
 
 
 
@@ -337,18 +371,7 @@
         <div>
           <div class="site-header__navigation-inner">
             <div class="site-header__navigation-top">
-              <!-- Utilities Menu -->
-              <!-- <ul class="menu utility-menu">
-              <li id="menu-item-5609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5609">
-                <a href="contact.html"></a>
-              </li>
-              <li id="menu-item-5608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5608">
-                <a href="/news.html"></a>
-              </li>
-              <li id="menu-item-5612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5612">
-                <a href="/locations.html"></a>
-              </li>
-            </ul> -->
+             
             </div>
           </div>
           <!-- Mobile Trigger: Navicon for toggling site-header__navigation into view. -->
@@ -399,9 +422,17 @@
                             <a style="font-size: larger;" href="sustainability.html" aria-haspopup="true"
                               aria-expanded="false">Sustainability</a>
                             <ol id="list" style="display: none;">
-                              <li>Sustainable future</li>
+                              <a href="t.html">
+                                <li>Sustainable future</li>
+
+                              </a>
+
+                            
                               <a href=""></a>
-                              <li>Carbon reduction path to zero</li>
+                              <a class="a" href="climate.html">
+                                <li>Carbon reduction path to zero</li>
+
+                              </a>
                             </ol>
                           </div>
 
@@ -420,17 +451,17 @@
                             <a style="font-size: larger; margin-top: 2rem;" href="Udgs.html" aria-haspopup="true"
                               aria-expanded="false">UNSDGS</a>
                             <ol id="list1" style="display: none;">
-                              <a href="/energy1.html">
+                               <a class="a" href="energy1.html">
                                 <li>Affordable and clean energy</li>
                               </a>
-                              <a href="/economic.html">
+                              <a class="a" href="economic.html">
                                 <li>Decent eprk and economic growth</li>
                               </a>
-                              <a href="environment.html">
+                              <a class="a" href="environment.html">
                                 <li>Sustainable cities and communities</li>
                               </a>
-                              <a href="climate.html">
-                                <li>Cimate action</li< /a>>
+                              <a class="a" href="climate.html">
+                                <li>Cimate action</li></a>
                             </ol>
                           </div>
 
@@ -449,9 +480,18 @@
                             <a style="font-size: larger; margin-top: 2rem;" href="environment.html"
                               aria-haspopup="true" aria-expanded="false">Environmental Focus Areas</a>
                             <ol id="list2" style="display: none;">
-                              <li>Nature and pollution</li>
-                              <li>Resource and materials</li>
-                              <li>Climate Action</li>
+                               <a class="a" href="nature.html">
+                                <li>Nature and pollution</li>
+
+                              </a>
+                              <a class="a" href="resource.html">
+                                <li>Resource and materials</li>
+
+                              </a>
+                              <a class="a" href="climate.html">
+                                <li>Climate Action</li>
+
+                              </a>
                             </ol>
                           </div>
                           <script>
@@ -470,14 +510,14 @@
                             <a style="font-size: larger; margin-top: 2rem;" href="social.html" aria-haspopup="true"
                               aria-expanded="false">Social Focus Areas </a>
                             <ol id="list3" style="display: none;">
-                              <a href="/being.html">
+                              <a class="a" href="being.html">
                                 <li>Well being</li>
                               </a>
-                              <a href="/economic.html">
+                              <a class="a" href="economic.html">
                                 <li>Economic Prosperity</li>
 
                               </a>
-                              <a href="community.html">
+                              <a class="a" href="community.html">
                                 <li>Comminity engagement</li>
 
                               </a>
@@ -528,11 +568,17 @@
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5011">
 
                           <div style="margin-top: 1rem;" onmouseover="showList5()" onmouseout="hideList5()">
-                            <a style="font-size: larger;" href="/sustainability.html" aria-haspopup="true"
+                            <a style="font-size: larger;" href="sustainability.html" aria-haspopup="true"
                               aria-expanded="false">INNOVATION</a>
                             <ol id="list5" style="display: none;">
-                              <li>Technological innovations</li>
-                              <li>General innovations innovations</li>
+                              <a class="a" href="tech.html">
+                                <li>Technological innovations</li>
+
+                              </a>
+                              <a class="a" href="general.html">
+                                <li>General innovations innovations</li>
+
+                              </a>
                             </ol>
                           </div>
 
@@ -554,13 +600,13 @@
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5005">
 
                           <div style="margin-top: 1rem;" onmouseover="showList6()" onmouseout="hideList6()">
-                            <a style="font-size: larger;" href="/energy1.html" aria-haspopup="true"
+                           <a style="font-size: larger;" href="energy1.html" aria-haspopup="true"
                               aria-expanded="false">CIVIL & ENERGY INFRASTRACTURE</a>
                             <ol id="list6" style="display: none;">
-                              <a href="/energy1.html">
+                              <a class="a" href="energy1.html">
                                 <li>Solar energy development</li>
-                              </a> <a href="/energy1.html">
-                                <li>Bio energy development</li>
+                              </a> <a href="energy1.html">
+                                <li class="a">Bio energy development</li>
                               </a>
                             </ol>
                           </div>
@@ -577,42 +623,41 @@
                             }
                           </script>
 
-
-
-
-                          <div style="margin-top: 1rem;" onmouseover="showList7()" onmouseout="showList7()">
-                            <a style="font-size: larger;" href="/roads.html" aria-haspopup="true"
+                          <div style="margin-top: 1rem; width: 100%;" onmouseover="showList11()" onmouseout="hideList11()">
+                            <a style="font-size: larger;" href="agrii.html" aria-haspopup="true"
                               aria-expanded="false">HIGHWAYS & ROADS</a>
-                            <ol id="list7" style="display: none;">
-                              <a href="/roads.html">
-                                <ol>Long Distance highways</ol>
+                            <ol id="list11" style="display: none; width: 12rem;">
+                              <a class="a" href="roads.html">
+                                <ol style="width: 15rem; margin-right: 4rem;">Long Distance highways</ol>
+                              </a> <a class="a" href="roads.html">
+                                <ol style="width: 15rem;">Super highways</ol>
                               </a>
-                              <a href="/roads.html">
-                                <ol>Super highways</ol>
-                              </a>
-
                             </ol>
                           </div>
 
                           <script>
-                            function showList7() {
-                              var list7 = document.getElementById("list7");
-                              list7.style.display = "block";
+                            function showList11() {
+                              var list11 = document.getElementById("list11");
+                              list11.style.display = "block";
                             }
 
-                            function showList7() {
-                              var list7 = document.getElementById("list7");
-                              list7.style.display = "none"; // Fix here: Change `list` to `list5`
+                            function hideList11() {
+                              var list11 = document.getElementById("list11");
+                              list11.style.display = "none"; // Fix here: Change `list` to `list5`
                             }
                           </script>
+
+
+
+
                           <div style="margin-top: 1rem;" onmouseover="showList8()" onmouseout="hideList8()">
-                            <a style="font-size: larger;" href="/agrii.html" aria-haspopup="true"
+                            <a style="font-size: larger;" href="agrii.html" aria-haspopup="true"
                               aria-expanded="false">SOCIAL & AGRICULTURE INFRASTRACTURE</a>
                             <ol id="list8" style="display: none;">
-                              <a href="agrii.html">
-                                <ol>Large cash crop farming</ol>
-                              </a> <a href="/agrii.html">
-                                <ol>Horticulture farming</ol>
+                              <a class="a" href="agrii.html">
+                                <ol  style="width: 15rem;">Large cash crop farming</ol>
+                              </a> <a class="a" href="agrii.html">
+                                <ol  style="width: 15rem;">Horticulture farming</ol>
                               </a>
                             </ol>
                           </div>
@@ -633,12 +678,12 @@
 
                         <li id="menu-item-5021"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5021">
-                          <a href="/water.html">SUSTAINABLE WATER SUPPLY & DISTRIBUTION SYSTEMS
+                          <a class="a" href="water.html">SUSTAINABLE WATER SUPPLY & DISTRIBUTION SYSTEMS
                           </a>
                         </li>
                         <li id="menu-item-5007"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5007">
-                          <a href="/energy1.html">ENERGY PROJECTS DEVELOPMENT</a>
+                          <a class="a" href="energy1.html">ENERGY PROJECTS DEVELOPMENT</a>
                         </li>
                       </ul>
                     </li>
@@ -695,7 +740,7 @@
               </li>
               <a style="color: #fff;cursor: pointer;" href="contact.html" aria-haspopup="true"
                 aria-expanded="false">Contact us</a>
-              <!-- -->
+             
               <li id="menu-item-5129"
                 class="mega-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5129">
                 <button class="menu-item__trigger">
@@ -749,9 +794,11 @@
                 <li id="menu-item-5609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5609">
                   <a href="contact.html">Contact</a>
                 </li>
-               
+                <li id="menu-item-5608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5608">
+                  <a href="news.html">News</a>
+                </li>
                 <li id="menu-item-5612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5612">
-                  <a href="/locations.html">Locations</a>
+                  <a href="locations.html">Locations</a>
                 </li>
               </ul>
             </div>
@@ -794,7 +841,7 @@
                               fill="currentColor" />
                           </svg></span><span class="screen-reader-text">Show submenu</span>
                       </button>
-                       <ul class="sub-menu">
+                      <ul class="sub-menu">
                         <li id="menu-item-5011"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5011">
                           <a href="services.html">INNOVATION</a>
@@ -826,7 +873,7 @@
                   </ul>
               </li>
 
-        <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
+              <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
                 <a href="projects.html">Projects</a>
               </li>
               <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
@@ -853,7 +900,7 @@
                             fill="currentColor" />
                         </svg></span><span class="screen-reader-text">Show submenu</span>
                     </button>
-                 <ul class="sub-menu">
+                    <ul class="sub-menu">
                       <li id="menu-item-5099"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5099">
                         <a href="leadership.html">Leadership</a>
@@ -915,7 +962,7 @@
                   </li>
                 </ul>
               </li>
-               <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
+              <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
                 <a href="projects.html">Contact</a>
               </li>
 
@@ -923,73 +970,20 @@
             </ul>
           </div>
         </nav>
-        <style>
-        body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        }
-
-        .container {
-        max-width: 600px;
-        margin: 50px auto;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-group {
-        margin-bottom: 20px;
-        }
-
-        .form-group label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 5px;
-        }
-
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-sizing: border-box;
-        }
-
-        .form-group textarea {
-        height: 150px;
-        }
-
-        .form-group button {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        }
-
-        .form-group button:hover {
-        background-color: #0056b3;
-        }
-        .contact-info {
-      margin-top: 20px;
-    }
-    
-    .contact-info p {
-      margin-bottom: 10px;
-      line-height: 1.6;
-    }
-    
-    .contact-info i {
-      margin-right: 10px;
-    }
-        </style>
     </header>
+
+    <!-- End of  Menu -->
+
+    <script>
+      // JavaScript to toggle the side menu
+      document.addEventListener('DOMContentLoaded', function () {
+        const sideMenu = document.querySelector('.side-menu');
+        const navIcon = document.getElementById('js-navicon');
+        navIcon.addEventListener('click', function () {
+          sideMenu.classList.toggle('show-menu');
+        });
+      });
+    </script>
     <main id="main-content" class="main clearfix" role="main">
       <article class="site-content clearfix">
         <section class="masthead masthead--image alignfull masthead--no-offset" aria-label="Banner">
@@ -1712,820 +1706,6 @@
   
       </div>
     </footer>
-  <script type="text/javascript">
-    (function () {
-      var c = document.body.className;
-      c = c.replace(/woocommerce-no-js/, "woocommerce-js");
-      document.body.className = c;
-    })();
-  </script>
-  <link rel="stylesheet" id="wc-blocks-style-css"
-    href="https://www.gilbaneco.com/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=11.8.0-dev"
-    type="text/css" media="all" />
-  <script type="text/javascript" id="em-locator-js-extra">
-    /* <![CDATA[ */
-    var emLocatorSettings = {
-      apiUrl:
-        "https:\/\/www.gilbaneco.com\/wp-json\/em-locator\/v1\/locations\/",
-      centerLat: "39.842286020743",
-      centerLng: "-99.404296875",
-      distanceUnit: "miles",
-      zoomLevel: "4",
-      countryRestrictions: "none",
-      postsPerPage: "5",
-      postTypePluralLabel: "Locations",
-      postTypeSingularLabel: "Location",
-      postTypeSlug: "location",
-      sharePageTitle: "Nearby Locations",
-      searchInputLabel: "Enter zip code, city\/state, or name",
-      noResultsMessage: "No results found",
-      googleMapsApiKey: "AIzaSyDLHFStg8jicVPUYbEIx9gAFxjI_6FIEV8",
-      googleMapsTheme: "",
-      sharePageBeforeListContent: "",
-      sharePageAfterListContent: "",
-      sharePageFooterContent: "",
-      basicAuthUsername: "",
-      basicAuthPassword: "",
-      distanceUnitShort: "mi",
-      archiveUrl: "https:\/\/www.gilbaneco.com\/location\/",
-    };
-    /* ]]> */
-  </script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/em-locator/public/js/em-locator-public.js?ver=1.1.1"
-    id="em-locator-js"></script>
-  <script type="text/javascript" src="https://www.gilbaneco.com/wp-includes/js/jquery/jquery.min.js?ver=2"
-    id="jquery-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.5.2"
-    id="jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
-  <script type="text/javascript" id="wc-add-to-cart-js-extra">
-    /* <![CDATA[ */
-    var wc_add_to_cart_params = {
-      ajax_url: "\/wp-admin\/admin-ajax.php",
-      wc_ajax_url: "\/?wc-ajax=%%endpoint%%",
-      i18n_view_cart: "View cart",
-      cart_url: "https:\/\/www.gilbaneco.com\/cart\/",
-      is_cart: "",
-      cart_redirect_after_add: "no",
-    };
-    /* ]]> */
-  </script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.5.2"
-    id="wc-add-to-cart-js" defer="defer" data-wp-strategy="defer"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.5.2"
-    id="js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
-  <script type="text/javascript" id="woocommerce-js-extra">
-    /* <![CDATA[ */
-    var woocommerce_params = {
-      ajax_url: "\/wp-admin\/admin-ajax.php",
-      wc_ajax_url: "\/?wc-ajax=%%endpoint%%",
-    };
-    /* ]]> */
-  </script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.5.2"
-    id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=8.5.2"
-    id="sourcebuster-js-js"></script>
-  <script type="text/javascript" id="wc-order-attribution-js-extra">
-    /* <![CDATA[ */
-    var wc_order_attribution = {
-      params: {
-        lifetime: 1.0e-5,
-        session: 30,
-        ajaxurl: "https:\/\/www.gilbaneco.com\/wp-admin\/admin-ajax.php",
-        prefix: "wc_order_attribution_",
-        allowTracking: "yes",
-      },
-    };
-    /* ]]> */
-  </script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=8.5.2"
-    id="wc-order-attribution-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2"
-    id="wp-polyfill-inert-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0"
-    id="regenerator-runtime-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0"
-    id="wp-polyfill-js"></script>
-  <script type="text/javascript" src="https://www.gilbaneco.com/wp-includes/js/dist/vendor/react.min.js?ver=18.2.0"
-    id="react-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/deprecated.min.js?ver=73ad3591e7bc95f4777a"
-    id="wp-deprecated-js"></script>
-  <script type="text/javascript" src="https://www.gilbaneco.com/wp-includes/js/dist/dom.min.js?ver=49ff2869626fbeaacc23"
-    id="wp-dom-js"></script>
-  <script type="text/javascript" src="https://www.gilbaneco.com/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.2.0"
-    id="react-dom-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/escape-html.min.js?ver=03e27a7b6ae14f7afaa6"
-    id="wp-escape-html-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/element.min.js?ver=ed1c7604880e8b574b40"
-    id="wp-element-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/is-shallow-equal.min.js?ver=20c2b06ecf04afb14fee"
-    id="wp-is-shallow-equal-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
-  <script type="text/javascript" id="wp-i18n-js-after">
-    /* <![CDATA[ */
-    wp.i18n.setLocaleData({ "text direction\u0004ltr": ["ltr"] });
-    /* ]]> */
-  </script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/keycodes.min.js?ver=3460bd0fac9859d6886c"
-    id="wp-keycodes-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/priority-queue.min.js?ver=422e19e9d48b269c5219"
-    id="wp-priority-queue-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/compose.min.js?ver=3189b344ff39fef940b7"
-    id="wp-compose-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/private-apis.min.js?ver=11cb2ebaa70a9f1f0ab5"
-    id="wp-private-apis-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/redux-routine.min.js?ver=0be1b2a6a79703e28531"
-    id="wp-redux-routine-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/data.min.js?ver=dc5f255634f3da29c8d5" id="wp-data-js"></script>
-  <script type="text/javascript" id="wp-data-js-after">
-    /* <![CDATA[ */
-    (function () {
-      var userId = 0;
-      var storageKey = "WP_DATA_USER_" + userId;
-      wp.data.use(wp.data.plugins.persistence, { storageKey: storageKey });
-    })();
-    /* ]]> */
-  </script>
-  <script type="text/javascript" src="https://www.gilbaneco.com/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.19"
-    id="lodash-js"></script>
-  <script type="text/javascript" id="lodash-js-after">
-    /* <![CDATA[ */
-    window.lodash = _.noConflict();
-    /* ]]> */
-  </script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-registry.js?ver=1c879273bd5c193cad0a"
-    id="wc-blocks-registry-js"></script>
-  <script type="text/javascript" src="https://www.gilbaneco.com/wp-includes/js/dist/url.min.js?ver=b4979979018b684be209"
-    id="wp-url-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/api-fetch.min.js?ver=0fa4dabf8bf2c7adf21a"
-    id="wp-api-fetch-js"></script>
-  <script type="text/javascript" id="wp-api-fetch-js-after">
-    /* <![CDATA[ */
-    wp.apiFetch.use(
-      wp.apiFetch.createRootURLMiddleware(
-        "https://www.gilbaneco.com/wp-json/"
-      )
-    );
-    wp.apiFetch.nonceMiddleware =
-      wp.apiFetch.createNonceMiddleware("d3017702f7");
-    wp.apiFetch.use(wp.apiFetch.nonceMiddleware);
-    wp.apiFetch.use(wp.apiFetch.mediaUploadMiddleware);
-    wp.apiFetch.nonceEndpoint =
-      "https://www.gilbaneco.com/wp-admin/admin-ajax.php?action=rest-nonce";
-    /* ]]> */
-  </script>
-  <script type="text/javascript" id="wc-settings-js-before">
-    /* <![CDATA[ */
-    var wcSettings =
-      wcSettings ||
-      JSON.parse(
-        decodeURIComponent(
-          "%7B%22shippingCostRequiresAddress%22%3Afalse%2C%22adminUrl%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fwp-admin%5C%2F%22%2C%22countries%22%3A%7B%22AF%22%3A%22Afghanistan%22%2C%22AX%22%3A%22%5Cu00c5land%20Islands%22%2C%22AL%22%3A%22Albania%22%2C%22DZ%22%3A%22Algeria%22%2C%22AS%22%3A%22American%20Samoa%22%2C%22AD%22%3A%22Andorra%22%2C%22AO%22%3A%22Angola%22%2C%22AI%22%3A%22Anguilla%22%2C%22AQ%22%3A%22Antarctica%22%2C%22AG%22%3A%22Antigua%20and%20Barbuda%22%2C%22AR%22%3A%22Argentina%22%2C%22AM%22%3A%22Armenia%22%2C%22AW%22%3A%22Aruba%22%2C%22AU%22%3A%22Australia%22%2C%22AT%22%3A%22Austria%22%2C%22AZ%22%3A%22Azerbaijan%22%2C%22BS%22%3A%22Bahamas%22%2C%22BH%22%3A%22Bahrain%22%2C%22BD%22%3A%22Bangladesh%22%2C%22BB%22%3A%22Barbados%22%2C%22BY%22%3A%22Belarus%22%2C%22PW%22%3A%22Belau%22%2C%22BE%22%3A%22Belgium%22%2C%22BZ%22%3A%22Belize%22%2C%22BJ%22%3A%22Benin%22%2C%22BM%22%3A%22Bermuda%22%2C%22BT%22%3A%22Bhutan%22%2C%22BO%22%3A%22Bolivia%22%2C%22BQ%22%3A%22Bonaire%2C%20Saint%20Eustatius%20and%20Saba%22%2C%22BA%22%3A%22Bosnia%20and%20Herzegovina%22%2C%22BW%22%3A%22Botswana%22%2C%22BV%22%3A%22Bouvet%20Island%22%2C%22BR%22%3A%22Brazil%22%2C%22IO%22%3A%22British%20Indian%20Ocean%20Territory%22%2C%22BN%22%3A%22Brunei%22%2C%22BG%22%3A%22Bulgaria%22%2C%22BF%22%3A%22Burkina%20Faso%22%2C%22BI%22%3A%22Burundi%22%2C%22KH%22%3A%22Cambodia%22%2C%22CM%22%3A%22Cameroon%22%2C%22CA%22%3A%22Canada%22%2C%22CV%22%3A%22Cape%20Verde%22%2C%22KY%22%3A%22Cayman%20Islands%22%2C%22CF%22%3A%22Central%20African%20Republic%22%2C%22TD%22%3A%22Chad%22%2C%22CL%22%3A%22Chile%22%2C%22CN%22%3A%22China%22%2C%22CX%22%3A%22Christmas%20Island%22%2C%22CC%22%3A%22Cocos%20%28Keeling%29%20Islands%22%2C%22CO%22%3A%22Colombia%22%2C%22KM%22%3A%22Comoros%22%2C%22CG%22%3A%22Congo%20%28Brazzaville%29%22%2C%22CD%22%3A%22Congo%20%28Kinshasa%29%22%2C%22CK%22%3A%22Cook%20Islands%22%2C%22CR%22%3A%22Costa%20Rica%22%2C%22HR%22%3A%22Croatia%22%2C%22CU%22%3A%22Cuba%22%2C%22CW%22%3A%22Cura%26ccedil%3Bao%22%2C%22CY%22%3A%22Cyprus%22%2C%22CZ%22%3A%22Czech%20Republic%22%2C%22DK%22%3A%22Denmark%22%2C%22DJ%22%3A%22Djibouti%22%2C%22DM%22%3A%22Dominica%22%2C%22DO%22%3A%22Dominican%20Republic%22%2C%22EC%22%3A%22Ecuador%22%2C%22EG%22%3A%22Egypt%22%2C%22SV%22%3A%22El%20Salvador%22%2C%22GQ%22%3A%22Equatorial%20Guinea%22%2C%22ER%22%3A%22Eritrea%22%2C%22EE%22%3A%22Estonia%22%2C%22SZ%22%3A%22Eswatini%22%2C%22ET%22%3A%22Ethiopia%22%2C%22FK%22%3A%22Falkland%20Islands%22%2C%22FO%22%3A%22Faroe%20Islands%22%2C%22FJ%22%3A%22Fiji%22%2C%22FI%22%3A%22Finland%22%2C%22FR%22%3A%22France%22%2C%22GF%22%3A%22French%20Guiana%22%2C%22PF%22%3A%22French%20Polynesia%22%2C%22TF%22%3A%22French%20Southern%20Territories%22%2C%22GA%22%3A%22Gabon%22%2C%22GM%22%3A%22Gambia%22%2C%22GE%22%3A%22Georgia%22%2C%22DE%22%3A%22Germany%22%2C%22GH%22%3A%22Ghana%22%2C%22GI%22%3A%22Gibraltar%22%2C%22GR%22%3A%22Greece%22%2C%22GL%22%3A%22Greenland%22%2C%22GD%22%3A%22Grenada%22%2C%22GP%22%3A%22Guadeloupe%22%2C%22GU%22%3A%22Guam%22%2C%22GT%22%3A%22Guatemala%22%2C%22GG%22%3A%22Guernsey%22%2C%22GN%22%3A%22Guinea%22%2C%22GW%22%3A%22Guinea-Bissau%22%2C%22GY%22%3A%22Guyana%22%2C%22HT%22%3A%22Haiti%22%2C%22HM%22%3A%22Heard%20Island%20and%20McDonald%20Islands%22%2C%22HN%22%3A%22Honduras%22%2C%22HK%22%3A%22Hong%20Kong%22%2C%22HU%22%3A%22Hungary%22%2C%22IS%22%3A%22Iceland%22%2C%22IN%22%3A%22India%22%2C%22ID%22%3A%22Indonesia%22%2C%22IR%22%3A%22Iran%22%2C%22IQ%22%3A%22Iraq%22%2C%22IE%22%3A%22Ireland%22%2C%22IM%22%3A%22Isle%20of%20Man%22%2C%22IL%22%3A%22Israel%22%2C%22IT%22%3A%22Italy%22%2C%22CI%22%3A%22Ivory%20Coast%22%2C%22JM%22%3A%22Jamaica%22%2C%22JP%22%3A%22Japan%22%2C%22JE%22%3A%22Jersey%22%2C%22JO%22%3A%22Jordan%22%2C%22KZ%22%3A%22Kazakhstan%22%2C%22KE%22%3A%22Kenya%22%2C%22KI%22%3A%22Kiribati%22%2C%22KW%22%3A%22Kuwait%22%2C%22KG%22%3A%22Kyrgyzstan%22%2C%22LA%22%3A%22Laos%22%2C%22LV%22%3A%22Latvia%22%2C%22LB%22%3A%22Lebanon%22%2C%22LS%22%3A%22Lesotho%22%2C%22LR%22%3A%22Liberia%22%2C%22LY%22%3A%22Libya%22%2C%22LI%22%3A%22Liechtenstein%22%2C%22LT%22%3A%22Lithuania%22%2C%22LU%22%3A%22Luxembourg%22%2C%22MO%22%3A%22Macao%22%2C%22MG%22%3A%22Madagascar%22%2C%22MW%22%3A%22Malawi%22%2C%22MY%22%3A%22Malaysia%22%2C%22MV%22%3A%22Maldives%22%2C%22ML%22%3A%22Mali%22%2C%22MT%22%3A%22Malta%22%2C%22MH%22%3A%22Marshall%20Islands%22%2C%22MQ%22%3A%22Martinique%22%2C%22MR%22%3A%22Mauritania%22%2C%22MU%22%3A%22Mauritius%22%2C%22YT%22%3A%22Mayotte%22%2C%22MX%22%3A%22Mexico%22%2C%22FM%22%3A%22Micronesia%22%2C%22MD%22%3A%22Moldova%22%2C%22MC%22%3A%22Monaco%22%2C%22MN%22%3A%22Mongolia%22%2C%22ME%22%3A%22Montenegro%22%2C%22MS%22%3A%22Montserrat%22%2C%22MA%22%3A%22Morocco%22%2C%22MZ%22%3A%22Mozambique%22%2C%22MM%22%3A%22Myanmar%22%2C%22NA%22%3A%22Namibia%22%2C%22NR%22%3A%22Nauru%22%2C%22NP%22%3A%22Nepal%22%2C%22NL%22%3A%22Netherlands%22%2C%22NC%22%3A%22New%20Caledonia%22%2C%22NZ%22%3A%22New%20Zealand%22%2C%22NI%22%3A%22Nicaragua%22%2C%22NE%22%3A%22Niger%22%2C%22NG%22%3A%22Nigeria%22%2C%22NU%22%3A%22Niue%22%2C%22NF%22%3A%22Norfolk%20Island%22%2C%22KP%22%3A%22North%20Korea%22%2C%22MK%22%3A%22North%20Macedonia%22%2C%22MP%22%3A%22Northern%20Mariana%20Islands%22%2C%22NO%22%3A%22Norway%22%2C%22OM%22%3A%22Oman%22%2C%22PK%22%3A%22Pakistan%22%2C%22PS%22%3A%22Palestinian%20Territory%22%2C%22PA%22%3A%22Panama%22%2C%22PG%22%3A%22Papua%20New%20Guinea%22%2C%22PY%22%3A%22Paraguay%22%2C%22PE%22%3A%22Peru%22%2C%22PH%22%3A%22Philippines%22%2C%22PN%22%3A%22Pitcairn%22%2C%22PL%22%3A%22Poland%22%2C%22PT%22%3A%22Portugal%22%2C%22PR%22%3A%22Puerto%20Rico%22%2C%22QA%22%3A%22Qatar%22%2C%22RE%22%3A%22Reunion%22%2C%22RO%22%3A%22Romania%22%2C%22RU%22%3A%22Russia%22%2C%22RW%22%3A%22Rwanda%22%2C%22ST%22%3A%22S%26atilde%3Bo%20Tom%26eacute%3B%20and%20Pr%26iacute%3Bncipe%22%2C%22BL%22%3A%22Saint%20Barth%26eacute%3Blemy%22%2C%22SH%22%3A%22Saint%20Helena%22%2C%22KN%22%3A%22Saint%20Kitts%20and%20Nevis%22%2C%22LC%22%3A%22Saint%20Lucia%22%2C%22SX%22%3A%22Saint%20Martin%20%28Dutch%20part%29%22%2C%22MF%22%3A%22Saint%20Martin%20%28French%20part%29%22%2C%22PM%22%3A%22Saint%20Pierre%20and%20Miquelon%22%2C%22VC%22%3A%22Saint%20Vincent%20and%20the%20Grenadines%22%2C%22WS%22%3A%22Samoa%22%2C%22SM%22%3A%22San%20Marino%22%2C%22SA%22%3A%22Saudi%20Arabia%22%2C%22SN%22%3A%22Senegal%22%2C%22RS%22%3A%22Serbia%22%2C%22SC%22%3A%22Seychelles%22%2C%22SL%22%3A%22Sierra%20Leone%22%2C%22SG%22%3A%22Singapore%22%2C%22SK%22%3A%22Slovakia%22%2C%22SI%22%3A%22Slovenia%22%2C%22SB%22%3A%22Solomon%20Islands%22%2C%22SO%22%3A%22Somalia%22%2C%22ZA%22%3A%22South%20Africa%22%2C%22GS%22%3A%22South%20Georgia%5C%2FSandwich%20Islands%22%2C%22KR%22%3A%22South%20Korea%22%2C%22SS%22%3A%22South%20Sudan%22%2C%22ES%22%3A%22Spain%22%2C%22LK%22%3A%22Sri%20Lanka%22%2C%22SD%22%3A%22Sudan%22%2C%22SR%22%3A%22Suriname%22%2C%22SJ%22%3A%22Svalbard%20and%20Jan%20Mayen%22%2C%22SE%22%3A%22Sweden%22%2C%22CH%22%3A%22Switzerland%22%2C%22SY%22%3A%22Syria%22%2C%22TW%22%3A%22Taiwan%22%2C%22TJ%22%3A%22Tajikistan%22%2C%22TZ%22%3A%22Tanzania%22%2C%22TH%22%3A%22Thailand%22%2C%22TL%22%3A%22Timor-Leste%22%2C%22TG%22%3A%22Togo%22%2C%22TK%22%3A%22Tokelau%22%2C%22TO%22%3A%22Tonga%22%2C%22TT%22%3A%22Trinidad%20and%20Tobago%22%2C%22TN%22%3A%22Tunisia%22%2C%22TR%22%3A%22Turkey%22%2C%22TM%22%3A%22Turkmenistan%22%2C%22TC%22%3A%22Turks%20and%20Caicos%20Islands%22%2C%22TV%22%3A%22Tuvalu%22%2C%22UG%22%3A%22Uganda%22%2C%22UA%22%3A%22Ukraine%22%2C%22AE%22%3A%22United%20Arab%20Emirates%22%2C%22GB%22%3A%22United%20Kingdom%20%28UK%29%22%2C%22US%22%3A%22United%20States%20%28US%29%22%2C%22UM%22%3A%22United%20States%20%28US%29%20Minor%20Outlying%20Islands%22%2C%22UY%22%3A%22Uruguay%22%2C%22UZ%22%3A%22Uzbekistan%22%2C%22VU%22%3A%22Vanuatu%22%2C%22VA%22%3A%22Vatican%22%2C%22VE%22%3A%22Venezuela%22%2C%22VN%22%3A%22Vietnam%22%2C%22VG%22%3A%22Virgin%20Islands%20%28British%29%22%2C%22VI%22%3A%22Virgin%20Islands%20%28US%29%22%2C%22WF%22%3A%22Wallis%20and%20Futuna%22%2C%22EH%22%3A%22Western%20Sahara%22%2C%22YE%22%3A%22Yemen%22%2C%22ZM%22%3A%22Zambia%22%2C%22ZW%22%3A%22Zimbabwe%22%7D%2C%22currency%22%3A%7B%22code%22%3A%22USD%22%2C%22precision%22%3A2%2C%22symbol%22%3A%22%24%22%2C%22symbolPosition%22%3A%22left%22%2C%22decimalSeparator%22%3A%22.%22%2C%22thousandSeparator%22%3A%22%2C%22%2C%22priceFormat%22%3A%22%251%24s%252%24s%22%7D%2C%22currentUserId%22%3A0%2C%22currentUserIsAdmin%22%3Afalse%2C%22dateFormat%22%3A%22F%20j%2C%20Y%22%2C%22homeUrl%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2F%22%2C%22locale%22%3A%7B%22siteLocale%22%3A%22en_US%22%2C%22userLocale%22%3A%22en_US%22%2C%22weekdaysShort%22%3A%5B%22Sun%22%2C%22Mon%22%2C%22Tue%22%2C%22Wed%22%2C%22Thu%22%2C%22Fri%22%2C%22Sat%22%5D%7D%2C%22dashboardUrl%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fmy-account%5C%2F%22%2C%22orderStatuses%22%3A%7B%22pending%22%3A%22Pending%20payment%22%2C%22processing%22%3A%22Processing%22%2C%22on-hold%22%3A%22On%20hold%22%2C%22completed%22%3A%22Completed%22%2C%22cancelled%22%3A%22Cancelled%22%2C%22refunded%22%3A%22Refunded%22%2C%22failed%22%3A%22Failed%22%2C%22checkout-draft%22%3A%22Draft%22%7D%2C%22placeholderImgSrc%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fwp-content%5C%2Fuploads%5C%2Fwoocommerce-placeholder.png%22%2C%22productsSettings%22%3A%7B%22cartRedirectAfterAdd%22%3Afalse%7D%2C%22siteTitle%22%3A%22Gilbane%22%2C%22storePages%22%3A%7B%22myaccount%22%3A%7B%22id%22%3A14462%2C%22title%22%3A%22My%20account%22%2C%22permalink%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fmy-account%5C%2F%22%7D%2C%22shop%22%3A%7B%22id%22%3A0%2C%22title%22%3A%22%22%2C%22permalink%22%3Afalse%7D%2C%22cart%22%3A%7B%22id%22%3A14460%2C%22title%22%3A%22Cart%22%2C%22permalink%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fcart%5C%2F%22%7D%2C%22checkout%22%3A%7B%22id%22%3A14461%2C%22title%22%3A%22Checkout%22%2C%22permalink%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fcheckout%5C%2F%22%7D%2C%22privacy%22%3A%7B%22id%22%3A0%2C%22title%22%3A%22%22%2C%22permalink%22%3Afalse%7D%2C%22terms%22%3A%7B%22id%22%3A0%2C%22title%22%3A%22%22%2C%22permalink%22%3Afalse%7D%7D%2C%22wcAssetUrl%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fwp-content%5C%2Fplugins%5C%2Fwoocommerce%5C%2Fassets%5C%2F%22%2C%22wcVersion%22%3A%228.5.2%22%2C%22wpLoginUrl%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fwp-login.php%22%2C%22wpVersion%22%3A%226.4.3%22%2C%22collectableMethodIds%22%3A%5B%5D%2C%22admin%22%3A%7B%22wccomHelper%22%3A%7B%22isConnected%22%3Afalse%2C%22connectURL%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fwp-admin%5C%2Fadmin.php%3Fpage%3Dwc-addons%26section%3Dhelper%26wc-helper-connect%3D1%26wc-helper-nonce%3D283a2d1661%22%2C%22userEmail%22%3A%22%22%2C%22userAvatar%22%3A%22https%3A%5C%2F%5C%2Fsecure.gravatar.com%5C%2Favatar%5C%2F%3Fs%3D48%26d%3Dmm%26r%3Dg%22%2C%22storeCountry%22%3A%22US%22%2C%22inAppPurchaseURLParams%22%3A%7B%22wccom-site%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%22%2C%22wccom-back%22%3A%22%252Fcontact%252F%22%2C%22wccom-woo-version%22%3A%228.5.2%22%2C%22wccom-connect-nonce%22%3A%22283a2d1661%22%7D%7D%2C%22_feature_nonce%22%3A%22a8ca2dd852%22%2C%22alertCount%22%3A%220%22%2C%22visibleTaskListIds%22%3A%5B%22setup%22%5D%7D%7D"
-        )
-      );
-    /* ]]> */
-  </script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/woocommerce/assets/client/blocks/wc-settings.js?ver=07c2f0675ddd247d2325"
-    id="wc-settings-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/data-controls.min.js?ver=fe4ccc8a1782ea8e2cb1"
-    id="wp-data-controls-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/html-entities.min.js?ver=36a4a255da7dd2e1bf8e"
-    id="wp-html-entities-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/notices.min.js?ver=38e88f4b627cf873edd0"
-    id="wp-notices-js"></script>
-  <script type="text/javascript" id="wc-blocks-middleware-js-before">
-    /* <![CDATA[ */
-    var wcBlocksMiddlewareConfig = {
-      storeApiNonce: "89aded12fb",
-      wcStoreApiNonceTimestamp: "1709134891",
-    };
-
-    /* ]]> */
-  </script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-middleware.js?ver=ca04183222edaf8a26be"
-    id="wc-blocks-middleware-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-data.js?ver=c96aba0171b12e03b8a6"
-    id="wc-blocks-data-store-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/dom-ready.min.js?ver=392bdd43726760d1f3ca"
-    id="wp-dom-ready-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/a11y.min.js?ver=7032343a947cfccf5608" id="wp-a11y-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/primitives.min.js?ver=6984e6eb5d6157c4fe44"
-    id="wp-primitives-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-includes/js/dist/warning.min.js?ver=122829a085511691f14d"
-    id="wp-warning-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/woocommerce/assets/client/blocks/blocks-components.js?ver=b165bb2bd213326d7f31"
-    id="wc-blocks-components-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/woocommerce/assets/client/blocks/blocks-checkout.js?ver=9f469ef17beaf7c51576"
-    id="wc-blocks-checkout-js"></script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution-blocks.min.js?ver=8.5.2"
-    id="wc-order-attribution-blocks-js"></script>
-  <script type="text/javascript" src="//js.hs-scripts.com/160261.js?ver=6.4.3" id="leadin-scriptloader-js-js"></script>
-  <script type="text/javascript" id="external-links-js-extra">
-    /* <![CDATA[ */
-    var emExternalLinks = { excludeList: [] };
-    /* ]]> */
-  </script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/em-components/modules/external-links/js/em-module-external-links.js?ver=2.1.7"
-    id="external-links-js"></script>
-  <script type="text/javascript" id="gated-content-js-extra">
-    /* <![CDATA[ */
-    var gatedContent = {
-      postID: "5607",
-      postType: "page",
-      ajax: "https:\/\/www.gilbaneco.com\/wp-admin\/admin-ajax.php",
-    };
-    /* ]]> */
-  </script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/em-components/modules/gated-content/js/em-module-gated-content.js?ver=2.1.7"
-    id="gated-content-js"></script>
-  <script type="text/javascript" defer="defer"
-    src="https://www.gilbaneco.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.4"
-    id="gform_json-js"></script>
-  <script type="text/javascript" id="gform_gravityforms-js-extra">
-    /* <![CDATA[ */
-    var gf_global = {
-      gf_currency_config: {
-        name: "U.S. Dollar",
-        symbol_left: "$",
-        symbol_right: "",
-        symbol_padding: "",
-        thousand_separator: ",",
-        decimal_separator: ".",
-        decimals: 2,
-        code: "USD",
-      },
-      base_url:
-        "https:\/\/www.gilbaneco.com\/wp-content\/plugins\/gravityforms",
-      number_formats: [],
-      spinnerUrl:
-        "https:\/\/www.gilbaneco.com\/wp-content\/plugins\/gravityforms\/images\/spinner.svg",
-      version_hash: "4042606653622dee45cc7dfef8b4e71a",
-      strings: {
-        newRowAdded: "New row added.",
-        rowRemoved: "Row removed",
-        formSaved:
-          "The form has been saved.  The content contains the link to return and complete the form.",
-      },
-    };
-    var gform_i18n = {
-      datepicker: {
-        days: {
-          monday: "Mo",
-          tuesday: "Tu",
-          wednesday: "We",
-          thursday: "Th",
-          friday: "Fr",
-          saturday: "Sa",
-          sunday: "Su",
-        },
-        months: {
-          january: "January",
-          february: "February",
-          march: "March",
-          april: "April",
-          may: "May",
-          june: "June",
-          july: "July",
-          august: "August",
-          september: "September",
-          october: "October",
-          november: "November",
-          december: "December",
-        },
-        firstDay: 1,
-        iconText: "Select date",
-      },
-    };
-    var gf_legacy_multi = { 2: "" };
-    var gform_gravityforms = {
-      strings: {
-        invalid_file_extension:
-          "This type of file is not allowed. Must be one of the following:",
-        delete_file: "Delete this file",
-        in_progress: "in progress",
-        file_exceeds_limit: "File exceeds size limit",
-        illegal_extension: "This type of file is not allowed.",
-        max_reached: "Maximum number of files reached",
-        unknown_error:
-          "There was a problem while saving the file on the server",
-        currently_uploading: "Please wait for the uploading to complete",
-        cancel: "Cancel",
-        cancel_upload: "Cancel this upload",
-        cancelled: "Cancelled",
-      },
-      vars: {
-        images_url:
-          "https:\/\/www.gilbaneco.com\/wp-content\/plugins\/gravityforms\/images",
-      },
-    };
-    var gf_global = {
-      gf_currency_config: {
-        name: "U.S. Dollar",
-        symbol_left: "$",
-        symbol_right: "",
-        symbol_padding: "",
-        thousand_separator: ",",
-        decimal_separator: ".",
-        decimals: 2,
-        code: "USD",
-      },
-      base_url:
-        "https:\/\/www.gilbaneco.com\/wp-content\/plugins\/gravityforms",
-      number_formats: [],
-      spinnerUrl:
-        "https:\/\/www.gilbaneco.com\/wp-content\/plugins\/gravityforms\/images\/spinner.svg",
-      version_hash: "4042606653622dee45cc7dfef8b4e71a",
-      strings: {
-        newRowAdded: "New row added.",
-        rowRemoved: "Row removed",
-        formSaved:
-          "The form has been saved.  The content contains the link to return and complete the form.",
-      },
-    };
-    /* ]]> */
-  </script>
-  <script type="text/javascript" id="gform_gravityforms-js-before">
-    /* <![CDATA[ */
-
-    /* ]]> */
-  </script>
-  <script type="text/javascript" defer="defer"
-    src="https://www.gilbaneco.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.8.4"
-    id="gform_gravityforms-js"></script>
-  <script type="text/javascript" id="gform_conditional_logic-js-extra">
-    /* <![CDATA[ */
-    var gf_legacy = { is_legacy: "" };
-    var gf_legacy = { is_legacy: "" };
-    /* ]]> */
-  </script>
-  <script type="text/javascript" defer="defer"
-    src="https://www.gilbaneco.com/wp-content/plugins/gravityforms/js/conditional_logic.min.js?ver=2.8.4"
-    id="gform_conditional_logic-js"></script>
-  <script type="text/javascript" defer="defer"
-    src="https://www.gilbaneco.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=54e7080aa7a02c83aa61fae430b9d869"
-    id="gform_gravityforms_theme_vendors-js"></script>
-  <script type="text/javascript" id="gform_gravityforms_theme-js-extra">
-    /* <![CDATA[ */
-    var gform_theme_config = {
-      common: {
-        form: {
-          honeypot: { version_hash: "4042606653622dee45cc7dfef8b4e71a" },
-        },
-      },
-      hmr_dev: "",
-      public_path:
-        "https:\/\/www.gilbaneco.com\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/",
-    };
-    /* ]]> */
-  </script>
-  <script type="text/javascript" defer="defer"
-    src="https://www.gilbaneco.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=bab19fd84843dabc070e73326d787910"
-    id="gform_gravityforms_theme-js"></script>
-  <script type="text/javascript" id="angelleye_frontend-js-extra">
-    /* <![CDATA[ */
-    var angelleye_frontend = {
-      is_product: "no",
-      is_cart: "no",
-      is_checkout: "no",
-      three_digits: "3 digits usually found on the signature strip.",
-      four_digits: "4 digits usually found on the front of the card.",
-      enable_in_context_checkout_flow: "no",
-    };
-    /* ]]> */
-  </script>
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/paypal-for-woocommerce/assets/js/angelleye-frontend.js?ver=2.0.0"
-    id="angelleye_frontend-js"></script>
-  <script type="text/javascript" id="em-js-js-extra">
-    /* <![CDATA[ */
-    var emJsData = {
-      siteUrl: "https:\/\/www.gilbaneco.com",
-      themeUrl:
-        "https:\/\/www.gilbaneco.com\/wp-content\/themes\/gilbane2022",
-      restUrl: "https:\/\/www.gilbaneco.com\/wp-json\/em\/v1\/",
-      ajaxUrl: "https:\/\/www.gilbaneco.com\/wp-admin\/admin-ajax.php",
-      readMore: "Read More",
-      learnMore: "Learn More",
-    };
-    /* ]]> */
-  </script>
-  <script type="text/javascript" src="https://www.gilbaneco.com/wp-content/themes/gilbane2022/js/main.js?ver=1708703973"
-    id="em-js-js"></script>
-  <script type="text/javascript">
-    /* <![CDATA[ */
-    gform.initializeOnLoaded(function () {
-      jQuery(document).on(
-        "gform_post_render",
-        function (event, formId, currentPage) {
-          if (formId == 2) {
-            gf_global["number_formats"][2] = {
-              1: { price: false, value: false },
-              3: { price: false, value: false },
-              4: { price: false, value: false },
-              12: { price: false, value: false },
-              5: { price: false, value: false },
-              6: { price: false, value: false },
-              7: { price: false, value: false },
-              8: { price: false, value: false },
-              10: { price: false, value: false },
-              11: { price: false, value: false },
-              13: { price: false, value: false },
-            };
-            if (window["jQuery"]) {
-              if (!window["gf_form_conditional_logic"])
-                window["gf_form_conditional_logic"] = new Array();
-              window["gf_form_conditional_logic"][2] = {
-                logic: {
-                  6: {
-                    field: {
-                      enabled: true,
-                      actionType: "show",
-                      logicType: "all",
-                      rules: [
-                        { fieldId: "5", operator: "is", value: "building" },
-                      ],
-                    },
-                    nextButton: null,
-                    section: null,
-                  },
-                  7: {
-                    field: {
-                      enabled: true,
-                      actionType: "show",
-                      logicType: "all",
-                      rules: [
-                        {
-                          fieldId: "5",
-                          operator: "is",
-                          value: "development",
-                        },
-                      ],
-                    },
-                    nextButton: null,
-                    section: null,
-                  },
-                },
-                dependents: { 6: [6], 7: [7] },
-                animation: 0,
-                defaults: {
-                  1: { 1.2: "", 1.3: "", 1.4: "", 1.6: "", 1.8: "" },
-                },
-                fields: {
-                  1: [],
-                  3: [],
-                  4: [],
-                  12: [],
-                  5: [6, 7],
-                  6: [],
-                  7: [],
-                  8: [],
-                  10: [],
-                  11: [],
-                  13: [],
-                },
-              };
-              if (!window["gf_number_format"])
-                window["gf_number_format"] = "decimal_dot";
-              jQuery(document).ready(function () {
-                gform.utils.trigger({
-                  event: "gform/conditionalLogic/init/start",
-                  native: false,
-                  data: { formId: 2, fields: null, isInit: true },
-                });
-                window["gformInitPriceFields"]();
-                gf_apply_rules(2, [6, 7], true);
-                jQuery("#gform_wrapper_2").show();
-                jQuery(document).trigger("gform_post_conditional_logic", [
-                  2,
-                  null,
-                  true,
-                ]);
-                gform.utils.trigger({
-                  event: "gform/conditionalLogic/init/end",
-                  native: false,
-                  data: { formId: 2, fields: null, isInit: true },
-                });
-              });
-            }
-          }
-        }
-      );
-      jQuery(document).on(
-        "gform_post_conditional_logic",
-        function (event, formId, fields, isInit) { }
-      );
-    });
-    /* ]]> */
-  </script>
-  <script type="text/javascript">
-    /* <![CDATA[ */
-    gform.initializeOnLoaded(function () {
-      const gformWrapperDiv = document.getElementById("gform_wrapper_2");
-      if (gformWrapperDiv) {
-        const visibilitySpan = document.createElement("span");
-        visibilitySpan.id = "gform_visibility_test_2";
-        gformWrapperDiv.insertAdjacentElement("afterend", visibilitySpan);
-      }
-      const visibilityTestDiv = document.getElementById(
-        "gform_visibility_test_2"
-      );
-      let postRenderFired = false;
-      function triggerPostRender() {
-        if (postRenderFired) {
-          return;
-        }
-        postRenderFired = true;
-        jQuery(document).trigger("gform_post_render", [2, 1]);
-        gform.utils.trigger({
-          event: "gform/postRender",
-          native: false,
-          data: { formId: 2, currentPage: 1 },
-        });
-        if (visibilityTestDiv) {
-          visibilityTestDiv.parentNode.removeChild(visibilityTestDiv);
-        }
-      }
-      function debounce(func, wait, immediate) {
-        var timeout;
-        return function () {
-          var context = this,
-            args = arguments;
-          var later = function () {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-          };
-          var callNow = immediate && !timeout;
-          clearTimeout(timeout);
-          timeout = setTimeout(later, wait);
-          if (callNow) func.apply(context, args);
-        };
-      }
-      const debouncedTriggerPostRender = debounce(function () {
-        triggerPostRender();
-      }, 200);
-      if (visibilityTestDiv && visibilityTestDiv.offsetParent === null) {
-        const observer = new MutationObserver((mutations) => {
-          mutations.forEach((mutation) => {
-            if (
-              mutation.type === "attributes" &&
-              visibilityTestDiv.offsetParent !== null
-            ) {
-              debouncedTriggerPostRender();
-              observer.disconnect();
-            }
-          });
-        });
-        observer.observe(document.body, {
-          attributes: true,
-          childList: false,
-          subtree: true,
-          attributeFilter: ["style", "class"],
-        });
-      } else {
-        triggerPostRender();
-      }
-    });
-    /* ]]> */
-  </script>
-  <svg style="position: absolute; width: 0; height: 0" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
-    <defs>
-      <symbol id="icon-behance" viewBox="0 0 37 32">
-        <path class="path1"
-          d="M33 6.054h-9.125v2.214H33V6.054zm-4.5 7.607q-1.607 0-2.607.938t-1.107 2.545h7.286q-.321-3.482-3.571-3.482zm.286 10.446q1.125 0 2.179-.571t1.357-1.554h3.946q-1.786 5.482-7.625 5.482-3.821 0-6.08-2.357t-2.259-6.196q0-3.714 2.33-6.17t6.009-2.455q2.464 0 4.295 1.214t2.732 3.196.902 4.429q0 .304-.036.839h-11.75q0 1.982 1.027 3.063t2.973 1.08zm-23.84-.893h5.286q3.661 0 3.661-2.982 0-3.214-3.554-3.214H4.946v6.196zm0-9.589h5.018q1.393 0 2.205-.652t.813-2.027q0-2.571-3.393-2.571H4.946v5.25zM0 4.536h10.607q1.554 0 2.768.25t2.259.848 1.607 1.723.563 2.75q0 3.232-3.071 4.696 2.036.571 3.071 2.054T18.84 20.5q0 1.339-.438 2.438t-1.179 1.848-1.759 1.268-2.161.75-2.393.232H-.001v-22.5z" />
-      </symbol>
-      <symbol id="icon-deviantart" viewBox="0 0 18 32">
-        <path class="path1"
-          d="M18.286 5.411l-5.411 10.393.429.554h4.982v7.411H9.232l-.786.536L5.91 29.18l-.536.536H-.001v-5.411L5.41 13.894l-.429-.536H-.001V5.947h9.054l.786-.536L12.375.536 12.911 0h5.375v5.411z" />
-      </symbol>
-      <symbol id="icon-medium" viewBox="0 0 32 32">
-        <path class="path1"
-          d="M10.661 7.518v20.946q0 .446-.223.759t-.652.313q-.304 0-.589-.143L.893 25.232q-.375-.179-.634-.598T0 23.804V3.447q0-.357.179-.607t.518-.25q.25 0 .786.268l9.125 4.571q.054.054.054.089zm1.143 1.803l9.536 15.464-9.536-4.75V9.321zM32 9.643v18.821q0 .446-.25.723t-.679.277-.839-.232l-7.875-3.929zM31.946 7.5q0 .054-4.58 7.491T22 23.696l-6.964-11.321 5.786-9.411q.304-.5.929-.5.25 0 .464.107l9.661 4.821q.071.036.071.107z" />
-      </symbol>
-      <symbol id="icon-slideshare" viewBox="0 0 32 32">
-        <path class="path1"
-          d="M15.589 13.214q0 1.482-1.134 2.545t-2.723 1.063-2.723-1.063-1.134-2.545q0-1.5 1.134-2.554t2.723-1.054 2.723 1.054 1.134 2.554zm8.965 0q0 1.482-1.125 2.545t-2.732 1.063q-1.589 0-2.723-1.063t-1.134-2.545q0-1.5 1.134-2.554t2.723-1.054q1.607 0 2.732 1.054t1.125 2.554zm4.017 3.215V4.518q0-1.554-.571-2.205t-1.982-.652H6.161q-1.482 0-2.009.607t-.527 2.25v12.018q.768.411 1.58.714t1.446.5 1.446.33 1.268.196 1.25.071 1.045.009 1.009-.036.795-.036q1.214-.018 1.696.482.107.107.179.161.464.446 1.089.911.125-1.625 2.107-1.554.089 0 .652.027t.768.036.813.018.946-.018.973-.08 1.089-.152 1.107-.241 1.196-.348 1.205-.482 1.286-.616zm2.911-.09q-2.161 2.661-6.643 4.5 1.5 5.089-.411 8.304-1.179 2.018-3.268 2.643-1.857.571-3.25-.268-1.536-.911-1.464-2.929l-.018-5.821v-.018q-.143-.036-.438-.107t-.42-.089l-.018 6.036q.071 2.036-1.482 2.929-1.411.839-3.268.268-2.089-.643-3.25-2.679-1.875-3.214-.393-8.268-4.482-1.839-6.643-4.5-.446-.661-.071-1.125t1.071.018q.054.036.196.125t.196.143V3.108q0-1.286.839-2.196T4.783.001h22.446q1.196 0 2.036.911t.839 2.196v12.393l.375-.268q.696-.482 1.071-.018t-.071 1.125z" />
-      </symbol>
-      <symbol id="icon-snapchat-ghost" viewBox="0 0 30 32">
-        <path class="path1"
-          d="M15.143 2.286q2.393-.018 4.295 1.223t2.92 3.438q.482 1.036.482 3.196 0 .839-.161 3.411.25.125.5.125.321 0 .911-.241t.911-.241q.518 0 1 .321t.482.821q0 .571-.563.964t-1.232.563-1.232.518-.563.848q0 .268.214.768.661 1.464 1.83 2.679t2.58 1.804q.5.214 1.429.411.5.107.5.625 0 1.25-3.911 1.839-.125.196-.196.696t-.25.83-.589.33q-.357 0-1.107-.116t-1.143-.116q-.661 0-1.107.089-.571.089-1.125.402t-1.036.679-1.036.723-1.357.598-1.768.241q-.929 0-1.723-.241t-1.339-.598-1.027-.723-1.036-.679-1.107-.402q-.464-.089-1.125-.089-.429 0-1.17.134t-1.045.134q-.446 0-.625-.33t-.25-.848-.196-.714Q.267 24.769.267 23.519q0-.518.5-.625.929-.196 1.429-.411 1.393-.571 2.58-1.804T6.606 18q.214-.5.214-.768 0-.5-.563-.848t-1.241-.527-1.241-.563-.563-.938q0-.482.464-.813t.982-.33q.268 0 .857.232t.946.232q.321 0 .571-.125-.161-2.536-.161-3.393 0-2.179.482-3.214 1.143-2.446 3.071-3.536t4.714-1.125z" />
-      </symbol>
-      <symbol id="icon-yelp" viewBox="0 0 27 32">
-        <path class="path1"
-          d="M13.804 23.554v2.268q-.018 5.214-.107 5.446-.214.571-.911.714-.964.161-3.241-.679t-2.902-1.589q-.232-.268-.304-.643-.018-.214.071-.464.071-.179.607-.839t3.232-3.857q.018 0 1.071-1.25.268-.339.705-.438t.884.063q.429.179.67.518t.223.75zm-2.661-4.483q-.054.982-.929 1.25l-2.143.696q-4.911 1.571-5.214 1.571-.625-.036-.964-.643-.214-.446-.304-1.339-.143-1.357.018-2.973t.536-2.223 1-.571q.232 0 3.607 1.375 1.25.518 2.054.839l1.5.607q.411.161.634.545t.205.866zm14.75 5.304q-.125.964-1.634 2.875t-2.42 2.268q-.661.25-1.125-.125-.25-.179-3.286-5.125l-.839-1.375q-.25-.375-.205-.821t.348-.821q.625-.768 1.482-.464.018.018 2.125.714 3.625 1.179 4.321 1.42t.839.366q.5.393.393 1.089zm-12-11.286q.089 1.821-.964 2.179-1.036.304-2.036-1.268L4.143 3.321Q4 2.696 4.482 2.214q.732-.768 3.705-1.598t4.009-.563q.714.179.875.804.054.321.393 5.455t.429 6.777zm11.821 1.929q.054.696-.464 1.054-.268.179-5.875 1.536-1.196.268-1.625.411l.018-.036q-.411.107-.821-.071t-.661-.571q-.536-.839 0-1.554.018-.018 1.339-1.821 2.232-3.054 2.679-3.643t.607-.696q.5-.339 1.161-.036.857.411 2.196 2.384t1.446 2.991v.054z" />
-      </symbol>
-      <symbol id="icon-vine" viewBox="0 0 27 32">
-        <path class="path1"
-          d="M26.732 14.768v3.536q-1.804.411-3.536.411-1.161 2.429-2.955 4.839T17 27.402t-2.286 1.902q-1.429.804-2.893-.054-.5-.304-1.08-.777t-1.518-1.491-1.83-2.295-1.92-3.286-1.884-4.357-1.634-5.616T.696 4.464H5.75Q6.214 8.357 7 11.58t1.866 5.661 2.17 4.205 2.5 3.482q3.018-3.018 5.125-7.25-2.536-1.286-3.982-3.929t-1.446-5.946q0-3.429 1.857-5.616t5.071-2.188q3.179 0 4.875 1.884t1.696 5.313q0 2.839-1.036 5.107-.125.018-.348.054t-.821.036-1.125-.107-1.107-.455-.902-.92q.554-1.839.554-3.286 0-1.554-.518-2.357t-1.411-.804q-.946 0-1.518.884t-.571 2.509q0 3.321 1.875 5.241t4.768 1.92q1.107 0 2.161-.25z" />
-      </symbol>
-      <symbol id="icon-vk" viewBox="0 0 35 32">
-        <path class="path1"
-          d="M34.232 9.286q.411 1.143-2.679 5.25-.429.571-1.161 1.518-1.393 1.786-1.607 2.339-.304.732.25 1.446.304.375 1.446 1.464h.018l.071.071q2.518 2.339 3.411 3.946.054.089.116.223t.125.473-.009.607-.446.491-1.054.223l-4.571.071q-.429.089-1-.089t-.929-.393l-.357-.214q-.536-.375-1.25-1.143t-1.223-1.384-1.089-1.036-1.009-.277q-.054.018-.143.063t-.304.259-.384.527-.304.929-.116 1.384q0 .268-.063.491t-.134.33l-.071.089q-.321.339-.946.393h-2.054q-1.268.071-2.607-.295t-2.348-.946-1.839-1.179-1.259-1.027l-.446-.429q-.179-.179-.491-.536T6.499 21.3t-1.893-2.696-2.188-3.768-2.33-4.857q-.107-.286-.107-.482t.054-.286l.071-.107q.268-.339 1.018-.339l4.893-.036q.214.036.411.116t.286.152l.089.054q.286.196.429.571.357.893.821 1.848t.732 1.455l.286.518q.518 1.071 1 1.857t.866 1.223.741.688.607.25.482-.089q.036-.018.089-.089t.214-.393.241-.839.17-1.446 0-2.232q-.036-.714-.161-1.304t-.25-.821l-.107-.214q-.446-.607-1.518-.768-.232-.036.089-.429.304-.339.679-.536.946-.464 4.268-.429 1.464.018 2.411.232.357.089.598.241t.366.429.188.571.063.813-.018.982-.045 1.259-.027 1.473q0 .196-.018.75t-.009.857.063.723.205.696.402.438q.143.036.304.071t.464-.196.679-.616.929-1.196 1.214-1.92q1.071-1.857 1.911-4.018.071-.179.179-.313t.196-.188l.071-.054.089-.045.232-.054.357-.009 5.143-.036q.696-.089 1.143.045t.554.295z" />
-      </symbol>
-      <symbol id="icon-path" viewBox="0 0 32 32">
-        <path class="path1"
-          d="M22.47 3.364S11.08-1.214 4.348 6.406c-5.184 7.08.116 13.618.116 13.618l3.52-3.132s-2.63-3.134-.58-6.616c2.708-4.372 8.164-4.024 8.164-4.024s8.7-.04 8.546 7.388c-.968 6.692-8.162 4.528-8.162 4.528V9.77h-4.87v14.78c-.694 1.942-2.446 1.18-3.752-.156v4.372s2.63 1.972 5.494.93c2.862-1.046 3.17-3.442 3.17-3.442v-4.336s8.084 3.21 12.26-5.454c3.02-9.516-5.784-13.1-5.784-13.1z" />
-      </symbol>
-      <symbol id="icon-polldaddy" viewBox="0 0 32 32">
-        <path class="path1"
-          d="M16 2C8.282 2 2 8.282 2 16c0 7.72 6.282 14 14 14 7.72 0 14-6.28 14-14 0-7.718-6.28-14-14-14zm1.388 2.352c3.306.118 6.52 1.752 8.676 4.39.396.468.758.97 1.084 1.494a10.884 10.884 0 00-8.532-4.116c-3.3 0-6.254 1.466-8.254 3.784-.008.004-.014.014-.022.02l-.214.222-.044.046a8.572 8.572 0 00-2.286 5.83c0 4.742 3.858 8.6 8.6 8.6.798 0 1.572-.114 2.308-.318-2.588 1.174-5.784 1.046-8.296-.454-2.578-1.524-4.44-4.356-4.806-7.438-.412-3.086.676-6.366 2.964-8.62 2.246-2.292 5.522-3.604 8.822-3.44zm4.722 11.926c-.068-2.834-2.222-5.444-4.962-5.844-2.698-.48-5.484 1.2-6.232 3.726a5.138 5.138 0 00.28 3.714c.546 1.12 1.494 2.032 2.652 2.462 2.33.916 5.082-.378 5.842-2.608.83-2.212-.554-4.792-2.716-5.286-2.128-.57-4.426 1.06-4.486 3.14a3.303 3.303 0 001.054 2.63 2.97 2.97 0 002.62.74 2.893 2.893 0 002.056-1.588 2.678 2.678 0 00-.122-2.474c-.416-.718-1.202-1.208-2-1.234a2.38 2.38 0 00-2.012.95 2.135 2.135 0 00-.252 2.084c.006.016.014.03.022.042a2.207 2.207 0 002.054 1.564 2.267 2.267 0 01-1.358-.256c-.652-.342-1.132-1.046-1.25-1.806-.116-.762.126-1.592.698-2.154a2.818 2.818 0 014.336.354c.51.694.714 1.618.536 2.482-.162.868-.74 1.644-1.53 2.12-.78.476-1.77.636-2.68.4-.91-.226-1.716-.848-2.218-1.688a3.957 3.957 0 01-.476-2.84c.2-.98.802-1.85 1.646-2.454 1.67-1.236 4.278-1.052 5.748.576 1.548 1.54 1.858 4.238.568 6.12-1.228 1.926-3.836 2.92-6.124 2.232-2.294-.628-4.078-2.91-4.244-5.394a6.253 6.253 0 01.816-3.608c.626-1.09 1.62-2.006 2.764-2.608 2.296-1.232 5.342-1.04 7.488.594 1.752 1.294 2.916 3.388 3.13 5.612l.002.042c0 4.06-3.302 7.364-7.364 7.364a7.318 7.318 0 01-2.726-.526 7.022 7.022 0 003.658-.11 6.94 6.94 0 003.52-2.452c.866-1.16 1.33-2.606 1.262-4.018zM16 28.758C8.966 28.758 3.244 23.036 3.244 16c0-6.704 5.198-12.212 11.776-12.714-.186.022-.372.05-.556.084-3.702.634-7.024 2.948-8.848 6.172-1.832 3.222-1.948 7.266-.42 10.538 1.478 3.276 4.554 5.818 8.086 6.374 3.496.616 7.186-.676 9.502-3.222 2.406-2.516 3.176-6.34 2.08-9.514-.816-2.534-2.766-4.664-5.18-5.664 4.784.832 8.644 4.51 8.644 9.494 0 1.406-.338 2.828-.92 4.152-2.096 4.178-6.42 7.058-11.408 7.058z" />
-      </symbol>
-      <symbol id="icon-search" viewBox="0 0 30 32">
-        <path class="path1"
-          d="M20.571 14.857q0-3.304-2.348-5.652t-5.652-2.348-5.652 2.348-2.348 5.652 2.348 5.652 5.652 2.348 5.652-2.348 2.348-5.652zm9.143 14.857q0 .929-.679 1.607T27.428 32q-.964 0-1.607-.679l-6.125-6.107q-3.196 2.214-7.125 2.214-2.554 0-4.884-.991t-4.018-2.679T.99 19.74t-.991-4.884.991-4.884 2.679-4.018 4.018-2.679 4.884-.991 4.884.991 4.018 2.679 2.679 4.018.991 4.884q0 3.929-2.214 7.125l6.125 6.125q.661.661.661 1.607z" />
-      </symbol>
-      <symbol id="icon-envelope-o" viewBox="0 0 32 32">
-        <path class="path1"
-          d="M29.714 26.857V13.143q-.571.643-1.232 1.179-4.786 3.679-7.607 6.036-.911.768-1.482 1.196t-1.545.866-1.83.438h-.036q-.857 0-1.83-.438t-1.545-.866-1.482-1.196q-2.821-2.357-7.607-6.036-.661-.536-1.232-1.179v13.714q0 .232.17.402t.402.17h26.286q.232 0 .402-.17t.17-.402zm0-18.768v-.438l-.009-.232-.054-.223-.098-.161-.161-.134-.25-.045H2.856q-.232 0-.402.17t-.17.402q0 3 2.625 5.071 3.446 2.714 7.161 5.661l.625.527q.518.438.821.67t.795.563.902.491.768.161h.036q.357 0 .768-.161t.902-.491.795-.563.821-.67.625-.527q3.714-2.946 7.161-5.661.964-.768 1.795-2.063t.83-2.348zM32 7.429v19.429q0 1.179-.839 2.018t-2.018.839H2.857q-1.179 0-2.018-.839T0 26.858V7.429Q0 6.25.839 5.411t2.018-.839h26.286q1.179 0 2.018.839T32 7.429z" />
-      </symbol>
-      <symbol id="icon-close" viewBox="0 0 25 32">
-        <path class="path1"
-          d="M23.179 23.607q0 .714-.5 1.214L20.25 27.25q-.5.5-1.214.5t-1.214-.5L12.572 22l-5.25 5.25q-.5.5-1.214.5t-1.214-.5l-2.429-2.429q-.5-.5-.5-1.214t.5-1.214l5.25-5.25-5.25-5.25q-.5-.5-.5-1.214t.5-1.214l2.429-2.429q.5-.5 1.214-.5t1.214.5l5.25 5.25 5.25-5.25q.5-.5 1.214-.5t1.214.5l2.429 2.429q.5.5.5 1.214t-.5 1.214l-5.25 5.25 5.25 5.25q.5.5.5 1.214z" />
-      </symbol>
-      <symbol id="icon-next" viewBox="0 0 32 32">
-        <path class="path1" d="M16 9.292l-1.354 1.354L20 16H6v2h14l-5.354 5.354L16 24.708 23.708 17z" />
-      </symbol>
-      <symbol id="icon-previous" viewBox="0 0 32 32">
-        <path class="path1" d="M16 9.292l1.354 1.354L12 16h14v2H12l5.354 5.354L16 24.708 8.292 17z" />
-      </symbol>
-      <symbol id="icon-arrow-down" viewBox="0 0 30 32">
-        <path class="path1"
-          d="M28.768 14.857q0 .946-.661 1.607L16.482 28.107q-.696.661-1.625.661-.946 0-1.607-.661L1.625 16.464q-.679-.643-.679-1.607 0-.946.679-1.625l1.321-1.339q.696-.661 1.625-.661.946 0 1.607.661l5.25 5.25V4.572q0-.929.679-1.607t1.607-.679H16q.929 0 1.607.679t.679 1.607v12.571l5.25-5.25q.661-.661 1.607-.661.929 0 1.625.661l1.339 1.339q.661.696.661 1.625z" />
-      </symbol>
-      <symbol id="icon-expand" viewBox="0 0 32 32">
-        <path class="path1" d="M22 12l-7 7-7-7-2 2 9 9 9-9z" />
-      </symbol>
-      <symbol id="icon-folder-open" viewBox="0 0 34 32">
-        <path class="path1"
-          d="M33.554 17q0 .554-.554 1.179l-6 7.071q-.768.911-2.152 1.545t-2.563.634H2.856q-.607 0-1.08-.232t-.473-.768q0-.554.554-1.179l6-7.071q.768-.911 2.152-1.545T12.572 16h19.429q.607 0 1.08.232t.473.768zm-6.125-6.143v2.857H12.572q-1.679 0-3.518.848t-2.929 2.134L.018 23.875q0-.071-.009-.223T0 23.429V6.286q0-1.643 1.179-2.821T4 2.286h5.714q1.643 0 2.821 1.179t1.179 2.821v.571h9.714q1.643 0 2.821 1.179t1.179 2.821z" />
-      </symbol>
-      <symbol id="icon-twitter" viewBox="0 0 1668.56 1221.19">
-        <path
-          d="M336.33 142.251l386.39 516.64-388.83 420.05h87.51l340.42-367.76 275.05 367.76h297.8l-408.13-545.7 361.92-390.99h-87.51l-313.51 338.7-253.31-338.7h-297.8zm128.69 64.46h136.81l604.13 807.76h-136.81l-604.13-807.76z" />
-      </symbol>
-      <symbol id="icon-facebook" viewBox="0 0 19 32">
-        <path class="path1"
-          d="M17.125.214v4.714h-2.804q-1.536 0-2.071.643T11.714 7.5v3.375h5.232l-.696 5.286h-4.536v13.554H6.25V16.161H1.696v-5.286H6.25V6.982q0-3.321 1.857-5.152T13.053 0q2.625 0 4.071.214z" />
-      </symbol>
-      <symbol id="icon-github" viewBox="0 0 27 32">
-        <path class="path1"
-          d="M13.714 2.286q3.732 0 6.884 1.839t4.991 4.991T27.428 16q0 4.482-2.616 8.063t-6.759 4.955q-.482.089-.714-.125t-.232-.536l.009-1.366q.009-1.312.009-2.402 0-1.732-.929-2.536 1.018-.107 1.83-.321t1.679-.696 1.446-1.188.946-1.875.366-2.688q0-2.125-1.411-3.679.661-1.625-.143-3.643-.5-.161-1.446.196t-1.643.786l-.679.429q-1.661-.464-3.429-.464t-3.429.464q-.286-.196-.759-.482t-1.491-.688-1.518-.241q-.804 2.018-.143 3.643-1.411 1.554-1.411 3.679 0 1.518.366 2.679t.938 1.875 1.438 1.196 1.679.696 1.83.321q-.696.643-.875 1.839-.375.179-.804.268t-1.018.089-1.17-.384-.991-1.116q-.339-.571-.866-.929t-.884-.429l-.357-.054q-.375 0-.518.08t-.089.205.161.25.232.214l.125.089q.393.179.777.679t.563.911l.179.411q.232.679.786 1.098t1.196.536 1.241.125.991-.063l.411-.071q0 .679.009 1.58t.009.973q0 .321-.232.536t-.714.125q-4.143-1.375-6.759-4.955t-2.616-8.063q0-3.732 1.839-6.884t4.991-4.991 6.884-1.839zM5.196 21.982q.054-.125-.125-.214-.179-.054-.232.036-.054.125.125.214.161.107.232-.036zm.554.607q.125-.089-.036-.286-.179-.161-.286-.054-.125.089.036.286.179.179.286.054zm.536.804q.161-.125 0-.339-.143-.232-.304-.107-.161.089 0 .321t.304.125zm.75.75q.143-.143-.071-.339-.214-.214-.357-.054-.161.143.071.339.214.214.357.054zm1.018.446q.054-.196-.232-.286-.268-.071-.339.125t.232.268q.268.107.339-.107zm1.125.09q0-.232-.304-.196-.286 0-.286.196 0 .232.304.196.286 0 .286-.196zm1.035-.179q-.036-.196-.321-.161-.286.054-.25.268t.321.143.25-.25z" />
-      </symbol>
-      <symbol id="icon-bars" viewBox="0 0 27 32">
-        <path class="path1"
-          d="M27.429 24v2.286q0 .464-.339.804t-.804.339H1.143q-.464 0-.804-.339T0 26.286V24q0-.464.339-.804t.804-.339h25.143q.464 0 .804.339t.339.804zm0-9.143v2.286q0 .464-.339.804t-.804.339H1.143q-.464 0-.804-.339T0 17.143v-2.286q0-.464.339-.804t.804-.339h25.143q.464 0 .804.339t.339.804zm0-9.143V8q0 .464-.339.804t-.804.339H1.143q-.464 0-.804-.339T0 8V5.714q0-.464.339-.804t.804-.339h25.143q.464 0 .804.339t.339.804z" />
-      </symbol>
-      <symbol id="icon-google-plus" viewBox="0 0 41 32">
-        <path class="path1"
-          d="M25.661 16.304q0 3.714-1.554 6.616t-4.429 4.536-6.589 1.634q-2.661 0-5.089-1.036t-4.179-2.786-2.786-4.179T-.001 16t1.036-5.089 2.786-4.179T8 3.946t5.089-1.036q5.107 0 8.768 3.429L18.303 9.75q-2.089-2.018-5.214-2.018-2.196 0-4.063 1.107t-2.955 3.009T4.982 16t1.089 4.152 2.955 3.009 4.063 1.107q1.482 0 2.723-.411t2.045-1.027 1.402-1.402.875-1.482.384-1.321h-7.429v-4.5h12.357q.214 1.125.214 2.179zm15.482-2.179v3.75h-3.732v3.732h-3.75v-3.732h-3.732v-3.75h3.732v-3.732h3.75v3.732h3.732z" />
-      </symbol>
-      <symbol id="icon-linkedin" viewBox="0 0 27 32">
-        <path class="path1"
-          d="M6.232 11.161v17.696H.339V11.161h5.893zm.375-5.465Q6.625 7 5.705 7.875t-2.42.875h-.036q-1.464 0-2.357-.875t-.893-2.179q0-1.321.92-2.188t2.402-.866 2.375.866.911 2.188zm20.822 13.018v10.143h-5.875v-9.464q0-1.875-.723-2.938t-2.259-1.063q-1.125 0-1.884.616t-1.134 1.527q-.196.536-.196 1.446v9.875H9.483q.036-7.125.036-11.554t-.018-5.286l-.018-.857h5.875v2.571h-.036q.357-.571.732-1t1.009-.929 1.554-.777 2.045-.277q3.054 0 4.911 2.027t1.857 5.938z" />
-      </symbol>
-      <symbol id="icon-quote-right" viewBox="0 0 30 32">
-        <path class="path1"
-          d="M13.714 5.714v12.571q0 1.857-.723 3.545t-1.955 2.92-2.92 1.955-3.545.723H3.428q-.464 0-.804-.339t-.339-.804v-2.286q0-.464.339-.804t.804-.339h1.143q1.893 0 3.232-1.339t1.339-3.232v-.571q0-.714-.5-1.214T7.428 16h-4q-1.429 0-2.429-1t-1-2.429V5.714q0-1.429 1-2.429t2.429-1h6.857q1.429 0 2.429 1t1 2.429zm16 0v12.571q0 1.857-.723 3.545t-1.955 2.92-2.92 1.955-3.545.723h-1.143q-.464 0-.804-.339t-.339-.804v-2.286q0-.464.339-.804t.804-.339h1.143q1.893 0 3.232-1.339t1.339-3.232v-.571q0-.714-.5-1.214t-1.214-.5h-4q-1.429 0-2.429-1t-1-2.429V5.714q0-1.429 1-2.429t2.429-1h6.857q1.429 0 2.429 1t1 2.429z" />
-      </symbol>
-      <symbol id="icon-mail-reply" viewBox="0 0 32 32">
-        <path class="path1"
-          d="M32 20q0 2.964-2.268 8.054l-.188.429q-.134.304-.241.536t-.232.393q-.214.304-.5.304-.268 0-.42-.179t-.152-.446q0-.161.045-.473t.045-.42q.089-1.214.089-2.196 0-1.804-.313-3.232t-.866-2.473-1.429-1.804-1.884-1.241-2.375-.759-2.75-.384-3.134-.107h-4v4.571q0 .464-.339.804t-.804.339-.804-.339L.337 12.234q-.339-.339-.339-.804t.339-.804L9.48 1.483q.339-.339.804-.339t.804.339.339.804v4.571h4q12.732 0 15.625 7.196.946 2.393.946 5.946z" />
-      </symbol>
-      <symbol id="icon-youtube" viewBox="0 0 27 32">
-        <path class="path1"
-          d="M17.339 22.214v3.768q0 1.196-.696 1.196-.411 0-.804-.393V21.41q.393-.393.804-.393.696 0 .696 1.196zm6.036.018v.821h-1.607v-.821q0-1.214.804-1.214t.804 1.214zm-17.25-3.893h1.911V16.66H2.465v1.679H4.34V28.5h1.786V18.339zM11.268 28.5h1.589v-8.821h-1.589v6.75q-.536.75-1.018.75-.321 0-.375-.375-.018-.054-.018-.625v-6.5H8.268v6.982q0 .875.143 1.304.214.661 1.036.661.857 0 1.821-1.089v.964zm7.661-2.643v-3.518q0-1.304-.161-1.768-.304-1-1.268-1-.893 0-1.661.964V16.66H14.25v11.839h1.589v-.857q.804.982 1.661.982.964 0 1.268-.982.161-.482.161-1.786zm6.035-.178v-.232h-1.625q0 .911-.036 1.089-.125.643-.714.643-.821 0-.821-1.232v-1.554h3.196v-1.839q0-1.411-.482-2.071-.696-.911-1.893-.911-1.214 0-1.911.911-.5.661-.5 2.071v3.089q0 1.411.518 2.071.696.911 1.929.911 1.286 0 1.929-.946.321-.482.375-.964.036-.161.036-1.036zM14.107 9.375v-3.75q0-1.232-.768-1.232t-.768 1.232v3.75q0 1.25.768 1.25t.768-1.25zm12.839 13.411q0 4.179-.464 6.25-.25 1.054-1.036 1.768t-1.821.821Q20.339 32 13.714 32t-9.911-.375q-1.036-.107-1.83-.821T.946 29.036q-.464-2-.464-6.25 0-4.179.464-6.25.25-1.054 1.036-1.768t1.839-.839q3.268-.357 9.893-.357t9.911.357q1.036.125 1.83.839t1.027 1.768q.464 2 .464 6.25zM9.125 0h1.821L8.785 7.125v4.839H6.999V7.125q-.25-1.321-1.089-3.786Q5.249 1.5 4.749 0h1.893L7.91 4.696zm6.607 5.946v3.125q0 1.446-.5 2.107-.661.911-1.893.911-1.196 0-1.875-.911-.5-.679-.5-2.107V5.946q0-1.429.5-2.089.679-.911 1.875-.911 1.232 0 1.893.911.5.661.5 2.089zm5.982-2.892v8.911h-1.625v-.982q-.946 1.107-1.839 1.107-.821 0-1.054-.661-.143-.429-.143-1.339V3.054h1.625v6.554q0 .589.018.625.054.393.375.393.482 0 1.018-.768V3.054h1.625z" />
-      </symbol>
-      <symbol id="icon-dropbox" viewBox="0 0 32 32">
-        <path class="path1"
-          d="M7.179 12.625L16 18.071 9.893 23.16l-8.75-5.696zm17.607 9.911v1.929l-8.75 5.232v.018l-.018-.018-.018.018v-.018l-8.732-5.232v-1.929l2.625 1.714L16 19.179v-.036l.018.018.018-.018v.036l6.125 5.071zM9.893 2.107L16 7.196l-8.821 5.429-6.036-4.821zm14.928 10.518l6.036 4.839-8.732 5.696L16 18.071zM22.125 2.107l8.732 5.696-6.036 4.821L16 7.195z" />
-      </symbol>
-      <symbol id="icon-instagram" viewBox="0 0 27 32">
-        <path class="path1"
-          d="M18.286 16q0-1.893-1.339-3.232t-3.232-1.339-3.232 1.339T9.144 16t1.339 3.232 3.232 1.339 3.232-1.339T18.286 16zm2.464 0q0 2.929-2.054 4.982t-4.982 2.054-4.982-2.054T6.678 16t2.054-4.982 4.982-2.054 4.982 2.054T20.75 16zm1.929-7.321q0 .679-.482 1.161t-1.161.482-1.161-.482-.482-1.161.482-1.161 1.161-.482 1.161.482.482 1.161zM13.714 4.75l-1.366-.009q-1.241-.009-1.884 0t-1.723.054-1.839.179-1.277.33q-.893.357-1.571 1.036T3.018 7.911q-.196.518-.33 1.277t-.179 1.839-.054 1.723 0 1.884T2.464 16t-.009 1.366 0 1.884.054 1.723.179 1.839.33 1.277q.357.893 1.036 1.571t1.571 1.036q.518.196 1.277.33t1.839.179 1.723.054 1.884 0 1.366-.009 1.366.009 1.884 0 1.723-.054 1.839-.179 1.277-.33q.893-.357 1.571-1.036t1.036-1.571q.196-.518.33-1.277t.179-1.839.054-1.723 0-1.884T24.964 16t.009-1.366 0-1.884-.054-1.723-.179-1.839-.33-1.277q-.357-.893-1.036-1.571t-1.571-1.036q-.518-.196-1.277-.33t-1.839-.179-1.723-.054-1.884 0-1.366.009zM27.429 16q0 4.089-.089 5.661-.179 3.714-2.214 5.75t-5.75 2.214q-1.571.089-5.661.089t-5.661-.089q-3.714-.179-5.75-2.214T.09 21.661Q.001 20.09.001 16t.089-5.661q.179-3.714 2.214-5.75t5.75-2.214q1.571-.089 5.661-.089t5.661.089q3.714.179 5.75 2.214t2.214 5.75q.089 1.571.089 5.661z" />
-      </symbol>
-      <symbol id="icon-flickr" viewBox="0 0 27 32">
-        <path class="path1"
-          d="M22.286 2.286q2.125 0 3.634 1.509t1.509 3.634v17.143q0 2.125-1.509 3.634t-3.634 1.509H5.143q-2.125 0-3.634-1.509T0 24.572V7.429q0-2.125 1.509-3.634t3.634-1.509h17.143zM12.464 16q0-1.571-1.107-2.679t-2.679-1.107-2.679 1.107T4.892 16t1.107 2.679 2.679 1.107 2.679-1.107T12.464 16zm10.072 0q0-1.571-1.107-2.679t-2.679-1.107-2.679 1.107T14.964 16t1.107 2.679 2.679 1.107 2.679-1.107T22.536 16z" />
-      </symbol>
-      <symbol id="icon-tumblr" viewBox="0 0 19 32">
-        <path class="path1"
-          d="M16.857 23.732l1.429 4.232q-.411.625-1.982 1.179t-3.161.571q-1.857.036-3.402-.464t-2.545-1.321T5.5 26.036t-.991-2.143-.295-2.107v-9.714h-3V8.233Q2.5 7.769 3.518 6.992t1.625-1.607 1.036-1.821.607-1.768.268-1.58q.018-.089.08-.152t.134-.063h4.357v7.571h5.946v4.5h-5.964v9.25q0 .536.116 1t.402.938.884.741 1.455.25q1.393-.036 2.393-.518z" />
-      </symbol>
-      <symbol id="icon-dribbble" viewBox="0 0 27 32">
-        <path class="path1"
-          d="M18.286 26.786q-.75-4.304-2.5-8.893h-.036l-.036.018q-.286.107-.768.295t-1.804.875-2.446 1.464-2.339 2.045-1.839 2.643l-.268-.196q3.286 2.679 7.464 2.679 2.357 0 4.571-.929zm-3.304-10.84q-.375-.875-.946-1.982-5.554 1.661-12.018 1.661Q2 15.75 2 16q0 2.214.786 4.223T5 23.821q.893-1.589 2.205-2.973t2.545-2.223 2.33-1.446 1.777-.857l.661-.232q.071-.018.232-.063t.232-.08zm-1.911-3.785q-2.143-3.804-4.357-6.75Q6.25 6.572 4.535 8.732t-2.286 4.857q5.393 0 10.821-1.429zm12.215 5.696q-3.75-1.071-7.304-.518 1.554 4.268 2.286 8.375 1.982-1.339 3.304-3.384t1.714-4.473zM10.911 4.625q-.018 0-.036.018.018-.018.036-.018zm10.535 2.589q-3.304-2.929-7.732-2.929-1.357 0-2.768.339 2.339 3.036 4.393 6.821 1.232-.464 2.321-1.08t1.723-1.098 1.17-1.018.67-.723zm3.983 8.661q-.054-4.143-2.661-7.321l-.018.018q-.161.214-.339.438t-.777.795-1.268 1.08-1.786 1.161-2.348 1.152q.446.946.786 1.696.036.107.116.313t.134.295q.643-.089 1.33-.125t1.313-.036 1.232.027 1.143.071 1.009.098.857.116.652.107.446.08zm2 .125q0 3.732-1.839 6.884t-4.991 4.991-6.884 1.839-6.884-1.839-4.991-4.991T.001 16 1.84 9.116t4.991-4.991 6.884-1.839 6.884 1.839 4.991 4.991T27.429 16z" />
-      </symbol>
-      <symbol id="icon-skype" viewBox="0 0 27 32">
-        <path class="path1"
-          d="M20.946 18.982q0-.893-.348-1.634t-.866-1.223-1.304-.875-1.473-.607-1.563-.411l-1.857-.429q-.536-.125-.786-.188t-.625-.205-.536-.286-.295-.375-.134-.536q0-1.375 2.571-1.375.768 0 1.375.214t.964.509.679.598.714.518.857.214q.839 0 1.348-.571t.509-1.375q0-.982-1-1.777T16.64 7.963t-3.25-.411q-1.214 0-2.357.277t-2.134.839-1.589 1.554-.598 2.295q0 1.089.339 1.902t1 1.348 1.429.866 1.839.58l2.607.643q1.607.393 2 .643.571.357.571 1.071 0 .696-.714 1.152t-1.875.455q-.911 0-1.634-.286t-1.161-.688-.813-.804-.821-.688-.964-.286q-.893 0-1.348.536T6.712 20.3q0 1.643 2.179 2.813t5.196 1.17q1.304 0 2.5-.33t2.188-.955 1.58-1.67.589-2.348zm6.483 3.875q0 2.839-2.009 4.848t-4.848 2.009q-2.321 0-4.179-1.429-1.375.286-2.679.286-2.554 0-4.884-.991t-4.018-2.679-2.679-4.018-.991-4.884q0-1.304.286-2.679-1.429-1.857-1.429-4.179 0-2.839 2.009-4.848t4.848-2.009q2.321 0 4.179 1.429 1.375-.286 2.679-.286 2.554 0 4.884.991t4.018 2.679 2.679 4.018.991 4.884q0 1.304-.286 2.679 1.429 1.857 1.429 4.179z" />
-      </symbol>
-      <symbol id="icon-foursquare" viewBox="0 0 23 32">
-        <path class="path1"
-          d="M17.857 7.75l.661-3.464q.089-.411-.161-.714t-.625-.304H5.018q-.411 0-.688.304t-.277.661v19.661q0 .125.107.018l5.196-6.286q.411-.464.679-.598t.857-.134h4.268q.393 0 .661-.259t.321-.527q.429-2.321.661-3.411.071-.375-.205-.714t-.652-.339h-5.25q-.518 0-.857-.339t-.339-.857v-.75q0-.518.339-.848t.857-.33h6.179q.321 0 .625-.241t.357-.527zm4.054-3.964q-.268 1.304-.955 4.759t-1.241 6.25-.625 3.098q-.107.393-.161.58t-.25.58-.438.589-.688.375-1.036.179h-4.839q-.232 0-.393.179-.143.161-7.607 8.821-.393.446-1.045.509t-.866-.098q-.982-.393-.982-1.75V2.678q0-.982.679-1.83T3.607 0h15.857q1.696 0 2.268.946t.179 2.839zm0 0L19.09 17.893q.071-.304.625-3.098t1.241-6.25.955-4.759z" />
-      </symbol>
-      <symbol id="icon-wordpress" viewBox="0 0 32 32">
-        <path class="path1"
-          d="M2.268 16q0-2.911 1.196-5.589l6.554 17.946q-3.5-1.696-5.625-5.018T2.268 16zm23-.696q0 .339-.045.688t-.179.884-.205.786-.313 1.054-.313 1.036l-1.357 4.571-4.964-14.75q.821-.054 1.571-.143.339-.036.464-.33t-.045-.554-.509-.241l-3.661.179q-1.339-.018-3.607-.179-.214-.018-.366.089t-.205.268-.027.33.161.295.348.143l1.429.143 2.143 5.857-3 9-5-14.857q.821-.054 1.571-.143.339-.036.464-.33t-.045-.554-.509-.241l-3.661.179q-.125 0-.411-.009t-.464-.009q1.875-2.857 4.902-4.527t6.563-1.67q2.625 0 5.009.946t4.259 2.661h-.179q-.982 0-1.643.723t-.661 1.705q0 .214.036.429t.071.384.143.411.161.375.214.402.223.375.259.429.25.411q1.125 1.911 1.125 3.786zm-9.036 1.892l4.232 11.554q.018.107.089.196-2.25.786-4.554.786-2 0-3.875-.571zm11.804-7.785q1.696 3.107 1.696 6.589 0 3.732-1.857 6.884t-4.982 4.973l4.196-12.107q1.054-3.018 1.054-4.929 0-.75-.107-1.411zM16 0q3.25 0 6.214 1.268t5.107 3.411 3.411 5.107T32 16t-1.268 6.214-3.411 5.107-5.107 3.411T16 32t-6.214-1.268-5.107-3.411-3.411-5.107T0 16t1.268-6.214 3.411-5.107 5.107-3.411T16 0zm0 31.268q3.089 0 5.92-1.214t4.875-3.259 3.259-4.875T31.268 16t-1.214-5.92-3.259-4.875-4.875-3.259T16 .732t-5.92 1.214-4.875 3.259-3.259 4.875T.732 16t1.214 5.92 3.259 4.875 4.875 3.259T16 31.268z" />
-      </symbol>
-      <symbol id="icon-stumbleupon" viewBox="0 0 34 32">
-        <path class="path1"
-          d="M18.964 12.714v-2.107q0-.75-.536-1.286t-1.286-.536-1.286.536-.536 1.286v10.929q0 3.125-2.25 5.339t-5.411 2.214q-3.179 0-5.42-2.241t-2.241-5.42v-4.75h5.857v4.679q0 .768.536 1.295t1.286.527 1.286-.527.536-1.295V10.286q0-3.054 2.259-5.214t5.384-2.161q3.143 0 5.393 2.179t2.25 5.25v2.429l-3.482 1.036zm9.465 3.965h5.857v4.75q0 3.179-2.241 5.42t-5.42 2.241q-3.161 0-5.411-2.223t-2.25-5.366v-4.786l2.339 1.089 3.482-1.036v4.821q0 .75.536 1.277t1.286.527 1.286-.527.536-1.277v-4.911z" />
-      </symbol>
-      <symbol id="icon-digg" viewBox="0 0 37 32">
-        <path class="path1"
-          d="M5.857 5.036H9.5V22.59H0V10.144h5.857V5.037zm0 14.625v-6.589H3.661v6.589h2.196zm5.107-9.518v12.446h3.661V10.143h-3.661zm0-5.107v3.643h3.661V5.036h-3.661zm5.125 5.107h9.518v16.821h-9.518v-2.911h5.857v-1.464h-5.857V10.143zm5.857 9.518v-6.589H19.75v6.589h2.196zm5.125-9.518h9.5v16.821h-9.5v-2.911h5.839v-1.464h-5.839V10.143zm5.84 9.518v-6.589h-2.196v6.589h2.196z" />
-      </symbol>
-      <symbol id="icon-spotify" viewBox="0 0 27 32">
-        <path class="path1"
-          d="M20.125 21.607q0-.571-.536-.911-3.446-2.054-7.982-2.054-2.375 0-5.125.607-.75.161-.75.929 0 .357.241.616t.634.259q.089 0 .661-.143 2.357-.482 4.339-.482 4.036 0 7.089 1.839.339.196.589.196.339 0 .589-.241t.25-.616zm1.714-3.839q0-.714-.625-1.089-4.232-2.518-9.786-2.518-2.732 0-5.411.75-.857.232-.857 1.143 0 .446.313.759t.759.313q.125 0 .661-.143 2.179-.589 4.482-.589 4.982 0 8.714 2.214.429.232.679.232.446 0 .759-.313t.313-.759zm1.929-4.429q0-.839-.714-1.25-2.25-1.304-5.232-1.973t-6.125-.67q-3.643 0-6.5.839-.411.125-.688.455t-.277.866q0 .554.366.929t.92.375q.196 0 .714-.143 2.375-.661 5.482-.661 2.839 0 5.527.607t4.527 1.696q.375.214.714.214.518 0 .902-.366t.384-.92zM27.429 16q0 3.732-1.839 6.884t-4.991 4.991-6.884 1.839-6.884-1.839-4.991-4.991T.001 16 1.84 9.116t4.991-4.991 6.884-1.839 6.884 1.839 4.991 4.991T27.429 16z" />
-      </symbol>
-      <symbol id="icon-soundcloud" viewBox="0 0 41 32">
-        <path class="path1"
-          d="M14 24.5l.286-4.304L14 10.857q-.018-.179-.134-.304t-.295-.125q-.161 0-.286.125t-.125.304l-.25 9.339.25 4.304q.018.179.134.295t.277.116q.393 0 .429-.411zm5.286-.518l.196-3.768-.214-10.464q0-.286-.232-.429-.143-.089-.286-.089t-.286.089q-.232.143-.232.429l-.018.107-.179 10.339.196 4.214v.018q0 .179.107.304.161.196.411.196.196 0 .357-.161.161-.125.161-.357zM.625 17.911l.357 2.286-.357 2.25q-.036.161-.161.161t-.161-.161l-.304-2.25.304-2.286q.036-.161.161-.161t.161.161zM2.161 16.5l.464 3.696-.464 3.625q-.036.161-.179.161-.161 0-.161-.179l-.411-3.607.411-3.696q0-.161.161-.161.143 0 .179.161zm1.643-.679l.446 4.375-.446 4.232q0 .196-.196.196-.179 0-.214-.196l-.375-4.232.375-4.375q.036-.214.214-.214.196 0 .196.214zm1.678-.125l.411 4.5-.411 4.357q-.036.232-.25.232-.232 0-.232-.232l-.375-4.357.375-4.5q0-.232.232-.232.214 0 .25.232zm1.679.322l.375 4.179-.375 4.393q-.036.286-.286.286-.107 0-.188-.08t-.08-.205l-.357-4.393.357-4.179q0-.107.08-.188t.188-.08q.25 0 .286.268zm1.678-2.607l.375 6.786-.375 4.393q0 .125-.089.223t-.214.098q-.286 0-.321-.321l-.321-4.393.321-6.786q.036-.321.321-.321.125 0 .214.098t.089.223zm1.679-1.536l.339 8.357-.339 4.357q0 .143-.098.241t-.241.098q-.321 0-.357-.339l-.286-4.357.286-8.357q.036-.339.357-.339.143 0 .241.098t.098.241zm1.75-.714l.321 9.036-.321 4.321q-.036.375-.393.375-.339 0-.375-.375l-.286-4.321.286-9.036q0-.161.116-.277t.259-.116q.161 0 .268.116t.125.277zm7 13.25zm-3.536-13.322L16 20.196l-.268 4.268q0 .179-.134.313t-.313.134-.304-.125-.143-.321l-.25-4.268.25-9.107q0-.196.134-.321t.313-.125.313.125.134.321zm1.768.34l.25 8.786-.25 4.214q0 .196-.143.339t-.339.143-.339-.143-.161-.339l-.214-4.214.214-8.786q.018-.214.161-.357t.339-.143.33.143.152.357zm3.786 8.785l-.25 4.125q0 .232-.161.393t-.393.161-.393-.161-.179-.393l-.107-2.036-.107-2.089.214-11.357v-.054q.036-.268.214-.429.161-.125.357-.125.143 0 .268.089.25.143.286.464zm19.857-.339q0 2.089-1.482 3.563t-3.571 1.473H22.054q-.232-.036-.393-.196t-.161-.393V8.268q0-.411.5-.589 1.518-.607 3.232-.607 3.482 0 6.036 2.348t2.857 5.777q.946-.393 1.964-.393 2.089 0 3.571 1.482t1.482 3.589z" />
-      </symbol>
-      <symbol id="icon-codepen" viewBox="0 0 32 32">
-        <path class="path1"
-          d="M3.857 20.875l10.768 7.179v-6.411l-5.964-3.982zM2.75 18.304L6.196 16 2.75 13.696v4.607zm14.625 9.75l10.768-7.179-4.804-3.214-5.964 3.982v6.411zM16 19.25L20.857 16 16 12.75 11.143 16zm-7.339-4.911l5.964-3.982V3.946L3.857 11.125zM25.804 16l3.446 2.304v-4.607zm-2.465-1.661l4.804-3.214-10.768-7.179v6.411zM32 11.125v9.75q0 .732-.607 1.143l-14.625 9.75Q16.393 32 16 32t-.768-.232L.607 22.018Q0 21.607 0 20.875v-9.75q0-.732.607-1.143L15.232.232Q15.607 0 16 0t.768.232l14.625 9.75q.607.411.607 1.143z" />
-      </symbol>
-      <symbol id="icon-twitch" viewBox="0 0 32 32">
-        <path class="path1"
-          d="M16 7.75v7.75h-2.589V7.75H16zm7.107 0v7.75h-2.589V7.75h2.589zm0 13.571l4.518-4.536V2.589H6.304v18.732h5.821v3.875L16 21.321h7.107zM30.214 0v18.089l-7.75 7.75h-5.821l-3.875 3.875H8.893v-3.875H1.786V5.16L3.732-.001h26.482z" />
-      </symbol>
-      <symbol id="icon-meanpath" viewBox="0 0 27 32">
-        <path class="path1"
-          d="M23.411 15.036v2.036q0 .429-.241.679t-.67.25h-3.607q-.429 0-.679-.25t-.25-.679v-2.036q0-.429.25-.679t.679-.25H22.5q.429 0 .67.25t.241.679zm-8.75 4.107v-4.464q0-.946-.58-1.527t-1.527-.58h-2.375q-1.214 0-1.714.929-.5-.929-1.714-.929H4.43q-.946 0-1.527.58t-.58 1.527v4.464q0 .393.375.393h.982q.393 0 .393-.393v-4.107q0-.429.241-.679t.688-.25h1.679q.429 0 .679.25t.25.679v4.107q0 .393.375.393h.964q.393 0 .393-.393v-4.107q0-.429.25-.679t.679-.25h1.732q.429 0 .67.25t.241.679v4.107q0 .393.393.393h.982q.375 0 .375-.393zm10.518-1.714v-2.75q0-.946-.589-1.527t-1.536-.58H18.34q-.946 0-1.536.58t-.589 1.527V22q0 .375.393.375h.982q.375 0 .375-.375v-3.214q.554.75 1.679.75h3.411q.946 0 1.536-.58t.589-1.527zm2.25-11v19.143q0 1.714-1.214 2.929t-2.929 1.214H4.143q-1.714 0-2.929-1.214T0 25.572V6.429Q0 4.715 1.214 3.5t2.929-1.214h19.143q1.714 0 2.929 1.214t1.214 2.929z" />
-      </symbol>
-      <symbol id="icon-pinterest-p" viewBox="0 0 23 32">
-        <path class="path1"
-          d="M0 10.661q0-1.929.67-3.634t1.848-2.973 2.714-2.196T8.536.465t3.607-.464q2.821 0 5.25 1.188t3.946 3.455 1.518 5.125q0 1.714-.339 3.357t-1.071 3.161-1.786 2.67-2.589 1.839-3.375.688q-1.214 0-2.411-.571t-1.714-1.571q-.179.696-.5 2.009t-.42 1.696-.366 1.268-.464 1.268-.571 1.116-.821 1.384-1.107 1.545l-.25.089-.161-.179q-.268-2.804-.268-3.357 0-1.643.384-3.688t1.188-5.134.929-3.625q-.571-1.161-.571-3.018 0-1.482.929-2.786T9.86 6.626q1.089 0 1.696.723t.607 1.83q0 1.179-.786 3.411t-.786 3.339q0 1.125.804 1.866t1.946.741q.982 0 1.821-.446t1.402-1.214 1-1.696.679-1.973.357-1.982.116-1.777q0-3.089-1.955-4.813t-5.098-1.723q-3.571 0-5.964 2.313t-2.393 5.866q0 .786.223 1.518t.482 1.161.482.813.223.545q0 .5-.268 1.304t-.661.804q-.036 0-.304-.054-.911-.268-1.616-1T.778 14.494t-.58-1.929-.196-1.902z" />
-      </symbol>
-      <symbol id="icon-get-pocket" viewBox="0 0 31 32">
-        <path class="path1"
-          d="M27.946 2.286q1.161 0 1.964.813t.804 1.973v9.268q0 3.143-1.214 6t-3.259 4.911-4.893 3.259-5.973 1.205q-3.143 0-5.991-1.205t-4.902-3.259-3.268-4.911-1.214-6V5.072q0-1.143.821-1.964t1.964-.821h25.161zm-12.571 19q.839 0 1.464-.589l7.214-6.929q.661-.625.661-1.518 0-.875-.616-1.491t-1.491-.616q-.839 0-1.464.589l-5.768 5.536-5.768-5.536q-.625-.589-1.446-.589-.875 0-1.491.616t-.616 1.491q0 .911.643 1.518l7.232 6.929q.589.589 1.446.589z" />
-      </symbol>
-      <symbol id="icon-vimeo" viewBox="0 0 32 32">
-        <path class="path1"
-          d="M30.518 9.25q-.179 4.214-5.929 11.625-5.946 7.696-10.036 7.696-2.536 0-4.286-4.696-.786-2.857-2.357-8.607-1.286-4.679-2.804-4.679-.321 0-2.268 1.357l-1.375-1.75q.429-.375 1.929-1.723T5.713 6.41q2.786-2.464 4.304-2.607 1.696-.161 2.732.991t1.446 3.634q.786 5.125 1.179 6.661.982 4.446 2.143 4.446.911 0 2.75-2.875 1.804-2.875 1.946-4.393.232-2.482-1.946-2.482-1.018 0-2.161.464 2.143-7.018 8.196-6.821 4.482.143 4.214 5.821z" />
-      </symbol>
-      <symbol id="icon-reddit-alien" viewBox="0 0 32 32">
-        <path class="path1"
-          d="M32 15.107q0 1.036-.527 1.884t-1.42 1.295q.214.821.214 1.714 0 2.768-1.902 5.125t-5.188 3.723-7.143 1.366T8.9 28.848t-5.179-3.723T1.819 20q0-.839.196-1.679-.911-.446-1.464-1.313t-.554-1.902q0-1.464 1.036-2.509t2.518-1.045q1.518 0 2.589 1.125 3.893-2.714 9.196-2.893L17.407.48q.054-.232.268-.375t.464-.089l6.589 1.446q.321-.661.964-1.063t1.411-.402q1.107 0 1.893.777t.786 1.884-.786 1.893-1.893.786-1.884-.777-.777-1.884l-5.964-1.321-1.857 8.429q5.357.161 9.268 2.857 1.036-1.089 2.554-1.089 1.482 0 2.518 1.045t1.036 2.509zM7.464 18.661q0 1.107.777 1.893t1.884.786 1.893-.786.786-1.893-.786-1.884T10.125 16q-1.089 0-1.875.786t-.786 1.875zM21.929 25q.196-.196.196-.464t-.196-.464q-.179-.179-.446-.179t-.464.179q-.732.75-2.161 1.107t-2.857.357-2.857-.357-2.161-1.107q-.196-.179-.464-.179t-.446.179q-.196.179-.196.455t.196.473q.768.768 2.116 1.214t2.188.527 1.625.08 1.625-.08 2.188-.527T21.931 25zm-.054-3.661q1.107 0 1.884-.786t.777-1.893q0-1.089-.786-1.875t-1.875-.786q-1.107 0-1.893.777t-.786 1.884.786 1.893 1.893.786z" />
-      </symbol>
-      <symbol id="icon-hashtag" viewBox="0 0 32 32">
-        <path class="path1"
-          d="M17.696 18.286l1.143-4.571h-4.536l-1.143 4.571h4.536zm13.715-9l-1 4q-.125.429-.554.429h-5.839l-1.143 4.571h5.554q.268 0 .446.214.179.25.107.5l-1 4q-.089.429-.554.429h-5.839l-1.446 5.857q-.125.429-.554.429h-4q-.286 0-.464-.214-.161-.214-.107-.5l1.393-5.571h-4.536l-1.446 5.857q-.125.429-.554.429H5.857q-.268 0-.446-.214-.161-.214-.107-.5l1.393-5.571H1.143q-.268 0-.446-.214-.161-.214-.107-.5l1-4q.125-.429.554-.429h5.839l1.143-4.571H3.572q-.268 0-.446-.214-.179-.25-.107-.5l1-4q.089-.429.554-.429h5.839l1.446-5.857q.125-.429.571-.429h4q.268 0 .446.214.161.214.107.5l-1.393 5.571h4.536l1.446-5.857q.125-.429.571-.429h4q.268 0 .446.214.161.214.107.5l-1.393 5.571h5.554q.268 0 .446.214.161.214.107.5z" />
-      </symbol>
-      <symbol id="icon-chain" viewBox="0 0 30 32">
-        <path class="path1"
-          d="M26 21.714q0-.714-.5-1.214l-3.714-3.714q-.5-.5-1.214-.5-.75 0-1.286.571.054.054.339.33t.384.384.268.339.232.455.063.491q0 .714-.5 1.214t-1.214.5q-.268 0-.491-.063t-.455-.232-.339-.268-.384-.384-.33-.339q-.589.554-.589 1.304 0 .714.5 1.214l3.679 3.696q.482.482 1.214.482.714 0 1.214-.464l2.625-2.607q.5-.5.5-1.196zM13.446 9.125q0-.714-.5-1.214L9.267 4.215q-.5-.5-1.214-.5-.696 0-1.214.482L4.214 6.804q-.5.5-.5 1.196 0 .714.5 1.214l3.714 3.714q.482.482 1.214.482.75 0 1.286-.554-.054-.054-.339-.33t-.384-.384-.268-.339-.232-.455-.063-.491q0-.714.5-1.214t1.214-.5q.268 0 .491.063t.455.232.339.268.384.384.33.339q.589-.554.589-1.304zm15.983 12.589q0 2.143-1.518 3.625l-2.625 2.607q-1.482 1.482-3.625 1.482-2.161 0-3.643-1.518l-3.679-3.696q-1.482-1.482-1.482-3.625 0-2.196 1.571-3.732l-1.571-1.571q-1.536 1.571-3.714 1.571-2.143 0-3.643-1.5l-3.714-3.714Q.286 10.143.286 8t1.518-3.625l2.625-2.607Q5.911.286 8.054.286q2.161 0 3.643 1.518L15.376 5.5q1.482 1.482 1.482 3.625 0 2.196-1.571 3.732l1.571 1.571q1.536-1.571 3.714-1.571 2.143 0 3.643 1.5l3.714 3.714q1.5 1.5 1.5 3.643z" />
-      </symbol>
-      <symbol id="icon-pinned" viewBox="0 0 32 32">
-        <path class="path1"
-          d="M7.464 23.122c-1.566 1.566-1.808 2.378-2.122 3.536 1.156-.312 1.97-.554 3.536-2.122l8.484-8.484-1.412-1.416-8.486 8.486z" />
-        <path class="path2"
-          d="M18.586 4.928a1.998 1.998 0 010 2.828l-2.828 2.83a2 2 0 01-2.83 0L10.1 13.414l8.486 8.484 2.828-2.828a1.998 1.998 0 010-2.828l2.828-2.828a1.998 1.998 0 012.828 0l2.828-2.828L21.414 2.1l-2.828 2.828z" />
-      </symbol>
-    </defs>
-  </svg>
   </div>
   <!-- Closing .site tag -->
 </body>

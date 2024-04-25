@@ -13,30 +13,21 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <!-- This site has installed PayPal for WooCommerce v2.0.0 - https://www.angelleye.com/product/woocommerce-paypal-plugin/ -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
- 
+  <style>
+    .main {}
+  </style>
   <style>
     .footer {
       height: 20rem !important;
     }
-  </style>
-
-  <style>
-    /* CSS for the side menu */
-    .side-menu {
-      transform: translateX(-110%);
-      transition: transform 0.3s ease;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      background-color: #fff;
-      /* Adjust background color as needed */
+    .a {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
     }
 
-    .side-menu.show-menu {
-      transform: translateX(0);
-    }
   </style>
+
+
   <!-- This site is optimized with the Yoast SEO plugin v21.9.1 - https://yoast.com/wordpress/plugins/seo/ -->
   <title>21knight</title>
   <meta name="description"
@@ -239,6 +230,32 @@
       background: none !important;
       padding: 0 !important;
     }
+
+    .a {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+
+    .a:hover {
+      color: red;
+    }
+  </style>
+  <style>
+    /* CSS for the side menu */
+    .side-menu {
+      transform: translateX(-110%);
+      transition: transform 0.3s ease;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: #fff;
+      /* Adjust background color as needed */
+    }
+
+    .side-menu.show-menu {
+      transform: translateX(0);
+    }
   </style>
   <link rel="stylesheet" id="wp-block-library-css"
     href="https://www.gilbaneco.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3" type="text/css"
@@ -307,7 +324,35 @@
   <div class="site">
     <!-- Starting .site wrapper tag -->
     <a class="skip-to-content" href="#main-content">Skip to content</a>
+    <style>
+      /* Your existing CSS styles */
 
+      /* Media query for small screens */
+      @media screen and (max-width: 768px) {
+        .site-header__navigation {
+          position: fixed;
+          /* Make the navigation fixed for small screens */
+          top: 0;
+          left: -300px;
+          /* Move the navigation off-screen initially */
+          width: 250px;
+          /* Set a width for the navigation */
+          height: 100vh;
+          /* Make the navigation full height */
+          background-color: #fff;
+          /* Add a background color */
+          transition: left 0.3s ease;
+          /* Add a smooth transition */
+          z-index: 1000;
+          /* Ensure the navigation appears above other content */
+        }
+
+        .navicon {
+          display: block;
+          /* Show the navicon button on small screens */
+        }
+      }
+    </style>
 
 
 
@@ -326,18 +371,7 @@
         <div>
           <div class="site-header__navigation-inner">
             <div class="site-header__navigation-top">
-              <!-- Utilities Menu -->
-              <!-- <ul class="menu utility-menu">
-                    <li id="menu-item-5609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5609">
-                      <a href="contact.html"></a>
-                    </li>
-                    <li id="menu-item-5608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5608">
-                      <a href="/news.html"></a>
-                    </li>
-                    <li id="menu-item-5612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5612">
-                      <a href="/locations.html"></a>
-                    </li>
-                  </ul> -->
+             
             </div>
           </div>
           <!-- Mobile Trigger: Navicon for toggling site-header__navigation into view. -->
@@ -388,10 +422,12 @@
                             <a style="font-size: larger;" href="sustainability.html" aria-haspopup="true"
                               aria-expanded="false">Sustainability</a>
                             <ol id="list" style="display: none;">
-                              <a class="a" style="margin-bottom: 1rem; " href="future">
+                              <a href="t.html">
                                 <li>Sustainable future</li>
 
                               </a>
+
+                            
                               <a href=""></a>
                               <a class="a" href="climate.html">
                                 <li>Carbon reduction path to zero</li>
@@ -474,7 +510,7 @@
                             <a style="font-size: larger; margin-top: 2rem;" href="social.html" aria-haspopup="true"
                               aria-expanded="false">Social Focus Areas </a>
                             <ol id="list3" style="display: none;">
-                             <a class="a" href="being.html">
+                              <a class="a" href="being.html">
                                 <li>Well being</li>
                               </a>
                               <a class="a" href="economic.html">
@@ -587,8 +623,7 @@
                             }
                           </script>
 
-                          <div style="margin-top: 1rem; width: 100%;" onmouseover="showList11()"
-                            onmouseout="hideList11()">
+                          <div style="margin-top: 1rem; width: 100%;" onmouseover="showList11()" onmouseout="hideList11()">
                             <a style="font-size: larger;" href="agrii.html" aria-haspopup="true"
                               aria-expanded="false">HIGHWAYS & ROADS</a>
                             <ol id="list11" style="display: none; width: 12rem;">
@@ -616,13 +651,13 @@
 
 
                           <div style="margin-top: 1rem;" onmouseover="showList8()" onmouseout="hideList8()">
-                            <a style="font-size: larger;" href="/agrii.html" aria-haspopup="true"
+                            <a style="font-size: larger;" href="agrii.html" aria-haspopup="true"
                               aria-expanded="false">SOCIAL & AGRICULTURE INFRASTRACTURE</a>
                             <ol id="list8" style="display: none;">
                               <a class="a" href="agrii.html">
-                                <ol style="width: 15rem;">Large cash crop farming</ol>
-                              </a> <a class="a" href="/agrii.html">
-                                <ol style="width: 15rem;">Horticulture farming</ol>
+                                <ol  style="width: 15rem;">Large cash crop farming</ol>
+                              </a> <a class="a" href="agrii.html">
+                                <ol  style="width: 15rem;">Horticulture farming</ol>
                               </a>
                             </ol>
                           </div>
@@ -641,7 +676,7 @@
 
 
 
-                     <li id="menu-item-5021"
+                        <li id="menu-item-5021"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5021">
                           <a class="a" href="water.html">SUSTAINABLE WATER SUPPLY & DISTRIBUTION SYSTEMS
                           </a>
@@ -759,9 +794,11 @@
                 <li id="menu-item-5609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5609">
                   <a href="contact.html">Contact</a>
                 </li>
-
+                <li id="menu-item-5608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5608">
+                  <a href="news.html">News</a>
+                </li>
                 <li id="menu-item-5612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5612">
-                  <a href="/locations.html">Locations</a>
+                  <a href="locations.html">Locations</a>
                 </li>
               </ul>
             </div>
@@ -804,7 +841,7 @@
                               fill="currentColor" />
                           </svg></span><span class="screen-reader-text">Show submenu</span>
                       </button>
-                       <ul class="sub-menu">
+                      <ul class="sub-menu">
                         <li id="menu-item-5011"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5011">
                           <a href="services.html">INNOVATION</a>
@@ -836,7 +873,7 @@
                   </ul>
               </li>
 
-        <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
+              <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
                 <a href="projects.html">Projects</a>
               </li>
               <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
@@ -863,7 +900,7 @@
                             fill="currentColor" />
                         </svg></span><span class="screen-reader-text">Show submenu</span>
                     </button>
-                 <ul class="sub-menu">
+                    <ul class="sub-menu">
                       <li id="menu-item-5099"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5099">
                         <a href="leadership.html">Leadership</a>
@@ -925,7 +962,7 @@
                   </li>
                 </ul>
               </li>
-               <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
+              <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
                 <a href="projects.html">Contact</a>
               </li>
 
@@ -934,6 +971,19 @@
           </div>
         </nav>
     </header>
+
+    <!-- End of  Menu -->
+
+    <script>
+      // JavaScript to toggle the side menu
+      document.addEventListener('DOMContentLoaded', function () {
+        const sideMenu = document.querySelector('.side-menu');
+        const navIcon = document.getElementById('js-navicon');
+        navIcon.addEventListener('click', function () {
+          sideMenu.classList.toggle('show-menu');
+        });
+      });
+    </script>
     <main id="main-content" class="main clearfix" role="main">
       <article class="si clearfix">
         <div id="block_13294b3bc0b707cd37c01fc74618f243"
