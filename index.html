@@ -352,6 +352,28 @@
           /* Show the navicon button on small screens */
         }
       }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .custom-button {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: red;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .custom-button:hover {
+        background-color: red;
+    }
     </style>
 
 
@@ -1409,19 +1431,15 @@
                 impact.
               </p>
 
-              <div class="wp-block-emagine-buttons has-text-align-left">
-                <div class="wp-block-emagine-button has-text-align-left is-style-arrow-right">
-                  <a class="btn btn--size-md btn--style-primary has-primary-background-color"
-                    href="https://www.gilbaneco.com/resources/2022-gilbane-building-company-cares-esg-report/"
-                    rel=""><span>21knight Building Report</span></a>
-                </div>
-
-                <div class="wp-block-emagine-button has-text-align-left is-style-arrow-right">
-                  <a class="btn btn--size-md btn--style-primary has-primary-background-color"
-                    href="https://www.gilbaneco.com/resources/2022-gilbane-development-company-care-report/"
-                    rel=""><span>21knight Development Report</span></a>
-                </div>
-              </div>
+              <div class="button-container">
+                <a class="custom-button" href="https://www.gilbaneco.com/resources/2022-gilbane-building-company-cares-esg-report/" rel="">
+                    <span>21knight Building Report</span>
+                </a>
+                <a class="custom-button" href="https://www.gilbaneco.com/resources/2022-gilbane-development-company-care-report/" rel="">
+                    <span>21knight Development Report</span>
+                </a>
+            </div>
+            
             </div>
 
             <div class="wp-block-emagine-column em-col-middle">
