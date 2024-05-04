@@ -1756,69 +1756,215 @@
             </div>
           </div>
         </div> -->
-        <section class="contact" id="contact">
-          <div class="container">
-              <div class="flex">
-                  <div class="flex-1 p-10">
-                      <div class="heading text-center">
-                          <h2>Contact <span>Us</span></h2>
-                          <p>If you have any questions or comments regarding 21Knight’s comprehensive construction and development solutions, please fill out our contact form below or visit our worldwide.</p>
-                      </div>
-                      <form method="post" action="/submit-contact-info">
-                          <div class="row">
-                              <div class="col-md-6">
-                                  <div class="form-group">
-                                      <label for="first_name">First Name:</label>
-                                      <input type="text" id="first_name" name="first_name" class="form-control" required>
-                                  </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="form-group">
-                                      <label for="last_name">Last Name:</label>
-                                      <input type="text" id="last_name" name="last_name" class="form-control" required>
-                                  </div>
-                              </div>
-                              <div class="col-md-12">
-                                  <div class="form-group">
-                                      <label for="email">Email:</label>
-                                      <input type="email" id="email" name="email" class="form-control" required>
-                                  </div>
-                              </div>
-                              <div class="col-md-12">
-                                  <div class="form-group">
-                                      <label for="message">Message:</label>
-                                      <textarea id="message" name="message" class="form-control" required></textarea>
-                                  </div>
-                              </div>
-                              <div class="col-md-12">
-                                  <button type="submit" class="btn btn-primary">Send Now!</button>
-                              </div>
-                          </div>
-                      </form>
+        <body>
+          <div class="container-contact">
+            
+            <div class="inner-container">
+              <div class="tile1">
+                <div class="tile1-heading">Get in touch</div>
+                <div class="form-row">We are here for you! How can we help?</div>
+                <form>
+                  <div class="form-row">
+                    <input type="text" class="form-field" placeholder="Enter your name">
                   </div>
-      
-                  <div class="flex-1">
-                      <div class="info">
-                          <h3>Contact Details</h3>
-                          <p><strong>Phone:</strong> +254 727-399-196</p>
-                          <p><strong>Email:</strong> <a href="mailto:contact@21knights.com">contact@21knights.com</a></p>
-                          <p><strong>Address:</strong> Muthaiga Square 2nd Floor</p>
-                      </div>
-                      <div class="social-links">
-                          <h3>Follow Us</h3>
-                          <p><a href="https://www.facebook.com/GilbaneBuildingCompany">Facebook</a></p>
-                          <p><a href="https://twitter.com/gilbanebuilding">Twitter</a></p>
-                          <p><a href="https://www.linkedin.com/company/gilbane-building-company">LinkedIn</a></p>
-                          <p><a href="https://www.youtube.com/user/gilbanebuilding">YouTube</a></p>
-                      </div>
+                  <div class="form-row">
+                    <input type="text" class="form-field" placeholder="Enter your email address">
                   </div>
+                  <div class="form-row">
+                    <textarea class="form-field" placeholder="Go ahead we are listening..."></textarea>
+                  </div>
+                  <div class="form-row">
+                    <input type="button" class="form-field btn" value="Submit">
+                  </div>
+                </form>
               </div>
+              <div class="tile2">
+                <div class="tile2-image">
+                    <img src="static/images/contact.png">
+                </div>
+                <div>
+                  <div class="form-row" style="margin-bottom: 10px;">
+                    <i class="fas fa-map-marker-alt contact-icon" style="margin-right: 5px;"></i><span style="vertical-align: middle;">564 Muthaiga</span>
+                </div>
+                <div class="form-row" style="margin-bottom: 10px;">
+                    <i class="fas fa-phone-alt contact-icon" style="margin-right: 5px;"></i><span style="vertical-align: middle;">+254723723666</span>
+                </div>
+                <div class="form-row">
+                    <i class="far fa-envelope contact-icon" style="margin-right: 5px;"></i><span style="vertical-align: middle;">contact@admin.com</span>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
           </div>
-      </section>
+        
+          <script>
+            function toggleMenu() {
+              var menuElement = document.getElementById("header-right-menu");
+              if (menuElement.style.display === "block") {
+                menuElement.style.display = "none";
+              } else {
+                menuElement.style.display = "block";
+              }
+            }
+          </script>
+        </body>
+        <style>
+          .body {
+            font-family: Arial;
+            background-image: url('static/images/bg.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+          }
+          .container-contact {
+            border-radius: 16px;
+            max-width: 1180px;
+            margin: 0 30px;
+          }
+          
+          a {
+            color: #ffffff;
+            text-decoration: none;
+          }
+          
+          .header-content {
+            font-weight: bold;
+            width: 800px;
+            margin: 20px auto;
+          }
+          
+          #header-right-menu {
+            float: right;
+          }
+          
+          #header-right-menu a {
+            padding: 12px;
+          }
+          
+          .header-active{
+            color:#000;
+          }
+          
+          .inner-container {
+            width: 750px;
+            margin: 80px auto;
+            display: flex;
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px
+          }
+          
+          .tile1 {
+            width: 350px;
+          }
+          
+          .tile2 {
+            flex: 1 1 auto;
+            padding: 0px 40px;
+          }
+          
+          .tile1-heading {
+            background: -webkit-linear-gradient(#0aa6bd, #f126bd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            font-size: 1.5em;
+          }
+          
+          .form-row {
+            padding: 20px 0px 0px 0px;
+          }
+          
+          .form-field {
+            border-radius: 4px;
+            width: 100%;
+            padding: 15px;
+            background-color: #f5f4fa;
+            border: 0px;
+          }
+          
+          .contact-image {
+            padding: 10px;
+            border-radius: 35px;
+            border: 1px solid #a8a4a4;
+            vertical-align: middle;
+            margin-right: 20px;
+            width: 16px;
+            height: 16px;
+          }
+          
+          textarea {
+            height: 100px;
+            font-family: Arial;
+          }
+          
+          .btn {
+            color: white;
+            background: linear-gradient(to right, #0aa6bd, #f126bd);
+          }
+          
+          .tile2-image img {
+            width: 321px;
+            height: 211px;
+          }
+          
+          #menu-icon {
+            display: none;
+            float: right;
+          }
+          
+          @media all and (max-width: 900px) {
+            .inner-container {
+              width: auto;
+              display: block;
+              margin: 30px auto;
+            }
+            .header-content {
+              width: auto;
+            }
+            .tile1 {
+              width: 100%;
+            }
+            .tile2 {
+              padding: 0px;
+            }
+            .tile2-image img {
+              width: 100%;
+              height: auto;
+            }
+          }
+          
+          
+          @media all and (max-width: 540px) {
+            #header-right-menu {
+              float: none;
+              display: none;
+            }
+            #header-right-menu a {
+              display: block;
+              padding: 10px 0px;
+            }
+            
+            #menu-icon {
+              display: block;
+              float: right;
+            }
+          }
+          
+          @media all and (max-width: 400px) {
+            .container {
+              padding: 10px;
+            }
+          }
+        </style>
+        
       
       </article>
     </main>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <style>
       .foo{
         color: #fff !important;
