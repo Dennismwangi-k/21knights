@@ -9,13 +9,24 @@
   <link rel="icon" href="icon_path" type="image/icon type">
   <link rel="icon" href="path_to_your_icon.ico" type="image/x-icon"> <!-- Specify the correct path to your icon -->
   <link rel="icon" href="path_to_your_icon.png" type="image/png">
+  <!-- CSS here -->
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="static/css/gijgo.css">
+  <link rel="stylesheet" href="static/css/slicknav.css">
+  <link rel="stylesheet" href="static/css/animate.min.css">
+  <link rel="stylesheet" href="static/css/magnific-popup.css">
+  <link rel="stylesheet" href="static/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="static/css/themify-icons.css">
+  <link rel="stylesheet" href="static/css/slick.css">
+  <link rel="stylesheet" href="static/css/nice-select.css">
+  <link rel="stylesheet" href="static/css/styles1.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
   <!-- xml sitemap -->
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <!-- This site has installed PayPal for WooCommerce v2.0.0 - https://www.angelleye.com/product/woocommerce-paypal-plugin/ -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <style>
-    .main {}
-  </style>
+  
   <style>
     .footer {
       height: 20rem !important;
@@ -24,7 +35,255 @@
       margin-bottom: 1rem;
       margin-top: 1rem;
     }
-
+	.hero-caption{
+		& span{
+			color: #fff;
+			font-size: 16px;
+			display: block;
+			margin-bottom: 24px;
+			font-weight: 600;
+			padding-left: 95px;
+			position: relative;
+			&::before{
+				position: absolute;
+				content: "";
+				width: 75px;
+				height: 3px;
+				background: theme-color;
+				left: 0;
+				top: 52%;
+				transform: translateY(-50%);
+			}
+		}
+		& h2{
+			color: #fff;
+			font-size: 50px;
+			font-weight: 700;
+		}
+	}
+	body{
+		background-color:#FFF;
+		font-family: "Lato", sans-serif;
+		font-weight: 300;
+		font-size:16px;
+		line-height:18px;
+		color:#777;
+	}
+	
+	p{
+		margin:0;
+	}
+	
+	a {
+		color: #aa0a5f;
+	}
+	
+	a, a:hover, a:focus{
+		text-decoration: none;
+		outline: 0;
+	}
+	h1, h2, h3,
+	h4, h5, h6 {
+		color: #333;
+		margin:0;
+		font-weight: normal;
+	}
+	
+	h1 { font-size: 28px;}
+	h2 { font-size: 24px;}
+	h3 { font-size: 18px;}
+	h5 { font-size: 16px;}
+	h6 { font-size: 14px;}
+	
+	strong {
+	  letter-spacing: 1px;
+	}
+	
+	code {
+	  background-color: #ddd;
+	  border-radius: 3px;
+	  color: #000;
+	  font-size: 85%;
+	  margin: 0;
+	  padding: 5px 10px;
+	}
+	
+	code a {
+		color: #333;
+	}
+	
+	code a:hover {
+		text-decoration: underline;
+	}
+	
+	section p {
+	  line-height: 28px;
+	}
+	
+	.clearfix:before,
+	.clearfix:after {
+		content: " ";
+		display: table;
+	}
+	.clearfix:after {
+		clear: both;
+	}
+	.clearfix {
+		*zoom: 1;
+	}
+	
+	.tan {
+	  margin-bottom: 10px;
+	}
+	
+	.fifteen{
+		margin-bottom: 15px;
+	}
+	
+	.twenty{
+		margin-bottom: 20px;
+	}
+	
+	.center {
+		text-align: center;
+	}
+	
+	.title {
+		margin: 50px 0 30px;
+	}
+	
+	.syntaxhighlighter {
+		border: 1px solid #efefef;
+		max-height: 100% !important;
+		padding: 20px 0;
+	}
+	
+	
+	.main-content section {
+	  margin: 0 5%;
+	}
+	
+	
+	.left-sidebar {
+		background-color: #ff2424;
+		float: left;
+		min-height: 100%;
+		position: fixed;
+		width: 18%;
+	}
+	
+	.logo {
+		padding-bottom: 30px;
+		padding-left: 30px;
+		padding-top: 70px;
+	}
+	.logo h1{
+		color: #fff;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.left-nav ul {
+		margin: 0;
+		padding: 0;
+		font-size: 14px;
+	}
+	
+	.left-nav ul li a {
+		color: #fff;
+		display: block;
+		padding: 10px 35px;
+		-webkit-transition: all 0.3s ease-in 0s;
+		   -moz-transition: all 0.3s ease-in 0s;
+			-ms-transition: all 0.3s ease-in 0s;
+			 -o-transition: all 0.3s ease-in 0s;
+				transition: all 0.3s ease-in 0s;
+	}
+	
+	.left-nav ul li a:hover, .left-nav ul li .current {
+		background-color: #fff;
+		color: #000;
+	}
+	
+	
+	#main-wrapper {
+		float: left;
+		margin-left: 18%;
+		width: 82%;
+	}
+	
+	.content-header {
+		border-bottom: 1px solid #ddd;
+		border-top: 1px solid #ddd;
+		margin-top: 30px;
+		padding: 30px 0 35px;
+		text-align: center;
+	}
+	
+	.welcome {
+		font-size: 16px;
+		line-height: 26px;
+		margin: 35px auto 0;
+	}
+	
+	.features {
+		margin-top: 50px;
+	}
+	
+	.features ul li {
+		list-style: square outside none;
+		margin-bottom: 15px;
+	}
+	
+	.features > ul {
+		padding-left: 18px;
+	}
+	
+	.author {
+		border-bottom: 1px solid #ddd;
+		border-top: 1px solid #ddd;
+		margin-top: 50px;
+		padding: 30px 0;
+	}
+	
+	.author-info {
+		font-size: 18px;
+		line-height: 28px;
+		margin: 0 auto;
+		width: 50%;
+	}
+	
+	.section-content {
+		font-size: 16px;
+		line-height: 25px;
+	}
+	
+	.section-content li {
+		margin-bottom: 15px;
+	}
+	
+	.section-content a:hover {
+		text-decoration: underline;
+	}
+	
+	.script-source li {
+		list-style: square outside none;
+		margin-bottom: 10px;
+	}
+	
+	#twitter-feed li,
+	#flickr li {
+		line-height: 25px;
+		margin-bottom: 10px;
+	}
+	
+	#twitter-feed img {
+		border: 1px solid #ddd;
+		box-shadow: 2px 3px 3px #ddd;
+		height: auto;
+		margin-top: 10px;
+		max-width: 100%;
+	}
+	
   </style>
 
 
@@ -389,13 +648,161 @@
             </div>
             <!-- Main menu. -->
             <ul class="menu main-menu">
-              <li id="menu-item-4959"
+              <li id="menu-item-4959" style="margin-left: -3%;"
                 class="mega-menu is-two-columns menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4959">
                 <a href="index.html" aria-haspopup="true" aria-expanded="false">Home</a>
               </li>
               <li id="menu-item-5001"
                 class="mega-menu is-two-columns menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5001">
                 <a href="sustainability.html" aria-haspopup="true" aria-expanded="false">Sustainability
+                  <button class="menu-item__trigger">
+                    <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                        <path
+                          d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
+                          fill="currentColor" />
+                      </svg></span><span class="screen-reader-text">Show submenu</span>
+                  </button>
+                  <ul class="sub-menu">
+                    <li id="menu-item-5003"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5003">
+
+                      <button class="menu-item__trigger">
+                        <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 12 12">
+                            <path
+                              d="M11.25 5.25h-4.5V.75a.75.75 0 1 0-1.5 0v4.5H.75a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 1 0 1.5 0v-4.5h4.5a.75.75 0 1 0 0-1.5z"
+                              fill="currentColor" />
+                          </svg></span><span class="screen-reader-text">Show submenu</span>
+                      </button>
+                      <ul class="sub-menu">
+                        <li id="menu-item-5011"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5011">
+                          <div style="" onmouseover="showList()" onmouseout="hideList()">
+                            <a style="font-size: larger;" href="sustainability.html" aria-haspopup="true"
+                              aria-expanded="false">Sustainability</a>
+                            <ol id="list" style="display: none;">
+                              <a href="sustainablefuture.html">
+                                <li>Sustainable future</li>
+
+                              </a>
+
+                            
+                              <a href=""></a>
+                              <a class="a" href="climate.html">
+                                <li>Carbon reduction path to zero</li>
+
+                              </a>
+                            </ol>
+                          </div>
+
+                          <script>
+                            function showList() {
+                              var list = document.getElementById("list");
+                              list.style.display = "block";
+                            }
+
+                            function hideList() {
+                              var list = document.getElementById("list");
+                              list.style.display = "none";
+                            }
+                          </script>
+                          <div onmouseover="showList1()" onmouseout="hideList1()">
+                            <a style="font-size: larger; margin-top: 2rem;" href="Udgs.html" aria-haspopup="true"
+                              aria-expanded="false">UNSDGS</a>
+                            <ol id="list1" style="display: none;">
+                               <a class="a" href="energy1.html">
+                                <li>Affordable and clean energy</li>
+                              </a>
+                              <a class="a" href="economic.html">
+                                <li>Decent eprk and economic growth</li>
+                              </a>
+                              <a class="a" href="environment.html">
+                                <li>Sustainable cities and communities</li>
+                              </a>
+                              <a class="a" href="climate.html">
+                                <li>Cimate action</li></a>
+                            </ol>
+                          </div>
+
+                          <script>
+                            function showList1() {
+                              var list = document.getElementById("list1");
+                              list.style.display = "block";
+                            }
+
+                            function hideList1() {
+                              var list = document.getElementById("list1");
+                              list.style.display = "none";
+                            }
+                          </script>
+                          <div onmouseover="showList2()" onmouseout="hideList2()">
+                            <a style="font-size: larger; margin-top: 2rem;" href="environment.html"
+                              aria-haspopup="true" aria-expanded="false">Environmental Focus Areas</a>
+                            <ol id="list2" style="display: none;">
+                               <a class="a" href="nature.html">
+                                <li>Nature and pollution</li>
+
+                              </a>
+                              <a class="a" href="resource.html">
+                                <li>Resource and materials</li>
+
+                              </a>
+                              <a class="a" href="climate.html">
+                                <li>Climate Action</li>
+
+                              </a>
+                            </ol>
+                          </div>
+                          <script>
+                            function showList2() {
+                              var list = document.getElementById("list2");
+                              list.style.display = "block";
+                            }
+
+                            function hideList2() {
+                              var list = document.getElementById("list2");
+                              list.style.display = "none";
+                            }
+                          </script>
+
+                          <div onmouseover="showList3()" onmouseout="hideList3()">
+                            <a style="font-size: larger; margin-top: 2rem;" href="social.html" aria-haspopup="true"
+                              aria-expanded="false">Social Focus Areas </a>
+                            <ol id="list3" style="display: none;">
+                              <a class="a" href="being.html">
+                                <li>Well being</li>
+                              </a>
+                              <a class="a" href="economic.html">
+                                <li>Economic Prosperity</li>
+
+                              </a>
+                              <a class="a" href="community.html">
+                                <li>Comminity engagement</li>
+
+                              </a>
+                            </ol>
+                          </div>
+                          <script>
+                            function showList3() {
+                              var list = document.getElementById("list3");
+                              list.style.display = "block";
+                            }
+
+                            function hideList3() {
+                              var list = document.getElementById("list3");
+                              list.style.display = "none";
+                            }
+                          </script>
+
+
+                      </ul>
+                    </li>
+
+                  </ul>
+              </li>
+			  <li id="menu-item-5001"
+                class="mega-menu is-two-columns menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5001">
+                <a href="environment.html" aria-haspopup="true" aria-expanded="false">Environment Focus
                   <button class="menu-item__trigger">
                     <span class="menu-item__trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
                         <path
@@ -567,20 +974,7 @@
                         <li id="menu-item-5011"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5011">
 
-                          <div style="margin-top: 1rem;" onmouseover="showList5()" onmouseout="hideList5()">
-                            <a style="font-size: larger;" href="sustainability.html" aria-haspopup="true"
-                              aria-expanded="false">INNOVATION</a>
-                            <ol id="list5" style="display: none;">
-                              <a class="a" href="tech.html">
-                                <li>Technological innovations</li>
-
-                              </a>
-                              <a class="a" href="general.html">
-                                <li>General innovations innovations</li>
-
-                              </a>
-                            </ol>
-                          </div>
+                          
 
                           <script>
                             function showList5() {
@@ -804,7 +1198,7 @@
                       <ul class="sub-menu">
                         <li id="menu-item-5011"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5011">
-                          <a href="services.html">INNOVATION</a>
+                          <a href="services.html"></a>
                         </li>
                         <li id="menu-item-5005"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5005">
@@ -932,6 +1326,20 @@
         </nav>
     </header>
 
+    <style>
+      .custom-list {
+        list-style-type: disc; /* Use disc bullets */
+        color: black; /* Text color */
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Use a commonly used sans-serif font */
+        font-size: 16px; /* Font size */
+        line-height: 1.6; /* Line height */
+    }
+
+    .custom-list li {
+        margin-bottom: 10px; /* Adjust spacing between list items */
+    }
+  </style>
+
     <!-- End of  Menu -->
 
     <script>
@@ -944,27 +1352,65 @@
         });
       });
     </script>
-        <main id="main-content" class="main clearfix" role="main">
-            <article class="site-content clearfix">
-                <!-- <div style="width: 40rem;" class="">
-                    <img class="img" style="width:80rem"
-                        src="https://res.cloudinary.com/pitz/image/upload/v1708324087/2_wr6ewo.png" alt="Innovation">
-                </div> -->
-                <div class="card-content">
-                    <h3 class="">Commercial and Residential Construction</h3>
-                    <p class="card-desc">Every project is an opportunity to transform spaces and enrich lives. As a
-                        premier construction company
-                        specializing in both commercial and residential construction, we are dedicated to realizing your
-                        vision
-                        with precision, creativity, and unparalleled craftsmanship.</p>
+    <main>
+        <!-- slider Area Start-->
+        <div class="slider-area ">
+            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="static/img/hero/construction01.jpg" width="100%;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-xl-8">
+                            <div class="hero-cap hero-cap2 pt-120">
+                                <h2>Commercial and Residential Construction</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h3>Our Approach</h3>
-                <p>With a focus on innovation, quality, and customer satisfaction, we approach each project with a
-                    commitment to excellence. Whether it's a sleek office building, a luxurious residential complex, or
-                    a cozy
-                    family home, we leverage our expertise and resources to deliver exceptional results.</p>
-
-                <h4>Our Services</h4>
+            </div>
+        </div>
+        <!-- slider Area End-->
+        <!-- Services Details Start -->
+        <div class="services-details-area" style="margin-top: -9%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="single-services section-padding2">
+                          <div class="details-container">
+                            <div class="details-img mb-40">
+                                <img src="static/img/gallery/Construction.jpeg" alt="">
+                            </div>
+                            <div class="details-content">
+                                <div class="details-caption-1">
+                                  <div class="card-content">
+                                    <h3 class="">Commercial and Residential Construction</h3>
+                                    <p class="card-desc">Every project is an opportunity to transform spaces and enrich lives. As a
+                                        premier construction company
+                                        specializing in both commercial and residential construction, we are dedicated to realizing your
+                                        vision
+                                        with precision, creativity, and unparalleled craftsmanship.</p>
+                                </div>
+                                <h3>Our Approach</h3>
+                                <p style="margin-top: -3%;">With a focus on innovation, quality, and customer satisfaction, we approach each project with a
+                                    commitment to excellence. Whether it's a sleek office building, a luxurious residential complex, or
+                                    a cozy
+                                    family home, we leverage our expertise and resources to deliver exceptional results.</p><br>
+                                    <h4 style="margin-top: -3%;">Partner with Us</h4>
+                                    <p style="margin-top: -3%;"> Are you ready to make a difference?
+                                    </p>
+                                    <p>
+                                        With Africa facing a critical shortage of affordable housing due to its rising population we believe
+                                        that
+                                        we can close this gap. With key collaboration between our company and investors we can address this
+                                        challenge by leveraging our expertise and working closely with investors. Through numerous
+                                        partnerships we can develop sustainable, cost-effective housing solutions that meet the needs of
+                                        underserved communities and creating a lasting impact.
+                                    </p>   
+                                         
+                                </div>
+                            </div>
+                        </div>
+                        
+              <div class="details-caption">
+                              <h4>Our Services</h4>
                 <ul>
                     <li> Commercial Construction: From a new office building, retail center, malls or hospitality
                         establishment we have the expertise and resources to design and construct.
@@ -981,7 +1427,6 @@
 
 
                 </ul>
-
                 <h4>Why Choose Us?</h4>
                 <ul>
                     <li>EDGE Certification: Our commitment to sustainability sets us apart. By incorporating EDGE
@@ -1002,7 +1447,7 @@
                         With our team of experienced engineers and project managers we provide services for
                         commercial office spaces and retail developments to custom homes and renovations.
                     </li>
-                </ul>
+                </ul><br>
                 <h4>Our Commitment to Sustainability</h4>
                 <p>As stewards of the environment, we recognize the importance of sustainable construction practices.
                     That's why we recommend to our vast clientele the importance of commercial and residential buildings
@@ -1010,129 +1455,168 @@
                     resource-efficient design to energy-saving technologies, we strive to create buildings that not only
                     meet
                     the needs of our clients but also contribute to a greener future</p>
-                <h4>Partner with Us</h4>
-                <p> Are you ready to make a difference?
-                </p>
-                <p>
-                    With Africa facing a critical shortage of affordable housing due to its rising population we believe
-                    that
-                    we can close this gap. With key collaboration between our company and investors we can address this
-                    challenge by leveraging our expertise and working closely with investors. Through numerous
-                    partnerships we can develop sustainable, cost-effective housing solutions that meet the needs of
-                    underserved communities and creating a lasting impact.
-                </p>
-               
-    </div>
-    </div>
-    </div>
-    </article>
-    </main>
-
-    <style>
-        .foo {
-            color: #fff !important;
-        }
-    </style>
-   <footer class="site-footer  site-footer--has-logo site-footer--align-brand-left">
-    <div style="background-color: rgb(6, 30, 49); color: #fff; padding: 1rem;" class=" foo clearfix">
-      <div style="color: #fff;" class="">
-        <div class="em-grid">
-          <div class="em-col-3_md-4_sm-12">
-            <div class="deep-footer__brand">
-              <div class="deep-footer__logo" style="max-width: 100%">
-                <a href="/">
-                  <?xml version="1.0"?>
-                  <img
-                    src="https://res.cloudinary.com/pitz/image/upload/v1708692038/Capture-removebg-preview_1_uhlkrr.png"
-                    alt="">
-                </a>
-              </div>
+                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="foo em-col-9_md-8_sm-12">
-            <ul class="menu foo deep-footer-menu">
-              <li id="menu-item-6069"
-                class="menu-item foo menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6069">
-                <a href="building.html" class="foo">Building</a>
-                <ul class="sub-menu">
-                  <li id="menu-item-17018"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17018">
-                    <a class="foo"
-                      href="/projects.html">Projects</a>
-                  </li>
-                  <li id="menu-item-6071"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6071">
-                    <a class="foo" href="services.html">Services</a>
-                  </li>
-                
-                
-                 
-                </ul>
-              </li>
-              <li id="menu-item-6072"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6072">
-                <a class="foo" href="#">Development</a>
-                <ul class="sub-menu">
-                  <li id="menu-item-17019"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17019">
-                    <a class="foo"
-                      href="#">Projects</a>
-                  </li>
-                  <li id="menu-item-6073"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6073">
-                    <a class="foo" href="services.html">Services</a>
-                  </li>
-                
-                
-                </ul>
-              </li>
-              <li id="menu-item-6077"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6077">
-                <a class="foo" href="about.html">About</a>
-                <ul class="sub-menu">
-                  <li id="menu-item-6078"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6078">
-                    <a class="foo" href="#">Our Impact</a>
-                  </li>
-                  <li id="menu-item-6079"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6079">
-                    <a class="foo" href="/about.html">Partner With Us</a>
-                  </li>
-                  <!-- <li
-                        id="menu-item-6080"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6080"
-                      >
-                        <a href="https://www.gilbaneco.com/careers/">Careers</a>
-                      </li> -->
-                </ul>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
-      <button class="scroll-to-top scroll-to-top--visible" id="scrollToTopButton" aria-label="Scroll to Top"
-        title="Scroll to Top">
-        <span class="screen-reader-text">Scroll to Top</span>
-        <svg width="12" height="16" xmlns="http://www.w3.org/2000/svg">
-          <g>
-            <path transform="rotate(-89.7475 6.02515 7.96823)" fill="#fff"
-              d="m13.551,7.969a0.836,0.836 0 0 0 -0.141,-0.432l-4.013,-5.34a0.435,0.435 0 0 0 -0.709,-0.025a0.77,0.77 0 0 0 -0.02,0.888l3.222,4.28l-12.89,0a0.644,0.644 0 0 0 0,1.256l12.889,0l-3.222,4.28a0.784,0.784 0 0 0 0.02,0.888a0.435,0.435 0 0 0 0.709,-0.024l4.013,-5.34a0.639,0.639 0 0 0 0.142,-0.431z"
-              id="Arrow"></path>
-          </g>
-        </svg>
-      </button>
-    </div>
-
-    </div>
-  </footer>
+        <!-- Services Details End -->
+    </main>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+      .foo{
+        color: #fff !important;
+      }
+      .details-container {
+        display: flex;
+    }
     
+    .details-img {
+        flex: 1;
+        margin-right: 20px; /* Adjust this value as needed */
+    }
     
+    .details-content {
+        flex: 2;
+    }
     
-    
-    
+       
+      </style>
+          <footer class="site-footer  site-footer--has-logo site-footer--align-brand-left">
+            <div style="background-color: rgb(6, 30, 49); color: #fff; padding: 1rem;" class=" foo clearfix">
+              <div style="color: #fff;" class="">
+                <div class="em-grid">
+                  <div class="em-col-3_md-4_sm-12">
+                    <div class="deep-footer__brand">
+                      <div class="deep-footer__logo" style="max-width: 100%">
+                        <a href="/">
+                          <?xml version="1.0"?>
+                          <img
+                            src="https://res.cloudinary.com/pitz/image/upload/v1708692038/Capture-removebg-preview_1_uhlkrr.png"
+                            alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="foo em-col-9_md-8_sm-12">
+                    <ul class="menu foo deep-footer-menu">
+                      <li id="menu-item-6069"
+                        class="menu-item foo menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6069">
+                        <a href="building.html" class="foo">Building</a>
+                        <ul class="sub-menu">
+                          <li id="menu-item-17018"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17018">
+                            <a class="foo"
+                              href="/projects.html">Projects</a>
+                          </li>
+                          <li id="menu-item-6071"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6071">
+                            <a class="foo" href="services.html">Services</a>
+                          </li>
+                        
+                        
+                         
+                        </ul>
+                      </li>
+                      <li id="menu-item-6072"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6072">
+                        <a class="foo" href="#">Development</a>
+                        <ul class="sub-menu">
+                          <li id="menu-item-17019"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17019">
+                            <a class="foo"
+                              href="#">Projects</a>
+                          </li>
+                          <li id="menu-item-6073"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6073">
+                            <a class="foo" href="services.html">Services</a>
+                          </li>
+                        
+                        
+                        </ul>
+                      </li>
+                      <li id="menu-item-6077"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6077">
+                        <a class="foo" href="about.html">About</a>
+                        <ul class="sub-menu">
+                          <li id="menu-item-6078"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6078">
+                            <a class="foo" href="#">Our Impact</a>
+                          </li>
+                          <li id="menu-item-6079"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6079">
+                            <a class="foo" href="/about.html">Partner With Us</a>
+                          </li>
+                          <!-- <li
+                                id="menu-item-6080"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6080"
+                              >
+                                <a href="https://www.gilbaneco.com/careers/">Careers</a>
+                              </li> -->
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <button class="scroll-to-top scroll-to-top--visible" id="scrollToTopButton" aria-label="Scroll to Top"
+                title="Scroll to Top">
+                <span class="screen-reader-text">Scroll to Top</span>
+                <svg width="12" height="16" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path transform="rotate(-89.7475 6.02515 7.96823)" fill="#fff"
+                      d="m13.551,7.969a0.836,0.836 0 0 0 -0.141,-0.432l-4.013,-5.34a0.435,0.435 0 0 0 -0.709,-0.025a0.77,0.77 0 0 0 -0.02,0.888l3.222,4.28l-12.89,0a0.644,0.644 0 0 0 0,1.256l12.889,0l-3.222,4.28a0.784,0.784 0 0 0 0.02,0.888a0.435,0.435 0 0 0 0.709,-0.024l4.013,-5.34a0.639,0.639 0 0 0 0.142,-0.431z"
+                      id="Arrow"></path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+        
+            </div>
+          </footer>
    
-   
-    </div> <!-- Closing .site tag -->
-</body>
+	<!-- JS here -->
+	
+		<!-- All JS Custom Plugins Link Here here -->
+        <script src="static/js/vendor/modernizr-3.5.0.min.js"></script>
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="static/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="static/js/popper.min.js"></script>
+        <script src="static/js/bootstrap.min.js"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="static/js/jquery.slicknav.min.js"></script>
 
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="static/js/owl.carousel.min.js"></script>
+        <script src="static/js/slick.min.js"></script>
+        <!-- Date Picker -->
+        <script src="static/js/gijgo.min.js"></script>
+		<!-- One Page, Animated-HeadLin -->
+        <script src="static/js/wow.min.js"></script>
+		<script src="static/js/animated.headline.js"></script>
+        <script src="static/js/jquery.magnific-popup.js"></script>
+
+		<!-- Scrollup, nice-select, sticky -->
+        <script src="static/js/jquery.scrollUp.min.js"></script>
+        <script src="static/js/jquery.nice-select.min.js"></script>
+		<script src="static/js/jquery.sticky.js"></script>
+               
+        <!-- counter , waypoint -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script src="static/js/jquery.counterup.min.js"></script>
+
+        <!-- contact js -->
+        <script src="static/js/contact.js"></script>
+        <script src="static/js/jquery.form.js"></script>
+        <script src="static/js/jquery.validate.min.js"></script>
+        <script src="static/js/mail-script.js"></script>
+        <script src="static/js/jquery.ajaxchimp.min.js"></script>
+        
+		<!-- Jquery Plugins, main Jquery -->	
+        <script src="static/js/plugins.js"></script>
+        <script src="static/js/main.js"></script>
+        
+    </body>
 </html>
