@@ -109,3 +109,12 @@
 .info h3, .social-links h3 {
     color: #333;
 }
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
