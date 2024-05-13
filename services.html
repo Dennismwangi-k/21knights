@@ -26,6 +26,62 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <!-- This site has installed PayPal for WooCommerce v2.0.0 - https://www.angelleye.com/product/woocommerce-paypal-plugin/ -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <style>
+    /* Base styles */
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      position: relative;
+    }
+
+    .menu li a {
+      display: block;
+      
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Submenu styles */
+    .sub-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+
+    .menu li:hover .sub-menu {
+      display: block;
+    }
+
+    /* Media query for mobile view */
+    @media only screen and (max-width: 768px) {
+      .menu li {
+        position: static;
+      }
+
+      .sub-menu {
+        position: static;
+        display: none;
+      }
+
+      .menu li:hover .sub-menu {
+        display: block;
+      }
+    }
+  </style>
+  <script>
+	function toggleMenu() {
+	  var menu = document.querySelector('.menu');
+	  menu.classList.toggle('active');
+	}
+  </script>
   
   <style>
     .footer {

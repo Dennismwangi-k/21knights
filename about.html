@@ -26,6 +26,61 @@
     }
 
   </style>
+  <style>
+    /* Base styles */
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      position: relative;
+    }
+
+    .menu li a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Submenu styles */
+    .sub-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+
+    .menu li:hover .sub-menu {
+      display: block;
+    }
+
+    /* Media query for mobile view */
+    @media only screen and (max-width: 768px) {
+      .menu li {
+        position: static;
+      }
+
+      .sub-menu {
+        position: static;
+        display: none;
+      }
+
+      .menu li:hover .sub-menu {
+        display: block;
+      }
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      var menu = document.querySelector('.menu');
+      menu.classList.toggle('active');
+    }
+  </script>
 
 
   <!-- This site is optimized with the Yoast SEO plugin v21.9.1 - https://yoast.com/wordpress/plugins/seo/ -->

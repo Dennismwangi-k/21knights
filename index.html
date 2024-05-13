@@ -340,31 +340,7 @@
     <style>
       /* Your existing CSS styles */
 
-      /* Media query for small screens */
-      @media screen and (max-width: 768px) {
-        .site-header__navigation {
-          position: fixed;
-          /* Make the navigation fixed for small screens */
-          top: 0;
-          left: -300px;
-          /* Move the navigation off-screen initially */
-          width: 250px;
-          /* Set a width for the navigation */
-          height: 100vh;
-          /* Make the navigation full height */
-          background-color: #fff;
-          /* Add a background color */
-          transition: left 0.3s ease;
-          /* Add a smooth transition */
-          z-index: 1000;
-          /* Ensure the navigation appears above other content */
-        }
-
-        .navicon {
-          display: block;
-          /* Show the navicon button on small screens */
-        }
-      }
+      
       .button-container {
         display: flex;
         justify-content: center;
@@ -389,9 +365,72 @@
     }
     </style>
 
+    <style>
+      /* Base styles */
+      .menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+  
+      .menu li {
+        position: relative;
+      }
+  
+      .menu li a {
+        display: block;
+        
+        text-decoration: none;
+        color: #333;
+      }
+  
+      /* Submenu styles */
+      .sub-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+      }
+  
+      .menu li:hover .sub-menu {
+        display: block;
+      }
+  
+      /* Media query for mobile view */
+      @media only screen and (max-width: 768px) {
+        .menu li {
+          position: static;
+        }
+  
+        .sub-menu {
+          position: static;
+          display: none;
+        }
+  
+        .menu li:hover .sub-menu {
+          display: block;
+        }
+      }
+    </style>
+    <script>
+      function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+      }
+    </script>
+    
+
 
 
     <header style="position: absolute;" id="js-si" class="site-header sticky" role="banner">
+      <!-- Hamburger icon for mobile view -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
       <div style="display: flex; padding:1rem; justify-content: space-around; gap: 10rem;" class=" alignwide">
         <!-- Custom logo and site title. -->
         <div class="custom-logo-wrapper">
@@ -426,7 +465,7 @@
             <ul class="menu main-menu">
               <li id="menu-item-4959" style="margin-left: -3%;"
                 class="mega-menu is-two-columns menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4959">
-                <a href="index.html" aria-haspopup="true" aria-expanded="false">Home</a>
+                <a href="/about.html" aria-haspopup="true" aria-expanded="false">About Us</a>
               </li>
               <li id="menu-item-5001"
                 class="mega-menu is-two-columns menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5001">
@@ -884,11 +923,6 @@
               </li>
               <li id="menu-item-5091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5091">
                 <a href="projects.html">Projects</a>
-              </li>
-
-              <li id="menu-item-5093"
-                class="mega-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5093">
-                <a href="/about.html" aria-haspopup="true" aria-expanded="false">About</a>
               </li>
               <a style="color: #fff;cursor: pointer;" href="contact.html" aria-haspopup="true"
                 aria-expanded="false">Contact us</a>
