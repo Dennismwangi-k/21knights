@@ -539,7 +539,17 @@
                             </ol>
                           </div>
 
-                         
+                          <script>
+                            function showList1() {
+                              var list = document.getElementById("list1");
+                              list.style.display = "block";
+                            }
+
+                            function hideList1() {
+                              var list = document.getElementById("list1");
+                              list.style.display = "none";
+                            }
+                          </script>
                           <div onmouseover="showList2()" onmouseout="hideList1()">
                             <a style="font-size: larger; margin-top: 2rem;" href="environment.html"
                               aria-haspopup="true" aria-expanded="false">Environmental Focus Areas</a>
