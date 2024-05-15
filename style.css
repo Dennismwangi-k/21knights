@@ -118,3 +118,59 @@
         display: flex;
     }
 }
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    .alignwide {
+      flex-direction: column; /* Stack items vertically */
+      gap: 1rem; /* Reduce the gap between items */
+      padding: 0.5rem; /* Reduce padding */
+    }
+  
+    .custom-logo-wrapper {
+      margin-bottom: 1rem; /* Add space below the logo */
+      text-align: center; /* Center the logo */
+    }
+  
+    .site-header__navigation {
+      display: none; /* Hide the navigation by default */
+    }
+  
+    .navicon {
+      display: block; /* Show the navicon button */
+      position: relative;
+      z-index: 9999;
+    }
+  
+    .site-header__navigation.is-active {
+      display: block; /* Show the navigation when active */
+    }
+  
+    .menu {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  
+    .menu li {
+      margin-bottom: 0.5rem; /* Add space between menu items */
+    }
+  
+    .sub-menu {
+      display: none; /* Hide sub-menus by default */
+    }
+  
+    .menu-item__trigger {
+      display: inline-block;
+      cursor: pointer;
+      margin-left: 0.5rem; /* Add space between menu item and trigger */
+    }
+  
+    .menu-item__trigger-icon {
+      vertical-align: middle;
+    }
+  
+    .screen-reader-text {
+      display: none; /* Hide screen-reader text */
+    }
+  }
+  
