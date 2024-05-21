@@ -1251,470 +1251,362 @@
               </style>
               </head>
 
-              <body>
-                <div class="slider">
-                  <div class="slide-container">
+            <body>
+                  <div class="slider">
+                    <div class="slide-container">
+                      <div class="slide">
+                        <img src="https://res.cloudinary.com/pitz/image/upload/v1708323532/1_bjx7vj.png" alt="INNOVATION">
+                        <h4>INNOVATION</h4>
+                        <p>Our commitment to innovation is shaped by our actions, partnerships and our teams. With
+                          continuous use and adoption of eco-friendly practices, digital technologies like BIM and Jenga
+                          21, and advanced materials, 21 Knights is constantly dedicated to innovation and making our
+                          sector more efficient for everyone.</p>
+                      </div>
+                      <div class="slide">
+                        <img src="https://res.cloudinary.com/pitz/image/upload/v1708323916/2_lbuhm1.png"
+                          alt="CIVIL & ENERGY INFRASTRUCTURE">
+                        <h4>CIVIL & ENERGY INFRASTRUCTURE</h4>
+                        <p>At 21 Knights Engineering Group we are at the forefront of the development of Civil and Energy
+                          infrastructure. We are dedicated to completing outstanding projects that promote Advancement,
+                          Sustainability, and Innovation. Our track record demonstrates this. We stand out because of our
+                          knowledge, commitment, and unwavering dedication towards quality and safety. Join us as we set
+                          out to create a better tomorrow for Shaping Africa.</p>
+                      </div>
+                      <div class="slide">
+                        <img src="https://res.cloudinary.com/pitz/image/upload/v1708324087/2_wr6ewo.png"
+                          alt="HIGHWAYS & ROADS">
+                        <h4>HIGHWAYS & ROADS</h4>
+                        <p>As a global construction firm specializing in roads and highways, we are exceptional at
+                          designing, building, and maintaining vital transportation infrastructure. We pride ourselves in
+                          delivering road and highway projects, connecting communities, fostering economic growth, and
+                          advancing transportation infrastructure.</p>
+                      </div>
+                      <div class="slide">
+                        <img src="https://res.cloudinary.com/pitz/image/upload/v1708324327/2_u5kgaz.png"
+                          alt="SOCIAL & AGRICULTURE INFRASTRUCTURE">
+                        <h4>SOCIAL & AGRICULTURE INFRASTRUCTURE</h4>
+                        <p>We are committed to construction of public amenities for societies and building systems to
+                          assist in agriculture and rural development.</p>
+                      </div>
+                      <div class="slide">
+                        <img src="https://res.cloudinary.com/pitz/image/upload/v1708324548/2_xkgm2z.png"
+                          alt="SUSTAINABLE WATER SUPPLY & DISTRIBUTION SYSTEMS">
+                        <h4>SUSTAINABLE WATER SUPPLY & DISTRIBUTION SYSTEMS</h4>
+                        <p>We ensure reliable water supply for Communities via involvement in Construction of Efficient
+                          Pipelines Treatment Facilities, Recycling and Smart Technologies to ensure long term water
+                          Sustainability.</p>
+                      </div>
+                      <div class="slide">
+                        <img src="https://res.cloudinary.com/pitz/image/upload/v1708114510/Cap_huhjt7.png"
+                          alt="ENERGY PROJECTS DEVELOPMENT">
+                        <h4>ENERGY PROJECTS DEVELOPMENT</h4>
+                        <p>21 Knights Engineering Group is a pioneer in energy projects development. We are in wind,
+                          solar, and hydro-electric space. We are currently collaborating with other firms on undertaking
+                          extensive research on potential areas in Africa for renewable energies. We believe that with
+                          strategic partnerships and investments we can drive a sustainable energy transition that
+                          addresses Africa energy Challenges and contribute to a greener future.</p>
+                      </div>
+                      <div class="slide">
+                        <img src="https://res.cloudinary.com/pitz/image/upload/v1708114893/Capture_actys7.png"
+                          alt="COMMERCIAL & RESIDENTIAL BUILDINGS">
+                        <h4>COMMERCIAL & RESIDENTIAL BUILDINGS</h4>
+                        <p>At 21 Knights Engineering Group we offer comprehensive Commercial and Residential construction
+                          services to our customers within the continent. With our team specialized in EDGE building
+                          construction practices we are committed to sustainable design and construction.</p>
+                      </div>
+                      <div class="slide">
+                        <img src="https://res.cloudinary.com/pitz/image/upload/v1708115255/Capture_dp41mf.png"
+                          alt="INDUSTRIAL AND MINING INFRASTRUCTURE">
+                        <h4>INDUSTRIAL AND MINING INFRASTRUCTURE</h4>
+                        <p>Our Expertise Spans Design, Construction, And Maintenance, Catering To The Unique Requirements
+                          of Industrial And Mining Sectors.</p>
+                      </div>
+                      <!-- Add more slides as needed -->
+                    </div>
+                  </div>
+
+                  <div class="slider-nav">
+                    <button onclick="prevSlide()">&#10094;</button>
+                    <button onclick="nextSlide()">&#10095;</button>
+                  </div>
+
+                  <script>
+                    // JavaScript for slider
+                    let slides = document.querySelector('.slide-container');
+                    let currentSlide = 0;
+                    const slideWidth = document.querySelector('.slide').offsetWidth + 20; // Slide width + margin
+
+                    function nextSlide() {
+                      currentSlide = (currentSlide + 1) % slides.children.length;
+                      slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+                    }
+
+                    function prevSlide() {
+                      currentSlide = (currentSlide - 1 + slides.children.length) % slides.children.length;
+                      slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+                    }
+
+                    function autoSlide() {
+                      setInterval(nextSlide, 5000);
+                    }
+
+                    autoSlide();
+                  </script>
+
+
+                  <!-- <style>
+                    /* CSS for slider */
+                    .slider {
+                      position: relative;
+                      display: flex;
+                      overflow-x: hidden;
+                    }
+                    .slide {
+                      flex: 0 0 auto;
+                      width: 60%;
+                      gap: 2rem;
+                      transition: transform 0.5s ease;
+                    }
+                    .slide img {
+                      width: 100%;
+                      height: 19rem;
+                      height: auto;
+                      border-radius: 5px;
+                    }
+                    .slide-content {
+                      position: absolute;
+                      bottom: 20px;
+                      left: 20px;
+                      color: white;
+                    }
+                    .slider-nav {
+                      position: absolute;
+                      top: 50%;
+                      transform: translateY(-50%);
+                      width: 100%;
+                      display: flex;
+                      justify-content: space-between;
+                      z-index: 1;
+                    }
+                    .slider-nav button {
+                      background: none;
+                      border: none;
+                      cursor: pointer;
+                      font-size: 24px;
+                      color: white;
+                    }
+                  </style>
+                
+                  
+                  <div class="slider">
                     <div class="slide">
                       <img src="https://res.cloudinary.com/pitz/image/upload/v1708323532/1_bjx7vj.png" alt="INNOVATION">
-                      <h4>INNOVATION</h4>
-                      <p>Our commitment to innovation is shaped by our actions, partnerships and our teams. With
-                        continuous use and adoption of eco-friendly practices, digital technologies like BIM and Jenga
-                        21, and advanced materials, 21 Knights is constantly dedicated to innovation and making our
-                        sector more efficient for everyone.</p>
+                      <h2>INNOVATION</h2>
+                      <p>Our commitment to innovation is shaped by our actions, partnerships and our teams. With continuous use and adoption of eco-friendly practices, digital technologies like BIM and Jenga 21, and advanced materials, 21 Knights is constantly dedicated to innovation and making our sector more efficient for everyone.</p>
                     </div>
-                    <div class="slide">
-                      <img src="https://res.cloudinary.com/pitz/image/upload/v1708323916/2_lbuhm1.png"
-                        alt="CIVIL & ENERGY INFRASTRUCTURE">
-                      <h4>CIVIL & ENERGY INFRASTRUCTURE</h4>
-                      <p>At 21 Knights Engineering Group we are at the forefront of the development of Civil and Energy
-                        infrastructure. We are dedicated to completing outstanding projects that promote Advancement,
-                        Sustainability, and Innovation. Our track record demonstrates this. We stand out because of our
-                        knowledge, commitment, and unwavering dedication towards quality and safety. Join us as we set
-                        out to create a better tomorrow for Shaping Africa.</p>
-                    </div>
-                    <div class="slide">
-                      <img src="https://res.cloudinary.com/pitz/image/upload/v1708324087/2_wr6ewo.png"
-                        alt="HIGHWAYS & ROADS">
-                      <h4>HIGHWAYS & ROADS</h4>
-                      <p>As a global construction firm specializing in roads and highways, we are exceptional at
-                        designing, building, and maintaining vital transportation infrastructure. We pride ourselves in
-                        delivering road and highway projects, connecting communities, fostering economic growth, and
-                        advancing transportation infrastructure.</p>
-                    </div>
-                    <div class="slide">
-                      <img src="https://res.cloudinary.com/pitz/image/upload/v1708324327/2_u5kgaz.png"
-                        alt="SOCIAL & AGRICULTURE INFRASTRUCTURE">
-                      <h4>SOCIAL & AGRICULTURE INFRASTRUCTURE</h4>
-                      <p>We are committed to construction of public amenities for societies and building systems to
-                        assist in agriculture and rural development.</p>
-                    </div>
-                    <div class="slide">
-                      <img src="https://res.cloudinary.com/pitz/image/upload/v1708324548/2_xkgm2z.png"
-                        alt="SUSTAINABLE WATER SUPPLY & DISTRIBUTION SYSTEMS">
-                      <h4>SUSTAINABLE WATER SUPPLY & DISTRIBUTION SYSTEMS</h4>
-                      <p>We ensure reliable water supply for Communities via involvement in Construction of Efficient
-                        Pipelines Treatment Facilities, Recycling and Smart Technologies to ensure long term water
-                        Sustainability.</p>
-                    </div>
-                    <div class="slide">
-                      <img src="https://res.cloudinary.com/pitz/image/upload/v1708114510/Cap_huhjt7.png"
-                        alt="ENERGY PROJECTS DEVELOPMENT">
-                      <h4>ENERGY PROJECTS DEVELOPMENT</h4>
-                      <p>21 Knights Engineering Group is a pioneer in energy projects development. We are in wind,
-                        solar, and hydro-electric space. We are currently collaborating with other firms on undertaking
-                        extensive research on potential areas in Africa for renewable energies. We believe that with
-                        strategic partnerships and investments we can drive a sustainable energy transition that
-                        addresses Africa energy Challenges and contribute to a greener future.</p>
-                    </div>
-                    <div class="slide">
-                      <img src="https://res.cloudinary.com/pitz/image/upload/v1708114893/Capture_actys7.png"
-                        alt="COMMERCIAL & RESIDENTIAL BUILDINGS">
-                      <h4>COMMERCIAL & RESIDENTIAL BUILDINGS</h4>
-                      <p>At 21 Knights Engineering Group we offer comprehensive Commercial and Residential construction
-                        services to our customers within the continent. With our team specialized in EDGE building
-                        construction practices we are committed to sustainable design and construction.</p>
-                    </div>
-                    <div class="slide">
-                      <img src="https://res.cloudinary.com/pitz/image/upload/v1708115255/Capture_dp41mf.png"
-                        alt="INDUSTRIAL AND MINING INFRASTRUCTURE">
-                      <h4>INDUSTRIAL AND MINING INFRASTRUCTURE</h4>
-                      <p>Our Expertise Spans Design, Construction, And Maintenance, Catering To The Unique Requirements
-                        of Industrial And Mining Sectors.</p>
-                    </div>
-                    <!-- Add more slides as needed -->
-                  </div>
-                </div>
-
-                <div class="slider-nav">
-                  <button onclick="prevSlide()">&#10094;</button>
-                  <button onclick="nextSlide()">&#10095;</button>
-                </div>
-
-                <script>
-                  // JavaScript for slider
-                  let slides = document.querySelector('.slide-container');
-                  let currentSlide = 0;
-                  const slideWidth = document.querySelector('.slide').offsetWidth + 20; // Slide width + margin
-
-                  function nextSlide() {
-                    currentSlide = (currentSlide + 1) % slides.children.length;
-                    slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-                  }
-
-                  function prevSlide() {
-                    currentSlide = (currentSlide - 1 + slides.children.length) % slides.children.length;
-                    slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-                  }
-
-                  function autoSlide() {
-                    setInterval(nextSlide, 5000);
-                  }
-
-                  autoSlide();
-                </script>
-
-
-                <!-- <style>
-                  /* CSS for slider */
-                  .slider {
-                    position: relative;
-                    display: flex;
-                    overflow-x: hidden;
-                  }
-                  .slide {
-                    flex: 0 0 auto;
-                    width: 60%;
-                    gap: 2rem;
-                    transition: transform 0.5s ease;
-                  }
-                  .slide img {
-                    width: 100%;
-                    height: 19rem;
-                    height: auto;
-                    border-radius: 5px;
-                  }
-                  .slide-content {
-                    position: absolute;
-                    bottom: 20px;
-                    left: 20px;
-                    color: white;
-                  }
-                  .slider-nav {
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    z-index: 1;
-                  }
-                  .slider-nav button {
-                    background: none;
-                    border: none;
-                    cursor: pointer;
-                    font-size: 24px;
-                    color: white;
-                  }
-                </style>
-              
-                
-                <div class="slider">
-                  <div class="slide">
-                    <img src="https://res.cloudinary.com/pitz/image/upload/v1708323532/1_bjx7vj.png" alt="INNOVATION">
-                    <h2>INNOVATION</h2>
-                    <p>Our commitment to innovation is shaped by our actions, partnerships and our teams. With continuous use and adoption of eco-friendly practices, digital technologies like BIM and Jenga 21, and advanced materials, 21 Knights is constantly dedicated to innovation and making our sector more efficient for everyone.</p>
+                    
                   </div>
                   
-                </div>
-                
-                <div class="slider-nav">
-                  <button onclick="prevSlide()">&#10094;</button>
-                  <button onclick="nextSlide()">&#10095;</button>
-                </div>
-                
-                <script>
-                  // JavaScript for slider
-                  let slides = document.querySelectorAll('.slide');
-                  let slider = document.querySelector('.slider');
-                  let currentSlide = 0;
-                
-                  function nextSlide() {
-                    slides[currentSlide].style.transform = 'translateX(-100%)';
-                    currentSlide = (currentSlide + 1) % slides.length;
-                    slides[currentSlide].style.transform = 'translateX(0)';
-                  }
-                
-                  function prevSlide() {
-                    slides[currentSlide].style.transform = 'translateX(100%)';
-                    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-                    slides[currentSlide].style.transform = 'translateX(0)';
-                  }
-                
-                  function autoSlide() {
-                    setInterval(nextSlide, 5000);
-                  }
-                
-                  autoSlide();
-                </script> -->
+                  <div class="slider-nav">
+                    <button onclick="prevSlide()">&#10094;</button>
+                    <button onclick="nextSlide()">&#10095;</button>
+                  </div>
+                  
+                  <script>
+                    // JavaScript for slider
+                    let slides = document.querySelectorAll('.slide');
+                    let slider = document.querySelector('.slider');
+                    let currentSlide = 0;
+                  
+                    function nextSlide() {
+                      slides[currentSlide].style.transform = 'translateX(-100%)';
+                      currentSlide = (currentSlide + 1) % slides.length;
+                      slides[currentSlide].style.transform = 'translateX(0)';
+                    }
+                  
+                    function prevSlide() {
+                      slides[currentSlide].style.transform = 'translateX(100%)';
+                      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                      slides[currentSlide].style.transform = 'translateX(0)';
+                    }
+                  
+                    function autoSlide() {
+                      setInterval(nextSlide, 5000);
+                    }
+                  
+                    autoSlide();
+                  </script> -->
 
+              </div>
             </div>
           </div>
-        </div>
 
 
-        <h1 class="h2 em-mt--xs"><strong>Sustainable Development Goals</strong></h1>
+          <h1 class="h2 em-mt--xs"><strong>Sustainable Development Goals</strong></h1>
 
-        <div class="wp-block-emagine-grid alignwide wp-block-emagine-grid--halves">
-          <p>The 2030 Agenda for sustainable developement by all united nations members state in 2015,
-            provides a shared blue print for peace and prosperity for people and planet
-            ,now and into the future . At its heart are the !7 Sustainable Developement Goals , which are an urgent call
-            for an action by all countries - developed and developing -in a global partnership.</p>
+          <div class="wp-block-emagine-grid alignwide wp-block-emagine-grid--halves">
+            <p>The 2030 Agenda for sustainable developement by all united nations members state in 2015,
+              provides a shared blue print for peace and prosperity for people and planet
+              ,now and into the future . At its heart are the !7 Sustainable Developement Goals , which are an urgent call
+              for an action by all countries - developed and developing -in a global partnership.</p>
 
 
-          <div
-            style="display: flex; flex-wrap: wrap; gap: 3rem; width: 100%; align-items: center; justify-content: center;">
-            <img style="width: 350px; object-fit: contain;"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sustainable_Development_Goal_7.png/1200px-Sustainable_Development_Goal_7.png"
-              alt="">
-            <img style="width: 350px; object-fit: contain;"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sustainable_Development_Goal_08DecentWork.svg/1200px-Sustainable_Development_Goal_08DecentWork.svg.png"
-              alt="">
-            <img style="width: 350px; object-fit: contain;"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Sustainable_Development_Goal_09Industry.svg/1200px-Sustainable_Development_Goal_09Industry.svg.png"
-              alt="">
-            <img style="width: 350px; object-fit: contain;"
-              src="data:image/png;base64,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"
-              alt="">
-            <img style="width: 350px; object-fit: contain;"
-              src="data:image/png;base64,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"
-              alt="">
+            <div
+              style="display: flex; flex-wrap: wrap; gap: 3rem; width: 100%; align-items: center; justify-content: center;">
+              <img style="width: 350px; object-fit: contain;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sustainable_Development_Goal_7.png/1200px-Sustainable_Development_Goal_7.png"
+                alt="">
+              <img style="width: 350px; object-fit: contain;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sustainable_Development_Goal_08DecentWork.svg/1200px-Sustainable_Development_Goal_08DecentWork.svg.png"
+                alt="">
+              <img style="width: 350px; object-fit: contain;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Sustainable_Development_Goal_09Industry.svg/1200px-Sustainable_Development_Goal_09Industry.svg.png"
+                alt="">
+              <img style="width: 350px; object-fit: contain;"
+                src="data:image/png;base64,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"
+                alt="">
+              <img style="width: 350px; object-fit: contain;"
+                src="data:image/png;base64,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"
+                alt="">
+            </div>
+
+            </ol>
           </div>
-
-          </ol>
-        </div>
-  </div>
+    </div>
 
 
 
-  <!--latest Nnews Area start -->
- <div class="latest-news-area section-padding30">
-  <div class="container">
-      <div class="row">
-          <div class="col-xl-12">
-              <!-- Section Tittle -->
-              <div class="section-tittle section-tittle7 mb-50">
-                  <div class="front-text">
-                      <h2 class="">latest news</h2>
+      <!--latest Nnews Area start -->
+      <div class="latest-news-area section-padding30">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-12">
+                  <!-- Section Tittle -->
+                  <div class="section-tittle section-tittle7 mb-50">
+                      <div class="front-text">
+                          <h2 class="">latest news</h2>
+                      </div>
+                      <span class="back-text">Our Blog</span>
                   </div>
-                  <span class="back-text">Our Blog</span>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6">
+                  <!-- single-news -->
+                  <div class="single-news mb-30">
+                      <div class="news-img">
+                          <img src="static/img/david/david_1.png" alt="">
+                          <div class="news-date text-center">
+                              <span>24</span>
+                              <p>Now</p>
+                          </div>
+                      </div>
+                      <div class="news-caption">
+                          <ul class="david-info">
+                              <li> | &nbsp; &nbsp;  Porperties</li>
+                          </ul>
+                          <h2><a href="#">Footprints in Time is perfect
+                              House in Nairobi</a></h2>
+                          <a href="#" class="d-btn">Read more »</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6">
+                  <!-- single-news -->
+                  <div class="single-news mb-30">
+                      <div class="news-img">
+                          <img src="static/img/david/david_2.png" alt="">
+                          <div class="news-date text-center">
+                              <span>24</span>
+                              <p>Now</p>
+                          </div>
+                      </div>
+                      <div class="news-caption">
+                          <ul class="david-info">
+                              <li> | &nbsp; &nbsp;  Porperties</li>
+                          </ul>
+                          <h2><a href="#">Footprints in Time is perfect
+                              House in Malaba</a></h2>
+                          <a href="#" class="d-btn">Read more » </a>
+                      </div>
+                  </div>
               </div>
           </div>
       </div>
-      <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-6">
-              <!-- single-news -->
-              <div class="single-news mb-30">
-                  <div class="news-img">
-                      <img src="static/img/david/david_1.png" alt="">
-                      <div class="news-date text-center">
-                          <span>24</span>
-                          <p>Now</p>
-                      </div>
-                  </div>
-                  <div class="news-caption">
-                      <ul class="david-info">
-                          <li> | &nbsp; &nbsp;  Porperties</li>
-                      </ul>
-                      <h2><a href="#">Footprints in Time is perfect
-                          House in Nairobi</a></h2>
-                      <a href="#" class="d-btn">Read more »</a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-6">
-              <!-- single-news -->
-              <div class="single-news mb-30">
-                  <div class="news-img">
-                      <img src="static/img/david/david_2.png" alt="">
-                      <div class="news-date text-center">
-                          <span>24</span>
-                          <p>Now</p>
-                      </div>
-                  </div>
-                  <div class="news-caption">
-                      <ul class="david-info">
-                          <li> | &nbsp; &nbsp;  Porperties</li>
-                      </ul>
-                      <h2><a href="#">Footprints in Time is perfect
-                          House in Malaba</a></h2>
-                      <a href="#" class="d-btn">Read more » </a>
-                  </div>
-              </div>
-          </div>
-     </div>
-  </div>
-</div>
-<!--latest News Area End -->
-  </article>
-  </main>
-  <style>
-    .foo{
-      color: #fff !important;
-    }
-     
+      </div>
+      <!--latest News Area End -->
+      </article>
+    </main>
+    <style>
+      .foo{
+        color: #fff !important;
+      }
+        
     </style>
-        <footer class="site-footer  site-footer--has-logo site-footer--align-brand-left">
-          <div style="background-color: rgb(6, 30, 49); color: #fff; padding: 1rem;" class=" foo clearfix">
-            <div style="color: #fff;" class="">
-              <div class="em-grid">
-                <div class="em-col-3_md-4_sm-12">
-                  <div class="deep-footer__brand">
-                    <div class="deep-footer__logo" style="max-width: 100%">
-                      <a href="/">
-                        <?xml version="1.0"?>
-                        <img
-                          src="https://res.cloudinary.com/pitz/image/upload/v1708692038/Capture-removebg-preview_1_uhlkrr.png"
-                          alt="">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="foo em-col-9_md-8_sm-12">
-                  <ul class="menu foo deep-footer-menu">
-                    <li id="menu-item-6069"
-                      class="menu-item foo menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6069">
-                      <a href="building.html" class="foo">Building</a>
-                      <ul class="sub-menu">
-                        <li id="menu-item-17018"
-                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17018">
-                          <a class="foo"
-                            href="/projects.html">Projects</a>
-                        </li>
-                        <li id="menu-item-6071"
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6071">
-                          <a class="foo" href="services.html">Services</a>
-                        </li>
-                      
-                      
-                       
-                      </ul>
-                    </li>
-                    <li id="menu-item-6072"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6072">
-                      <a class="foo" href="#">Development</a>
-                      <ul class="sub-menu">
-                        <li id="menu-item-17019"
-                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17019">
-                          <a class="foo"
-                            href="#">Projects</a>
-                        </li>
-                        <li id="menu-item-6073"
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6073">
-                          <a class="foo" href="services.html">Services</a>
-                        </li>
-                      
-                      
-                      </ul>
-                    </li>
-                    <li id="menu-item-6077"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6077">
-                      <a class="foo" href="about.html">About</a>
-                      <ul class="sub-menu">
-                        <li id="menu-item-6078"
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6078">
-                          <a class="foo" href="#">Our Impact</a>
-                        </li>
-                        <li id="menu-item-6079"
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6079">
-                          <a class="foo" href="/about.html">Partner With Us</a>
-                        </li>
-                        <!-- <li
-                              id="menu-item-6080"
-                              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6080"
-                            >
-                              <a href="https://www.gilbaneco.com/careers/">Careers</a>
-                            </li> -->
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
+
+    <footer class="site-footer site-footer--has-logo site-footer--align-brand-left">
+      <div style="background-color: rgb(6, 30, 49); color: #fff; padding: 1rem;" class="foo clearfix">
+        <div class="em-grid">
+          <div class="em-col-3_md-4_sm-12">
+            <div class="deep-footer__brand">
+              <div class="deep-footer__logo" style="max-width: 100%">
+                <a href="/">
+                  <img src="https://res.cloudinary.com/pitz/image/upload/v1708692038/Capture-removebg-preview_1_uhlkrr.png" alt="">
+                </a>
               </div>
             </div>
-            <button class="scroll-to-top scroll-to-top--visible" id="scrollToTopButton" aria-label="Scroll to Top"
-              title="Scroll to Top">
-              <span class="screen-reader-text">Scroll to Top</span>
-              <svg width="12" height="16" xmlns="http://www.w3.org/2000/svg">
-                <g>
-                  <path transform="rotate(-89.7475 6.02515 7.96823)" fill="#fff"
-                    d="m13.551,7.969a0.836,0.836 0 0 0 -0.141,-0.432l-4.013,-5.34a0.435,0.435 0 0 0 -0.709,-0.025a0.77,0.77 0 0 0 -0.02,0.888l3.222,4.28l-12.89,0a0.644,0.644 0 0 0 0,1.256l12.889,0l-3.222,4.28a0.784,0.784 0 0 0 0.02,0.888a0.435,0.435 0 0 0 0.709,-0.024l4.013,-5.34a0.639,0.639 0 0 0 0.142,-0.431z"
-                    id="Arrow"></path>
-                </g>
-              </svg>
-            </button>
           </div>
-      
+          <div class="em-col-9_md-8_sm-12">
+            <ul class="menu foo deep-footer-menu">
+              <li id="menu-item-6069" class="menu-item foo menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6069">
+                <a href="building.html" class="foo">Building</a>
+                <ul class="sub-menu">
+                  <li id="menu-item-17018" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17018">
+                    <a class="foo" href="/projects.html">Projects</a>
+                  </li>
+                  <li id="menu-item-6071" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6071">
+                    <a class="foo" href="services.html">Services</a>
+                  </li>
+                </ul>
+              </li>
+              <li id="menu-item-6072" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6072">
+                <a class="foo" href="#">Development</a>
+                <ul class="sub-menu">
+                  <li id="menu-item-17019" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17019">
+                    <a class="foo" href="#">Projects</a>
+                  </li>
+                  <li id="menu-item-6073" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6073">
+                    <a class="foo" href="services.html">Services</a>
+                  </li>
+                </ul>
+              </li>
+              <li id="menu-item-6077" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6077">
+                <a class="foo" href="about.html">About</a>
+                <ul class="sub-menu">
+                  <li id="menu-item-6078" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6078">
+                    <a class="foo" href="#">Our Impact</a>
+                  </li>
+                  <li id="menu-item-6079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6079">
+                    <a class="foo" href="/about.html">Partner With Us</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
-        </footer>
-  
-  
-  
-  <script type="text/javascript" id="wc-settings-js-before">
-    /* <![CDATA[ */
-    var wcSettings =
-      wcSettings ||
-      JSON.parse(
-        decodeURIComponent(
-          "%7B%22shippingCostRequiresAddress%22%3Afalse%2C%22adminUrl%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fwp-admin%5C%2F%22%2C%22countries%22%3A%7B%22AF%22%3A%22Afghanistan%22%2C%22AX%22%3A%22%5Cu00c5land%20Islands%22%2C%22AL%22%3A%22Albania%22%2C%22DZ%22%3A%22Algeria%22%2C%22AS%22%3A%22American%20Samoa%22%2C%22AD%22%3A%22Andorra%22%2C%22AO%22%3A%22Angola%22%2C%22AI%22%3A%22Anguilla%22%2C%22AQ%22%3A%22Antarctica%22%2C%22AG%22%3A%22Antigua%20and%20Barbuda%22%2C%22AR%22%3A%22Argentina%22%2C%22AM%22%3A%22Armenia%22%2C%22AW%22%3A%22Aruba%22%2C%22AU%22%3A%22Australia%22%2C%22AT%22%3A%22Austria%22%2C%22AZ%22%3A%22Azerbaijan%22%2C%22BS%22%3A%22Bahamas%22%2C%22BH%22%3A%22Bahrain%22%2C%22BD%22%3A%22Bangladesh%22%2C%22BB%22%3A%22Barbados%22%2C%22BY%22%3A%22Belarus%22%2C%22PW%22%3A%22Belau%22%2C%22BE%22%3A%22Belgium%22%2C%22BZ%22%3A%22Belize%22%2C%22BJ%22%3A%22Benin%22%2C%22BM%22%3A%22Bermuda%22%2C%22BT%22%3A%22Bhutan%22%2C%22BO%22%3A%22Bolivia%22%2C%22BQ%22%3A%22Bonaire%2C%20Saint%20Eustatius%20and%20Saba%22%2C%22BA%22%3A%22Bosnia%20and%20Herzegovina%22%2C%22BW%22%3A%22Botswana%22%2C%22BV%22%3A%22Bouvet%20Island%22%2C%22BR%22%3A%22Brazil%22%2C%22IO%22%3A%22British%20Indian%20Ocean%20Territory%22%2C%22BN%22%3A%22Brunei%22%2C%22BG%22%3A%22Bulgaria%22%2C%22BF%22%3A%22Burkina%20Faso%22%2C%22BI%22%3A%22Burundi%22%2C%22KH%22%3A%22Cambodia%22%2C%22CM%22%3A%22Cameroon%22%2C%22CA%22%3A%22Canada%22%2C%22CV%22%3A%22Cape%20Verde%22%2C%22KY%22%3A%22Cayman%20Islands%22%2C%22CF%22%3A%22Central%20African%20Republic%22%2C%22TD%22%3A%22Chad%22%2C%22CL%22%3A%22Chile%22%2C%22CN%22%3A%22China%22%2C%22CX%22%3A%22Christmas%20Island%22%2C%22CC%22%3A%22Cocos%20%28Keeling%29%20Islands%22%2C%22CO%22%3A%22Colombia%22%2C%22KM%22%3A%22Comoros%22%2C%22CG%22%3A%22Congo%20%28Brazzaville%29%22%2C%22CD%22%3A%22Congo%20%28Kinshasa%29%22%2C%22CK%22%3A%22Cook%20Islands%22%2C%22CR%22%3A%22Costa%20Rica%22%2C%22HR%22%3A%22Croatia%22%2C%22CU%22%3A%22Cuba%22%2C%22CW%22%3A%22Cura%26ccedil%3Bao%22%2C%22CY%22%3A%22Cyprus%22%2C%22CZ%22%3A%22Czech%20Republic%22%2C%22DK%22%3A%22Denmark%22%2C%22DJ%22%3A%22Djibouti%22%2C%22DM%22%3A%22Dominica%22%2C%22DO%22%3A%22Dominican%20Republic%22%2C%22EC%22%3A%22Ecuador%22%2C%22EG%22%3A%22Egypt%22%2C%22SV%22%3A%22El%20Salvador%22%2C%22GQ%22%3A%22Equatorial%20Guinea%22%2C%22ER%22%3A%22Eritrea%22%2C%22EE%22%3A%22Estonia%22%2C%22SZ%22%3A%22Eswatini%22%2C%22ET%22%3A%22Ethiopia%22%2C%22FK%22%3A%22Falkland%20Islands%22%2C%22FO%22%3A%22Faroe%20Islands%22%2C%22FJ%22%3A%22Fiji%22%2C%22FI%22%3A%22Finland%22%2C%22FR%22%3A%22France%22%2C%22GF%22%3A%22French%20Guiana%22%2C%22PF%22%3A%22French%20Polynesia%22%2C%22TF%22%3A%22French%20Southern%20Territories%22%2C%22GA%22%3A%22Gabon%22%2C%22GM%22%3A%22Gambia%22%2C%22GE%22%3A%22Georgia%22%2C%22DE%22%3A%22Germany%22%2C%22GH%22%3A%22Ghana%22%2C%22GI%22%3A%22Gibraltar%22%2C%22GR%22%3A%22Greece%22%2C%22GL%22%3A%22Greenland%22%2C%22GD%22%3A%22Grenada%22%2C%22GP%22%3A%22Guadeloupe%22%2C%22GU%22%3A%22Guam%22%2C%22GT%22%3A%22Guatemala%22%2C%22GG%22%3A%22Guernsey%22%2C%22GN%22%3A%22Guinea%22%2C%22GW%22%3A%22Guinea-Bissau%22%2C%22GY%22%3A%22Guyana%22%2C%22HT%22%3A%22Haiti%22%2C%22HM%22%3A%22Heard%20Island%20and%20McDonald%20Islands%22%2C%22HN%22%3A%22Honduras%22%2C%22HK%22%3A%22Hong%20Kong%22%2C%22HU%22%3A%22Hungary%22%2C%22IS%22%3A%22Iceland%22%2C%22IN%22%3A%22India%22%2C%22ID%22%3A%22Indonesia%22%2C%22IR%22%3A%22Iran%22%2C%22IQ%22%3A%22Iraq%22%2C%22IE%22%3A%22Ireland%22%2C%22IM%22%3A%22Isle%20of%20Man%22%2C%22IL%22%3A%22Israel%22%2C%22IT%22%3A%22Italy%22%2C%22CI%22%3A%22Ivory%20Coast%22%2C%22JM%22%3A%22Jamaica%22%2C%22JP%22%3A%22Japan%22%2C%22JE%22%3A%22Jersey%22%2C%22JO%22%3A%22Jordan%22%2C%22KZ%22%3A%22Kazakhstan%22%2C%22KE%22%3A%22Kenya%22%2C%22KI%22%3A%22Kiribati%22%2C%22KW%22%3A%22Kuwait%22%2C%22KG%22%3A%22Kyrgyzstan%22%2C%22LA%22%3A%22Laos%22%2C%22LV%22%3A%22Latvia%22%2C%22LB%22%3A%22Lebanon%22%2C%22LS%22%3A%22Lesotho%22%2C%22LR%22%3A%22Liberia%22%2C%22LY%22%3A%22Libya%22%2C%22LI%22%3A%22Liechtenstein%22%2C%22LT%22%3A%22Lithuania%22%2C%22LU%22%3A%22Luxembourg%22%2C%22MO%22%3A%22Macao%22%2C%22MG%22%3A%22Madagascar%22%2C%22MW%22%3A%22Malawi%22%2C%22MY%22%3A%22Malaysia%22%2C%22MV%22%3A%22Maldives%22%2C%22ML%22%3A%22Mali%22%2C%22MT%22%3A%22Malta%22%2C%22MH%22%3A%22Marshall%20Islands%22%2C%22MQ%22%3A%22Martinique%22%2C%22MR%22%3A%22Mauritania%22%2C%22MU%22%3A%22Mauritius%22%2C%22YT%22%3A%22Mayotte%22%2C%22MX%22%3A%22Mexico%22%2C%22FM%22%3A%22Micronesia%22%2C%22MD%22%3A%22Moldova%22%2C%22MC%22%3A%22Monaco%22%2C%22MN%22%3A%22Mongolia%22%2C%22ME%22%3A%22Montenegro%22%2C%22MS%22%3A%22Montserrat%22%2C%22MA%22%3A%22Morocco%22%2C%22MZ%22%3A%22Mozambique%22%2C%22MM%22%3A%22Myanmar%22%2C%22NA%22%3A%22Namibia%22%2C%22NR%22%3A%22Nauru%22%2C%22NP%22%3A%22Nepal%22%2C%22NL%22%3A%22Netherlands%22%2C%22NC%22%3A%22New%20Caledonia%22%2C%22NZ%22%3A%22New%20Zealand%22%2C%22NI%22%3A%22Nicaragua%22%2C%22NE%22%3A%22Niger%22%2C%22NG%22%3A%22Nigeria%22%2C%22NU%22%3A%22Niue%22%2C%22NF%22%3A%22Norfolk%20Island%22%2C%22KP%22%3A%22North%20Korea%22%2C%22MK%22%3A%22North%20Macedonia%22%2C%22MP%22%3A%22Northern%20Mariana%20Islands%22%2C%22NO%22%3A%22Norway%22%2C%22OM%22%3A%22Oman%22%2C%22PK%22%3A%22Pakistan%22%2C%22PS%22%3A%22Palestinian%20Territory%22%2C%22PA%22%3A%22Panama%22%2C%22PG%22%3A%22Papua%20New%20Guinea%22%2C%22PY%22%3A%22Paraguay%22%2C%22PE%22%3A%22Peru%22%2C%22PH%22%3A%22Philippines%22%2C%22PN%22%3A%22Pitcairn%22%2C%22PL%22%3A%22Poland%22%2C%22PT%22%3A%22Portugal%22%2C%22PR%22%3A%22Puerto%20Rico%22%2C%22QA%22%3A%22Qatar%22%2C%22RE%22%3A%22Reunion%22%2C%22RO%22%3A%22Romania%22%2C%22RU%22%3A%22Russia%22%2C%22RW%22%3A%22Rwanda%22%2C%22ST%22%3A%22S%26atilde%3Bo%20Tom%26eacute%3B%20and%20Pr%26iacute%3Bncipe%22%2C%22BL%22%3A%22Saint%20Barth%26eacute%3Blemy%22%2C%22SH%22%3A%22Saint%20Helena%22%2C%22KN%22%3A%22Saint%20Kitts%20and%20Nevis%22%2C%22LC%22%3A%22Saint%20Lucia%22%2C%22SX%22%3A%22Saint%20Martin%20%28Dutch%20part%29%22%2C%22MF%22%3A%22Saint%20Martin%20%28French%20part%29%22%2C%22PM%22%3A%22Saint%20Pierre%20and%20Miquelon%22%2C%22VC%22%3A%22Saint%20Vincent%20and%20the%20Grenadines%22%2C%22WS%22%3A%22Samoa%22%2C%22SM%22%3A%22San%20Marino%22%2C%22SA%22%3A%22Saudi%20Arabia%22%2C%22SN%22%3A%22Senegal%22%2C%22RS%22%3A%22Serbia%22%2C%22SC%22%3A%22Seychelles%22%2C%22SL%22%3A%22Sierra%20Leone%22%2C%22SG%22%3A%22Singapore%22%2C%22SK%22%3A%22Slovakia%22%2C%22SI%22%3A%22Slovenia%22%2C%22SB%22%3A%22Solomon%20Islands%22%2C%22SO%22%3A%22Somalia%22%2C%22ZA%22%3A%22South%20Africa%22%2C%22GS%22%3A%22South%20Georgia%5C%2FSandwich%20Islands%22%2C%22KR%22%3A%22South%20Korea%22%2C%22SS%22%3A%22South%20Sudan%22%2C%22ES%22%3A%22Spain%22%2C%22LK%22%3A%22Sri%20Lanka%22%2C%22SD%22%3A%22Sudan%22%2C%22SR%22%3A%22Suriname%22%2C%22SJ%22%3A%22Svalbard%20and%20Jan%20Mayen%22%2C%22SE%22%3A%22Sweden%22%2C%22CH%22%3A%22Switzerland%22%2C%22SY%22%3A%22Syria%22%2C%22TW%22%3A%22Taiwan%22%2C%22TJ%22%3A%22Tajikistan%22%2C%22TZ%22%3A%22Tanzania%22%2C%22TH%22%3A%22Thailand%22%2C%22TL%22%3A%22Timor-Leste%22%2C%22TG%22%3A%22Togo%22%2C%22TK%22%3A%22Tokelau%22%2C%22TO%22%3A%22Tonga%22%2C%22TT%22%3A%22Trinidad%20and%20Tobago%22%2C%22TN%22%3A%22Tunisia%22%2C%22TR%22%3A%22Turkey%22%2C%22TM%22%3A%22Turkmenistan%22%2C%22TC%22%3A%22Turks%20and%20Caicos%20Islands%22%2C%22TV%22%3A%22Tuvalu%22%2C%22UG%22%3A%22Uganda%22%2C%22UA%22%3A%22Ukraine%22%2C%22AE%22%3A%22United%20Arab%20Emirates%22%2C%22GB%22%3A%22United%20Kingdom%20%28UK%29%22%2C%22US%22%3A%22United%20States%20%28US%29%22%2C%22UM%22%3A%22United%20States%20%28US%29%20Minor%20Outlying%20Islands%22%2C%22UY%22%3A%22Uruguay%22%2C%22UZ%22%3A%22Uzbekistan%22%2C%22VU%22%3A%22Vanuatu%22%2C%22VA%22%3A%22Vatican%22%2C%22VE%22%3A%22Venezuela%22%2C%22VN%22%3A%22Vietnam%22%2C%22VG%22%3A%22Virgin%20Islands%20%28British%29%22%2C%22VI%22%3A%22Virgin%20Islands%20%28US%29%22%2C%22WF%22%3A%22Wallis%20and%20Futuna%22%2C%22EH%22%3A%22Western%20Sahara%22%2C%22YE%22%3A%22Yemen%22%2C%22ZM%22%3A%22Zambia%22%2C%22ZW%22%3A%22Zimbabwe%22%7D%2C%22currency%22%3A%7B%22code%22%3A%22USD%22%2C%22precision%22%3A2%2C%22symbol%22%3A%22%24%22%2C%22symbolPosition%22%3A%22left%22%2C%22decimalSeparator%22%3A%22.%22%2C%22thousandSeparator%22%3A%22%2C%22%2C%22priceFormat%22%3A%22%251%24s%252%24s%22%7D%2C%22currentUserId%22%3A0%2C%22currentUserIsAdmin%22%3Afalse%2C%22dateFormat%22%3A%22F%20j%2C%20Y%22%2C%22homeUrl%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2F%22%2C%22locale%22%3A%7B%22siteLocale%22%3A%22en_US%22%2C%22userLocale%22%3A%22en_US%22%2C%22weekdaysShort%22%3A%5B%22Sun%22%2C%22Mon%22%2C%22Tue%22%2C%22Wed%22%2C%22Thu%22%2C%22Fri%22%2C%22Sat%22%5D%7D%2C%22dashboardUrl%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fmy-account%5C%2F%22%2C%22orderStatuses%22%3A%7B%22pending%22%3A%22Pending%20payment%22%2C%22processing%22%3A%22Processing%22%2C%22on-hold%22%3A%22On%20hold%22%2C%22completed%22%3A%22Completed%22%2C%22cancelled%22%3A%22Cancelled%22%2C%22refunded%22%3A%22Refunded%22%2C%22failed%22%3A%22Failed%22%2C%22checkout-draft%22%3A%22Draft%22%7D%2C%22placeholderImgSrc%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fwp-content%5C%2Fuploads%5C%2Fwoocommerce-placeholder.png%22%2C%22productsSettings%22%3A%7B%22cartRedirectAfterAdd%22%3Afalse%7D%2C%22siteTitle%22%3A%22Gilbane%22%2C%22storePages%22%3A%7B%22myaccount%22%3A%7B%22id%22%3A14462%2C%22title%22%3A%22My%20account%22%2C%22permalink%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fmy-account%5C%2F%22%7D%2C%22shop%22%3A%7B%22id%22%3A0%2C%22title%22%3A%22%22%2C%22permalink%22%3Afalse%7D%2C%22cart%22%3A%7B%22id%22%3A14460%2C%22title%22%3A%22Cart%22%2C%22permalink%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fcart%5C%2F%22%7D%2C%22checkout%22%3A%7B%22id%22%3A14461%2C%22title%22%3A%22Checkout%22%2C%22permalink%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fcheckout%5C%2F%22%7D%2C%22privacy%22%3A%7B%22id%22%3A0%2C%22title%22%3A%22%22%2C%22permalink%22%3Afalse%7D%2C%22terms%22%3A%7B%22id%22%3A0%2C%22title%22%3A%22%22%2C%22permalink%22%3Afalse%7D%7D%2C%22wcAssetUrl%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fwp-content%5C%2Fplugins%5C%2Fwoocommerce%5C%2Fassets%5C%2F%22%2C%22wcVersion%22%3A%228.5.2%22%2C%22wpLoginUrl%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fwp-login.php%22%2C%22wpVersion%22%3A%226.4.3%22%2C%22collectableMethodIds%22%3A%5B%5D%2C%22admin%22%3A%7B%22wccomHelper%22%3A%7B%22isConnected%22%3Afalse%2C%22connectURL%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%5C%2Fwp-admin%5C%2Fadmin.php%3Fpage%3Dwc-addons%26section%3Dhelper%26wc-helper-connect%3D1%26wc-helper-nonce%3D283a2d1661%22%2C%22userEmail%22%3A%22%22%2C%22userAvatar%22%3A%22https%3A%5C%2F%5C%2Fsecure.gravatar.com%5C%2Favatar%5C%2F%3Fs%3D48%26d%3Dmm%26r%3Dg%22%2C%22storeCountry%22%3A%22US%22%2C%22inAppPurchaseURLParams%22%3A%7B%22wccom-site%22%3A%22https%3A%5C%2F%5C%2Fwww.gilbaneco.com%22%2C%22wccom-back%22%3A%22%252F%22%2C%22wccom-woo-version%22%3A%228.5.2%22%2C%22wccom-connect-nonce%22%3A%22283a2d1661%22%7D%7D%2C%22_feature_nonce%22%3A%22a8ca2dd852%22%2C%22alertCount%22%3A%220%22%2C%22visibleTaskListIds%22%3A%5B%22setup%22%5D%7D%7D"
-        )
-      );
-    /* ]]> */
-  </script>
-  <script src="static/js/main.js"></script>
-  <script src="static/js/custom.js"></script>
-  <!-- JS here -->
-	
-		<!-- All JS Custom Plugins Link Here here -->
-    <script src="static/js/vendor/modernizr-3.5.0.min.js"></script>
-		<!-- Jquery, Popper, Bootstrap -->
-		<script src="static/js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="static/js/popper.min.js"></script>
-        <script src="static/js/bootstrap.min.js"></script>
-	    <!-- Jquery Mobile Menu -->
-        <script src="static/js/jquery.slicknav.min.js"></script>
-
-		<!-- Jquery Slick , Owl-Carousel Plugins -->
-        <script src="static/js/owl.carousel.min.js"></script>
-        <script src="static/js/slick.min.js"></script>
-        <!-- Date Picker -->
-        <script src="static/js/gijgo.min.js"></script>
-		<!-- One Page, Animated-HeadLin -->
-        <script src="static/js/wow.min.js"></script>
-		<script src="static/js/animated.headline.js"></script>
-        <script src="static/js/jquery.magnific-popup.js"></script>
-        <!-- counter , waypoint -->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-        <script src="static/js/jquery.counterup.min.js"></script>
-
-        <!-- contact js -->
-        <script src="static/js/contact.js"></script>
-        <script src="static/js/jquery.form.js"></script>
-        <script src="static/js/jquery.validate.min.js"></script>
-        <script src="static/js/mail-script.js"></script>
-        <script src="static/js/jquery.ajaxchimp.min.js"></script>
-        
-		<!-- Jquery Plugins, main Jquery -->	
-        <script src="static/js/plugins.js"></script>
-        <script src="static/js/main.js"></script>
-  <script type="text/javascript" id="wc-blocks-middleware-js-before">
-    /* <![CDATA[ */
-    var wcBlocksMiddlewareConfig = {
-      storeApiNonce: "89aded12fb",
-      wcStoreApiNonceTimestamp: "1709127684",
-    };
-
-    /* ]]> */
-  </script>
-  
-  <script type="text/javascript"
-    src="https://www.gilbaneco.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution-blocks.min.js?ver=8.5.2"
-    id="wc-order-attribution-blocks-js"></script>
-  
-  
-  <script type="text/javascript" id="gated-content-js-extra">
-    /* <![CDATA[ */
-    var gatedContent = {
-      postID: "5",
-      postType: "page",
-      ajax: "https:\/\/www.gilbaneco.com\/wp-admin\/admin-ajax.php",
-    };
-    /* ]]> */
-  </script>
-  
-  
-  
-  
-  </div>
-  <!-- Closing .site tag -->
+        </div>
+        <button class="scroll-to-top scroll-to-top--visible" id="scrollToTopButton" aria-label="Scroll to Top" title="Scroll to Top">
+          <span class="screen-reader-text">Scroll to Top</span>
+          <svg width="12" height="16" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path transform="rotate(-89.7475 6.02515 7.96823)" fill="#fff" d="m13.551,7.969a0.836,0.836 0 0 0 -0.141,-0.432l-4.013,-5.34a0.435,0.435 0 0 0 -0.709,-0.025a0.77,0.77 0 0 0 -0.02,0.888l3.222,4.28l-12.89,0a0.644,0.644 0 0 0 0,1.256l12.889,0l-3.222,4.28a0.784,0.784 0 0 0 0.02,0.888a0.435,0.435 0 0 0 0.709,-0.024l4.013,-5.34a0.639,0.639 0 0 0 0.142,-0.431z" id="Arrow"></path>
+            </g>
+          </svg>
+        </button>
+      </div>
+    </footer>
+    
+    </div>
+    <!-- Closing .site tag -->
 </body>
 
 </html>
